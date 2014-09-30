@@ -3,6 +3,6 @@
  */
 
 angular.module('ng-twapp')
-    .service('fbloginService', function ($rootScope, Facebook) {
+    .service('loginService', function ($rootScope) {
 
 });
