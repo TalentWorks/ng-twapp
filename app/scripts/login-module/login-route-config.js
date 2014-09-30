@@ -7,34 +7,33 @@ angular.module('ng-twapp')
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-    // route to show our basic form (/form)
+      // route to show our basic form (/form)
       .state('form', {
         url: '/form',
         templateUrl: '/scripts/login-module/views/form.html',
         controller: 'logingCtrl'
       })
 
-    // url will be /form/login
+      // url will be /form/login
       .state('form.login', {
         url: '/login',
-        templateUrl: '/scripts/login-module/views/login.html'
+        templateUrl: '/scripts/login-module/views/form-login.html'
       })
 
-    // url will be /form/success
+      // url will be /form/success
       .state('form.success', {
         url: '/success',
-        templateUrl: '/scripts/login-module/views/loginSuccess.html'
+        templateUrl: '/scripts/login-module/views/form-login-success.html'
       })
 
-    // nested states
-    // each of these sections will have their own view
-    // url will be nested (/form/profile)
+      // nested states
+      // url will be nested (/form/profile)
       .state('form.profile', {
         url: '/profile',
         templateUrl: '/scripts/login-module/views/form-profile.html'
       })
 
-    // url will be /form/interests
+      // url will be /form/interests
       .state('form.interests', {
         url: '/interests',
         templateUrl: '/scripts/login-module/views/form-interests.html'
