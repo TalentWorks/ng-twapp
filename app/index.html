@@ -29,18 +29,12 @@
 
     <!-- Add your site or application content here -->
     <!-- views will be injected here -->
+   <common-top-nav></common-top-nav>
     <div class="container">
         <div ui-view></div>
     </div>
+    <common-footer-nav></common-footer-nav>
 
-    <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-            <div class="jumbotron text-muted text-center">
-                <p>Welcome to <a href="/#" target="_blank">Talent Works</a></p>
-                <p><a href="www.google.com">Have fun</a></p>
-            </div>
-        </div>
-    </div>
 
 
     <!--[if lt IE 9]>
@@ -78,15 +72,26 @@
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/route-config.js"></script>
+    <script type="text/javascript" src="scripts/application.js"></script>
+
+    <!-- top navigation scripts -->
+    <script type="text/javascript" src="scripts/navigation-module/controllers/nav-module-controller.js"></script>
+    <script type="text/javascript" src="scripts/navigation-module/directives/top-nav-directive.js"></script>
+    <script type="text/javascript" src="scripts/navigation-module/nav-route-config.js"></script>
 
     <!-- main scripts -->
+    <script type="text/javascript" src="scripts/main-module/controllers/main-module-controller.js"></script>
     <script type="text/javascript" src="scripts/main-module/main-route-config.js"></script>
 
     <!-- login scripts -->
     <script type="text/javascript" src="scripts/login-module/service/loginService.js"></script>
-    <script type="text/javascript" src="scripts/login-module/controller/loginCtrl.js"></script>
+    <script type="text/javascript" src="scripts/login-module/controller/login-ctrl.js"></script>
     <script type="text/javascript" src="scripts/login-module/login-route-config.js"></script>
 
+    <!-- footer scripts -->
+    <script type="text/javascript" src="scripts/footer-module/controllers/common-footer-ctrl.js"></script>
+    <script type="text/javascript" src="scripts/footer-module/directives/footer-nav-directive.js"></script>
+    <script type="text/javascript" src="scripts/footer-module/footer-route-config.js"></script>
 
     <!-- endbuild -->
 </body>

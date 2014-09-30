@@ -1,18 +1,15 @@
+'use strict';
 /**
- * Created by josefsosa on 9/29/14.
+ * @author josefsosa on 9/18/14.
+ * @ngdoc directive
+ * @name ng-twapp.commonTopNav
+ * @description # directive
  */
 angular.module('ng-twapp')
-.directive('commonFooter', ['$location', function ($location) {
-  return {
-    restrict: 'E',
-    templateUrl: 'scripts/footer-module/views/footer.html',
-    scope: {
-
-    },
-    link: function (scope, element, attrs) {
-      scope.isActive = function(route) {
-        return route === $location.path();
-      }
-    }
-  }
-}]);
+    .directive('commonTopNav', function () {
+      return {
+        restrict: 'E',
+        templateUrl: 'scripts/navigation-module/views/top-navigation.html',
+        replace: true
+      };
+    });

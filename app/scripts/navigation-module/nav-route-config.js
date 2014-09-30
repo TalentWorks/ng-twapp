@@ -4,18 +4,18 @@
 'use strict';
 
 angular.module('ng-twapp')
-.config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $urlRouterProvider) {
 
-  $stateProvider.state('about', {
-    url: '/about',
-    templateUrl: '/scripts/main-module/view/main.html',
-    controller: 'MainCtrl'
-  });
-  $stateProvider.state('contacts', {
-    url: '/contacts',
-    templateUrl: '/scripts/main-module/view/main.html',
-    controller: 'MainCtrl'
-  });
+      $stateProvider.state('about', {
+        url: '/about',
+        templateUrl: '/scripts/main-module/view/main.html',
+        controller: 'mainCtrl'
+      });
+      $stateProvider.state('contact', {
+        url: '/contact',
+        templateUrl: '/scripts/main-module/view/main.html',
+        controller: 'mainCtrl'
+      });
 
-  $urlRouterProvider.otherwise('/');
-});
+      $urlRouterProvider.otherwise('/');
+    });

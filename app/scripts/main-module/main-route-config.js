@@ -1,7 +1,11 @@
 'use strict';
 /**
- * Created by josefsosa on 9/29/14.
+ * @author josefsosa on 9/18/14.
+ * @ngdoc config
+ * @name ng-twapp
+ * @description # Main module configuration
  */
+
 
 angular
     .module('ng-twapp')
@@ -10,7 +14,7 @@ angular
       $stateProvider.state('main', {
         url: '/main',
         templateUrl: '/scripts/main-module/view/main.html',
-        controller: 'MainCtrl'
+        controller: 'mainCtrl'
 
       });
       $urlRouterProvider.otherwise('/');
