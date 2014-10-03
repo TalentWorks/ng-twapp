@@ -1,12 +1,12 @@
 'use strict';
 /**
  * @ngdoc module
- * @name mytmoNgApp
+ * @name ng-twapp
  * @file nav-route-config.js
- * @description # mytmoNgApp nav-route-config.js main app module loader
+ * @description # ng-twapp nav-route-config.js main app module loader
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider.state('home', {

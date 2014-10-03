@@ -1,10 +1,10 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name mytmoNgApp.calendarDirective
+ * @name ng-twapp.calendarDirective
  * @description # calendar picker directive
  */
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .directive('weatherIcon', function() {
     return {
         restrict: 'E', replace: true,

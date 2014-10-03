@@ -1,10 +1,10 @@
  'use strict';
 /**
  * @ngdoc config
- * @name mytmoNgApp.pagination
+ * @name ng-twapp.pagination
  * @description  Pagination configuration
  */
-angular.module('mytmoNgApp').config(function ($stateProvider, $urlRouterProvider) {
+angular.module('ng-twapp').config(function ($stateProvider, $urlRouterProvider) {
 	    $stateProvider.state('pagination', {
             url: '/pagination',
             templateUrl: 'scripts/pagination-module/views/pagination-example.html',

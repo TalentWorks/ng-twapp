@@ -1,11 +1,11 @@
 'use strict';
 /**
  * @ngdoc controller
- * @name mytmoNgApp.calendarPickerModuleController
+ * @name ng-twapp.calendarPickerModuleController
  * @description # calendarPickerModuleController
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .controller('WeatherCtrl', function ($scope, weatherService) {
     $scope.weather = weatherService.getWeather();
 });

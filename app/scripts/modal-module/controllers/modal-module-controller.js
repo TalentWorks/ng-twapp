@@ -1,11 +1,11 @@
 'use strict';
 /**
  * @ngdoc controller
- * @name mytmoNgApp.modelController
+ * @name ng-twapp.modelController
  * @description # modelController
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .controller('modalController', function ($scope, $rootScope, $http, $location) {
 
     });

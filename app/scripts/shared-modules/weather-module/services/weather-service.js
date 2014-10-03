@@ -1,12 +1,12 @@
 'use strict';
 /**
  * @ngdoc service
- * @name mytmoNgApp.weatherService
+ * @name ng-twapp.weatherService
  * @file weather-service.js
  * @description # weatherService
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .factory('weatherService', function($http, $q) {
     return {
         getWeather: function() {

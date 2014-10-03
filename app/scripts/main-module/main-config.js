@@ -2,13 +2,13 @@
 /**
  * @author josefsosa on 9/18/14.
  * @ngdoc config
- * @name mytmoNgApp
+ * @name ng-twapp
  * @description # Main module configuration
  */
 
 
 angular
-    .module('mytmoNgApp')
+    .module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
 
       $stateProvider.state('main', {

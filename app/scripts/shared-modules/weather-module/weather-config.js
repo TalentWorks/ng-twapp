@@ -1,12 +1,12 @@
 'use strict';
 /**
  * @ngdoc module
- * @name mytmoNgApp
+ * @name ng-twapp
  * @file weather-config.js
- * @description # mytmoNgApp WeatherCtrl module loader
+ * @description # ng-twapp WeatherCtrl module loader
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
        //http://api.openweathermap.org/data/2.5/weather?q=seattle,usa
         $stateProvider.state('weather1', {

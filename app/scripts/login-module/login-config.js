@@ -1,11 +1,11 @@
 'use strict';
 /**
  * @ngdoc config
- * @name mytmoNgApp.config
+ * @name ng-twapp.config
  * @description # config for login
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
 

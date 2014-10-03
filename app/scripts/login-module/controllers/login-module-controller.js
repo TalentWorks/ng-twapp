@@ -1,11 +1,11 @@
 'use strict';
 /**
  * @ngdoc controller
- * @name mytmoNgApp.logingCtrl
+ * @name ng-twapp.logingCtrl
  * @description # logingCtrl
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .controller('loginCtrl', function ($scope) {
       // we will store all of our form data in this object
       $scope.formData = {};

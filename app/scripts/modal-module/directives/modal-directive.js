@@ -2,10 +2,10 @@
 /**
  * @author josefsosa on 9/18/14.
  * @ngdoc directive
- * @name mytmoNgApp.modelDirective
+ * @name ng-twapp.modelDirective
  * @description # modelDirective
  */
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .directive('customModals', function () {
         return {
             restrict: 'A',

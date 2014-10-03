@@ -1,4 +1,4 @@
-angular.module('mytmoNgApp').controller('InfiniteScrollController', function($scope, $http) {
+angular.module('ng-twapp').controller('InfiniteScrollController', function($scope, $http) {
 	$scope.busy = false;
 	$scope.after = '';
 	$scope.items = [];

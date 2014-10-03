@@ -1,4 +1,4 @@
-angular.module('mytmoNgApp').controller('PaginationExampleController', function ($scope) {
+angular.module('ng-twapp').controller('PaginationExampleController', function ($scope) {
 	$scope.items = setupItems();
 	$scope.totalItems = $scope.items.length;
 	$scope.currentPage = 1;

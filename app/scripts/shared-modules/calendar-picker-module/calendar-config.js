@@ -1,12 +1,12 @@
 'use strict';
 /**
  * @ngdoc module
- * @name mytmoNgApp
+ * @name ng-twapp
  * @file calendar-config.js
- * @description # mytmoNgApp calendar module loader
+ * @description # ng-twapp calendar module loader
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider.state('cal', {

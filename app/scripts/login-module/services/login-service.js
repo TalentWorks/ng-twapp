@@ -1,11 +1,11 @@
 'use strict';
 /**
  * @ngdoc service
- * @name mytmoNgApp.loginService
+ * @name ng-twapp.loginService
  * @description # loginService
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .service('loginService', function ($rootScope) {
 
     });

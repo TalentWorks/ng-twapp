@@ -1,12 +1,12 @@
 'use strict';
 /**
  * @ngdoc filter
- * @name mytmoNgApp.calendarDirective
+ * @name ng-twapp.calendarDirective
  * @file weather-filter.js
  * @description # weather-filter
  */
 
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .filter('temp', function($filter) {
     return function(input, precision) {
         if (!precision) {

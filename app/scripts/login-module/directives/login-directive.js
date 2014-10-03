@@ -1,10 +1,10 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name mytmoNgApp.commonHeader
+ * @name ng-twapp.commonHeader
  * @description # Common Header navigation directive
  */
-angular.module('mytmoNgApp')
+angular.module('ng-twapp')
     .directive('LoginDirective', function () {
         return {
             restrict: 'E',

@@ -1,4 +1,4 @@
-angular.module('mytmoNgApp').controller('InventoryCtrl', [ function() {
+angular.module('ng-twapp').controller('InventoryCtrl', [ function() {
     var self = this;
 //    var i, _i;
     var items = []
