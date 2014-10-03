@@ -1,4 +1,4 @@
-// Generated on 2014-09-29 using generator-angular 0.9.7
+// Generated on 2014-08-26 using generator-angular 0.9.5
 'use strict';
 
 // # Globbing
@@ -44,9 +44,9 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
-      compass: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        tasks: ['compass:server', 'autoprefixer']
+      less: {
+        files: ['<%= yeoman.app %>/styles/less/{,*/}*.{less,less}'],
+        tasks: ['build-less', 'autoprefixer:less']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -130,6 +130,18 @@ module.exports = function (grunt) {
       }
     },
 
+    csslint: {
+      strict: {
+        src: ['.tmp/styles/{,*/}*.css']
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['.tmp/styles/{,*/}*.css']
+      }
+    },
+
     // Empties folders to start fresh
     clean: {
       dist: {
@@ -157,54 +169,29 @@ module.exports = function (grunt) {
           src: '{,*/}*.css',
           dest: '.tmp/styles/'
         }]
+      },
+      less: {
+        files: [{
+          expand: true,
+          cwd: '.tmp/styles/',
+          src: '{,*/}*.css',
+          dest: '.tmp/styles/'
+        }]
       }
     },
 
     // Automatically inject Bower components into the app
     wiredep: {
+      options: {
+        cwd: '<%= yeoman.app %>'
+      },
       app: {
         src: ['<%= yeoman.app %>/index.html'],
         ignorePath:  /\.\.\//
       },
-      sass: {
-        src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
+      less: {
+        src: ['<%= yeoman.app %>/styles/{,*/}*.{less,less}'],
         ignorePath: /(\.\.\/){1,2}bower_components\//
-      }
-    },
-
-    // The following *-min tasks produce minified files in the dist folder
-    cssmin: {
-      options: {
-        root: '<%= yeoman.app %>'
-      }
-    },
-
-    // Compiles Sass to CSS and generates necessary files if requested
-    compass: {
-      options: {
-        sassDir: '<%= yeoman.app %>/styles',
-        cssDir: '.tmp/styles',
-        generatedImagesDir: '.tmp/images/generated',
-        imagesDir: '<%= yeoman.app %>/images',
-        javascriptsDir: '<%= yeoman.app %>/scripts',
-        fontsDir: '<%= yeoman.app %>/styles/fonts',
-        importPath: './bower_components',
-        httpImagesPath: '/images',
-        httpGeneratedImagesPath: '/images/generated',
-        httpFontsPath: '/styles/fonts',
-        relativeAssets: false,
-        assetCacheBuster: false,
-        raw: 'Sass::Script::Number.precision = 10\n'
-      },
-      dist: {
-        options: {
-          generatedImagesDir: '<%= yeoman.dist %>/images/generated'
-        }
-      },
-      server: {
-        options: {
-          debugInfo: true
-        }
       }
     },
 
@@ -213,9 +200,9 @@ module.exports = function (grunt) {
       dist: {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
-          '<%= yeoman.dist %>/styles/{,*/}*.css',
+          '<%= yeoman.dist %>/styles/{,*/}/{,*/}*.css',
           '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-          '<%= yeoman.dist %>/styles/fonts/*'
+          '<%= yeoman.dist %>/fonts/*'
         ]
       }
     },
@@ -314,14 +301,14 @@ module.exports = function (grunt) {
       }
     },
 
-    // ng-annotate tries to make the code safe for minification automatically
-    // by using the Angular long form for dependency injection.
+    // Add, remove and rebuild AngularJS dependency injection annotations.
+    // Replacement for ngmin (deprecated) and handles minification.
     ngAnnotate: {
       dist: {
         files: [{
           expand: true,
           cwd: '.tmp/concat/scripts',
-          src: ['*.js', '!oldieshim.js'],
+          src: '*.js',
           dest: '.tmp/concat/scripts'
         }]
       }
@@ -348,18 +335,14 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'fonts/*'
+            'fonts/*',
+            'styles/{,*/}.*.css'
           ]
         }, {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
           src: ['generated/*']
-        }, {
-          expand: true,
-          cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-          dest: '<%= yeoman.dist %>'
         }]
       },
       styles: {
@@ -371,18 +354,47 @@ module.exports = function (grunt) {
     },
 
     // Run some tasks in parallel to speed up the build process
-    concurrent: {
-      server: [
-        'compass:server'
-      ],
-      test: [
-        'compass'
-      ],
-      dist: [
-        'compass:dist',
-        'imagemin',
-        'svgmin'
-      ]
+      concurrent: {
+//        server: [
+//            'compass:server'
+//        ],
+//        test: [
+//            'compass'
+//        ],
+        dist: [
+            'imagemin',
+           // 'compass:dist',
+            'svgmin'
+        ]
+      },
+
+    // LESS Configuration to be run
+    less: {
+      development: {
+        options: {
+          paths: ['styles/less/']
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/styles/less',
+          src: ['**/*.less'],
+          dest: '.tmp/styles',
+          ext: '.css'
+        }]
+      },
+      production: {
+        options: {
+          paths: ['styles/less/'],
+          cleancss: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= yeoman.app %>/styles/less',
+          src: ['**/*.less'],
+          dest: '.tmp/styles',
+          ext: '.css'
+        }]
+      }
     },
 
     // Test settings
@@ -394,6 +406,10 @@ module.exports = function (grunt) {
     }
   });
 
+  // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-internal');
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -402,13 +418,22 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'wiredep',
-      'concurrent:server',
-      'autoprefixer',
+      //'wiredep',
+      //'concurrent:server',
+      'less:development',
+      'autoprefixer:less',
       'connect:livereload',
       'watch'
     ]);
   });
+
+  grunt.registerTask('build-less', [
+    'clean:server',
+    'less:development',
+    'autoprefixer:less',
+    'connect:livereload',
+    'watch'
+  ]);
 
   grunt.registerTask('server', 'DEPRECATED TASK. Use the "serve" task instead', function (target) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
@@ -423,9 +448,18 @@ module.exports = function (grunt) {
     'karma'
   ]);
 
+  grunt.registerTask('unit', [
+    'clean:server',
+    'concurrent:test',
+    'autoprefixer',
+    'connect:test',
+    'karma:unit'
+  ]);
+
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
+    //'wiredep',
+    'less',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',

@@ -1,0 +1,441 @@
+@import "/bower_components/bootstrap/less/variables.less";
+@icon-font-path: "/bower_components/bootstrap/fonts/";
+@import "/bower_components/bootstrap/less/glyphicons.less";
+@import (reference) "vendor";
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body > .container {
+  height: 100%;
+}
+
+/* Space out content a bit */
+body {
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  //  .container {
+  //    max-width: 730px;
+  //}
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* Supporting Profile*/
+
+#di_lineselector {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#di_alert {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#navProfile {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 85px;
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#navMainView {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  margin-left: 269px;
+  margin-bottom: 20px;
+  margin-top: -147px;
+  width: 200%;
+  height: 100%;
+}
+
+.custBalance {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 60%
+}
+
+.co_billing-alerts .billing-table {
+  width: 100%;
+}
+
+.co_billing-alerts .link-style {
+  display: table;
+  width: 938px;
+  height: 44px;
+}
+
+#homeAlerts {
+  background-color: #fff;
+  overflow: hidden;
+  min-height: 95px;
+  padding: 25px 35px 35px 35px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 40%
+}
+
+#di_balancedue .row-fluid.co_balance {
+  background-color: #fff;
+  overflow: hidden;
+  min-height: 95px;
+  border-radius: 6px;
+  border: 1px solid #d3d3d3;
+  border-bottom: 2px solid #CCC;
+  padding: 25px 35px 35px 35px;
+  width: 50%;
+  float: left;
+}
+
+//@import "/ower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* style.css */
+/* BASIC STYLINGS
+============================================================================= */
+
+/* form styling */
+#form-container {
+  background: #2f2f2f;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#form-container .page-header {
+  background: #151515;
+  margin: 0;
+  padding: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* numbered buttons */
+#status-buttons {
+}
+
+#status-buttons a {
+  color: #FFF;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#status-buttons a:hover {
+  text-decoration: none;
+}
+
+/* we will style the span as the circled number */
+#status-buttons span {
+  background: #080808;
+  display: block;
+  height: 30px;
+  margin: 0 auto 10px;
+  padding-top: 5px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/* active buttons turn light green-blue*/
+#status-buttons a.active span {
+  background: #00BC8C;
+}
+
+/* style.css */
+/* ANIMATION STYLINGS
+============================================================================= */
+#signup-form {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+#form-views {
+  width: auto;
+}
+
+/* basic styling for entering and leaving */
+/* left and right added to ensure full width */
+#form-views.ng-enter,
+#form-views.ng-leave {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+}
+
+/* enter animation */
+#form-views.ng-enter {
+  -webkit-animation: slideInRight 0.5s both ease;
+  -moz-animation: slideInRight 0.5s both ease;
+  animation: slideInRight 0.5s both ease;
+}
+
+/* leave animation */
+#form-views.ng-leave {
+  -webkit-animation: slideOutLeft 0.5s both ease;
+  -moz-animation: slideOutLeft 0.5s both ease;
+  animation: slideOutLeft 0.5s both ease;
+}
+
+/* ANIMATIONS
+============================================================================= */
+/* slide out to the left */
+@keyframes slideOutLeft {
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@-moz-keyframes slideOutLeft {
+  to {
+    -moz-transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes slideOutLeft {
+  to {
+    -webkit-transform: translateX(-200%);
+  }
+}
+
+/* slide in from the right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes slideInRight {
+  from {
+    -moz-transform: translateX(200%);
+  }
+  to {
+    -moz-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(200%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+  }
+}
+
+.left-nav {
+  height: 100%;
+  top: 60px;
+  width: 240px;
+  overflow: auto;
+  position: fixed;
+
+}
+
+.right-nav {
+  top: 60px;
+  position: relative;
+  margin-left: 280px;
+}
+
+.footer {
+  z-index: 9999;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: @body-bg;
+}

@@ -1,0 +1,10 @@
+<div class="left-nav-mobile">
+    <a class="visible-xs btn  btn-primary" ng-class="" ng-click="inventory.sideBarOpened = !inventory.sideBarOpened">Show / Hide Table of Contents</a>
+</div>
+
+<left-nav ng-show="inventory.sideBarOpened" ng-class="{hide:false}"></left-nav>
+
+<div class="right-nav">
+    <div ui-view></div>
+</div>
+

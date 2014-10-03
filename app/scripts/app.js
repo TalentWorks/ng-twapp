@@ -6,8 +6,7 @@
  * @description # ng-twapp main app module loader
  */
 
-angular
-    .module('ng-twapp', [
+angular.module('ng-twapp', [
       'ngCookies',
       'ngResource',
       'ngSanitize',
