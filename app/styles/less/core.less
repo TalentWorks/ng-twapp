@@ -1,7 +1,11 @@
 @import "/bower_components/bootstrap/less/variables.less";
-@icon-font-path: "/bower_components/bootstrap/fonts/";
 @import "/bower_components/bootstrap/less/glyphicons.less";
 @import (reference) "vendor";
+
+body > .container {
+  margin-bottom: 20px;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -9,47 +13,48 @@
   padding: 0.2em 0;
 }
 
-html,
-body {
-  height: 100%;
+.header-navbar .navbar-brand {
+  color: #00BC8C;
 }
 
-body > .container {
-  height: 100%;
+.header-navbar .navbar-nav > li > a {
+  color: #00BC8C;
 }
 
-/* Space out content a bit */
-body {
-  margin-top: 70px;
-  padding-bottom: 20px;
+.footer-navbar {
+  margin-bottom: 0;
+  border-top: 1px solid #e5e5e5;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
+.pagination-example {
+  > table {
+    margin: 10px 0 15px 0;
+  }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+  .pagination {
+    margin: 0;
   }
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+.inventory-sidebar {
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+
+  .left-nav {
+    margin-bottom: 20px;
+  }
+}
+
+#logingCtrl {
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-narrow > hr {
@@ -73,30 +78,6 @@ body {
 
   p + h4 {
     margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  //  .container {
-  //    max-width: 730px;
-  //}
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }
 
@@ -189,8 +170,6 @@ body {
   float: left;
 }
 
-//@import "/ower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -199,31 +178,9 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
+.marketing {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 .container-narrow > hr {
@@ -248,31 +205,6 @@ body {
 
 .marketing p + h4 {
   margin-top: 28px;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
 }
 
 /* style.css */
@@ -416,26 +348,7 @@ body {
   }
 }
 
-.left-nav {
-  height: 100%;
-  top: 60px;
-  width: 240px;
-  overflow: auto;
-  position: fixed;
-
-}
-
-.right-nav {
-  top: 60px;
-  position: relative;
-  margin-left: 280px;
-}
-
-.footer {
-  z-index: 9999;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: @body-bg;
+#talentworkLogo {
+  position:relative;
+  top: -7px;
 }
