@@ -1,28 +1,31 @@
-'use strict';
 /**
- * @ngdoc module
- * @name ng-twapp
- * @file nav-route-config.js
- * @description # ng-twapp nav-route-config.js main app module loader
+ * Created by josefsosa on 9/29/14.
  */
+'use strict';
 
 angular.module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
 
-        $stateProvider.state('home', {
-            url: '/',
-            templateUrl: '/scripts/main-module/view/main.html',
-            controller: 'mainController'
-        });
-        $stateProvider.state('about', {
-            url: '/about',
-            templateUrl: '/scripts/main-module/view/main.html',
-            controller: 'mainController'
-        });
-        $stateProvider.state('contact', {
-            url: '/contact',
-            templateUrl: '/scripts/main-module/view/main.html',
-            controller: 'mainController'
-        });
-        $urlRouterProvider.otherwise('/');
+      $stateProvider.state('home', {
+        url: '/home',
+        templateUrl: '/scripts/main-module/views/main.html',
+        controller: 'mainCtrl'
+      });
+      $stateProvider.state('about', {
+        url: '/about',
+        templateUrl: '/scripts/main-module/view/main.html',
+        controller: 'mainCtrl'
+      });
+      $stateProvider.state('contact', {
+        url: '/contact',
+        templateUrl: '/scripts/main-module/view/main.html',
+        controller: 'mainCtrl'
+      });
+      $stateProvider.state('userProfile', {
+        url: '/userProfile',
+        templateUrl: '/scripts/profile-module/views/profile.html',
+        controller: 'profileController'
+      });
+
+      $urlRouterProvider.otherwise('/');
     });

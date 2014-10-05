@@ -1,5 +1,6 @@
 'use strict';
 /**
+ * @author josefsosa on 9/18/14.
  * @ngdoc config
  * @name ng-twapp.config
  * @description # config for login
