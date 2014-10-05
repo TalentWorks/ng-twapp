@@ -54,5 +54,13 @@
   },
   "scripts": {
     "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TalentWorks/ng-twapp.git"
+  },
+  "author": "Jose F. Sosa <josefsosa@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/TalentWorks/ng-twapp/issues"
   }
 }
