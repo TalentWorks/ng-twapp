@@ -6,7 +6,7 @@
  * @description # commonFooterCtrl
  */
 
-angular.module('ng-twapp')
+angular.module('ng-twapp.footer')
     .controller('commonFooterCtrl', function ($scope, $rootScope, $http, $location) {
 
     });

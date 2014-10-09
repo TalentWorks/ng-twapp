@@ -5,7 +5,7 @@
  * @description # loginService
  */
 
-angular.module('ng-twapp')
+angular.module('ng-twapp.login')
     .service('loginService', function ($rootScope) {
 
     });

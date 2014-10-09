@@ -5,10 +5,10 @@
  * @name ng-twapp.commonFooterNav
  * @description # Common footer navigation directive
  */
-angular.module('ng-twapp')
+angular.module('ng-twapp.footer')
     .directive('commonFooterNav', function () {
       return {
         restrict: 'E',
-        templateUrl: 'scripts/footer-module/views/footer-navigation.html',
+        templateUrl: 'scripts/footer-module/views/footer-navigation.html'
       };
     });

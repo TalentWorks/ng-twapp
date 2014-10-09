@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-    .module('ng-twapp')
+    .module('ng-twapp.inventory')
     .config(function ($stateProvider, $urlRouterProvider) {
 
         $stateProvider.state('inventory', {

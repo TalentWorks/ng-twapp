@@ -4,7 +4,7 @@
  * @name ng-twapp.commonHeader
  * @description # Common Header navigation directive
  */
-angular.module('ng-twapp')
+angular.module('ng-twapp.login')
     .directive('LoginDirective', function () {
         return {
             restrict: 'E',

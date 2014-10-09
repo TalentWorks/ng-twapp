@@ -6,7 +6,7 @@
  */
 
 angular
-    .module('ng-twapp')
+    .module('ng-twapp.footer')
     .config(function ($stateProvider, $urlRouterProvider) {
 
       $stateProvider

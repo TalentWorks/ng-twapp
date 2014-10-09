@@ -6,7 +6,7 @@
  * @description # commonFooterCtrl
  */
 
-angular.module('ng-twapp')
+angular.module('ng-twapp.main')
     .controller('mainCtrl', function ($scope) {
       var params = {userName:'John', userLast:'Smith'};
 

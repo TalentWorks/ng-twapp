@@ -5,7 +5,7 @@
  * @description # logingCtrl
  */
 
-angular.module('ng-twapp')
+angular.module('ng-twapp.login')
     .controller('loginCtrl', function ($scope) {
       // we will store all of our form data in this object
       $scope.formData = {};
