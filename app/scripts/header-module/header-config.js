@@ -6,7 +6,7 @@
  */
 
 angular
-    .module('ng-twapp.header')
+    .module('ng-twapp')
     .config(function () {
 
     });

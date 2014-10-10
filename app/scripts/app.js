@@ -14,12 +14,5 @@ angular.module('ng-twapp', [
       'ngAnimate',
       'ui.router',
       'ui.bootstrap',
-      'ng-infinite-scroll.js',
-      //Custom application modules
-      'ng-twapp.main'
-//      'ng-twapp.inventory',
-//      'ng-twapp.login',
-//      'ng-twapp.infiniteScroller',
-//      'ng-twapp.footer'
-
+      'ng-infinite-scroll'
     ]);

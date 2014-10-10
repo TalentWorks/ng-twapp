@@ -1,7 +1,10 @@
-/**
- * Created by josefsosa on 9/28/14.
- */
 'use strict';
+/**
+ * @author josefsosa on 9/18/14.
+ * @ngdoc module
+ * @name  ng-twapp
+ * @description # ng-twapp main app module loader
+ */
 
 angular
     .module('ng-twapp')

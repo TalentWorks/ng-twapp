@@ -7,8 +7,7 @@
  */
 
 
-angular
-    .module('ng-twapp.main')
+angular.module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
 
       $stateProvider.state('main', {

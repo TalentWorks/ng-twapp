@@ -6,7 +6,7 @@
  * @description # config for login
  */
 
-angular.module('ng-twapp.login')
+angular.module('ng-twapp')
     .config(function ($stateProvider, $urlRouterProvider) {
       $stateProvider
 
