@@ -13,6 +13,5 @@ angular.module('ng-twapp', [
       'ngRoute',
       'ngAnimate',
       'ui.router',
-      'ui.bootstrap',
-      'ng-infinite-scroll'
+      'infinite-scroll'
     ]);

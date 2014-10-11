@@ -6,7 +6,7 @@
  */
 
 angular.module('ng-twapp')
-    .service('loginService', function ($rootScope, $scope, $http) {
+    .service('loginService', function ($rootScope) {
       // Public API
       var service = {};
 

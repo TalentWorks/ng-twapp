@@ -9,6 +9,6 @@ angular.module('ng-twapp')
     .directive('commonFooterNav', function () {
       return {
         restrict: 'E',
-        templateUrl: 'scripts/footer-module/views/footer-navigation.html'
+        templateUrl: 'scripts/footer-module/views/footer-navigation.html',
       };
     });

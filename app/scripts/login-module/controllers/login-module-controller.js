@@ -6,8 +6,7 @@
  */
 
 angular.module('ng-twapp')
-    .controller('loginCtrl', function ($scope, loginService, $http, $parse) {
-
+    .controller('loginCtrl', function ($scope, $http, $parse, loginService ) {
       $http.get('http://localhost:9005/api/users').
           success(function(data) {
             var jsonData = angular.fromJson(data);
@@ -26,6 +25,8 @@ angular.module('ng-twapp')
       ///$scope.usersByID = loginService.getUsersById('5433698078b5d6674be9680c');
       //console.log($scope.usersByID);
 
+
+      $scope.formData = {};
 
       // function to process the form
       $scope.processForm = function () {
