@@ -4,8 +4,7 @@
  * @name ng-twapp.infinite-scroll
  * @description  Infinite Scroll Example configuration
  */
-angular.module('' +
-        '').config(function ($stateProvider, $urlRouterProvider) {
+angular.module('ng-twapp').config(function ($stateProvider, $urlRouterProvider) {
 	    $stateProvider.state('infinite-scroll', {
             url: '/infinite-scroll',
             templateUrl: 'scripts/infinite-scroll-module/views/infinite-scroll.html',

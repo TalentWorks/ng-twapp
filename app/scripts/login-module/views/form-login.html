@@ -1,9 +1,16 @@
 <!-- form-login.html -->
 <div class="form-group">
-    <label for="username">User Name</label>
-    <input type="text" class="form-control" name="username" ng-model="formData.username">
+    <label for="firstName">First Name</label>
+    <input type="text" class="form-control" name="fName" ng-model="formData.firstName">
 </div>
-
+<div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input type="text" class="form-control" name="lName" ng-model="formData.lastName">
+</div>
+<div class="form-group">
+    <label for="primaryEmail">Email</label>
+    <input type="text" class="form-control" name="primaryEmail" ng-model="formData.primaryEmail">
+</div>
 <div class="form-group">
     <label for="password">Password</label>
     <input type="password" class="form-control" name="password" ng-model="formData.password">
@@ -15,4 +22,9 @@
             Login <span class="glyphicon glyphicon-circle-arrow-right"></span>
         </a>
     </div>
+</div>
+
+<div class="form-group">
+    <label>Users</label>
+    <br/>
 </div>

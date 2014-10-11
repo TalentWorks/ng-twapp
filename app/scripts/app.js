@@ -12,5 +12,6 @@ angular.module('ng-twapp', [
       'ngSanitize',
       'ngRoute',
       'ngAnimate',
-      'ui.router'
+      'ui.router',
+      'infinite-scroll'
     ]);
