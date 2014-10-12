@@ -1,3 +1,5 @@
+'use strict';
+
 describe('Controller: myTmoApp.header-module.directives', function () {
 
   // load the controller's module
