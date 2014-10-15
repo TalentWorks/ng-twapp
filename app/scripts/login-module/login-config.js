@@ -18,9 +18,9 @@ angular.module('ng-twapp')
           })
 
         // url will be /form/login
-          .state('form.login', {
-            url: '/login',
-            templateUrl: '/scripts/login-module/views/form-login.html'
+          .state('form.signup', {
+            url: '/signup',
+            templateUrl: '/scripts/login-module/views/form-signup.html'
           })
 
         // url will be /form/success

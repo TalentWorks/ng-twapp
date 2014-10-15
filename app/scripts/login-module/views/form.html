@@ -5,15 +5,15 @@
         <div id="logingCtrl">
 
             <div class="page-header text-center">
-                <h2>Login or Sign up for Talent Works!</h2>
+                <h2>Sign up for Talent Works!</h2>
 
                 <!-- the links to our nested states using relative paths -->
                 <!-- add the active class if the state matches our ui-sref -->
                 <div id="status-buttons" class="text-center">
-                    <a ui-sref-active="active" ui-sref=".login"><span>L</span> Login</a>
-                    <a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
-                    <a ui-sref-active="active" ui-sref=".interests"><span>2</span> Interests</a>
-                    <a ui-sref-active="active" ui-sref=".verify"><span>3</span> Verify</a>
+                    <a ui-sref-active="active" ui-sref=".signup"><span>1</span> Sign Up</a>
+                    <a ui-sref-active="active" ui-sref=".profile"><span>2</span> Profile</a>
+                    <a ui-sref-active="active" ui-sref=".interests"><span>3</span> Interests</a>
+                    <a ui-sref-active="active" ui-sref=".verify"><span>4</span> Verify</a>
                 </div>
             </div>
 
@@ -30,7 +30,15 @@
 	<pre>
 		{{ formData }}
 	</pre>
-
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="stuff in formData">
+                <b>{{stuff.firstName}}</b>
+                <div class="text-muted">{{stuff.lastName}}</div>
+            </li>
+        </ul>
 
     </div>
 </div>
+<pre>
+		{{ formData2 }}
+</pre>

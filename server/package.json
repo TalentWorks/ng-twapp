@@ -1,0 +1,23 @@
+{
+  "name": "jsServer",
+  "version": "0.0.0",
+  "description": "A reusable Node server module designed for converting html",
+  "main": "jsServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "BSD",
+  "dependencies": {
+    "cors": "^2.4.1",
+    "ejs": "^1.0.0",
+    "express": "~3.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Josefsosa/htmlboa.git"
+  },
+  "author": "Jose F. Sosa <josefsosa@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/Josefsosa/htmlboa/issues"
+  }
+}
