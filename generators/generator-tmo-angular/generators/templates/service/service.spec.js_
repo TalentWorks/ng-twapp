@@ -1,0 +1,17 @@
+'use strict';
+
+describe('Service: <%= name %>', function () {
+
+    var <%= name %>;
+
+    beforeEach(function () {
+        module('<%= moduleName %>');
+        inject(function (_<%= name %>_) {
+            <%= name %> = _<%= name %>_;
+        });
+    });
+
+    it('should be defined', function () {
+        expect(!!<%= name %>).to.be.true;
+    });
+});

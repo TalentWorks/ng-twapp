@@ -2,11 +2,10 @@
 /**
  * @author josefsosa on 9/18/14.
  * @ngdoc controller
- * @name ng-twapp.commonNavCtrl
+ * @name ng-twapp.nav.commonNavCtrl
  * @description # commonNavCtrl
  */
 
-angular.module('ng-twapp')
-    .controller('commonNavCtrl', function ($scope, $rootScope, $http, $location) {
+angular.module('ng-twapp.nav').controller('commonNavController', function () {
 
-    });
+});

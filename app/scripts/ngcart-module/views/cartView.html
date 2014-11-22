@@ -1,0 +1,22 @@
+<div class="main">
+  <summary></summary>
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-sm-6 col-xs-12" ng-repeat="item in products">
+      <div class="thumbnail cartView">
+        <h3>{{ item.name }}</h3> <img ng-src="/{{ item.imageUrl }}" alt="{{item.name}}">
+
+        <p>{{ item.snippet }}</p>
+
+        <h2 class="price">{{ item.name.length*10-.01 | currency}}</h2>
+        <addtocart id="{{ item.id }}" name="{{ item.name }}" price="{{ item.name.length*10-.01  }}" data="item"
+                   quantity="1"> Add To Cart
+        </addtocart>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <cart></cart>
+  </div>
+</div>

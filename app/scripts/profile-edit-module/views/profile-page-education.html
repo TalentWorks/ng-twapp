@@ -1,0 +1,213 @@
+<!-- form-profile-page4.html -->
+Group Act?    <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to continu wth group act form.
+<h4>Education History</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseOne">1. My Education
+            History?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Education Start Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Educational Institutions:</label><br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                School Name
+              </div>
+              <div class="col-md-1">
+                Degree
+              </div>
+              <div class="col-md-2">
+                Field of Study
+              </div>
+              <div class="col-md-1">
+                Start
+              </div>
+              <div class="col-md-1">
+                End
+              </div>
+              <div class="col-md-2">
+                Major
+              </div>
+              <div class="col-md-3">
+                URL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="image" src="" ng-click="showDetails = ! showDetails" class="a"
+                       value="add another language +"/>
+              </div>
+            </div>
+            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="schoolName">School Name</label>
+                  <input type="text" class="form-control" name="schoolName" ng-model="formData.schoolName">
+                </div>
+                <div class="col-md-4">
+                  <label for="degree">Degree</label>
+                  <input type="text" class="form-control" name="degree" ng-model="formData.degree">
+                </div>
+                <div class="col-md-4">
+                  <label for="field">Field of Study</label>
+                  <select ng-model="myRoles" class="form-control" ng-options="role.name for role in roles"></select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="attendedStart">Dates Started</label>
+                  <input type="text" class="form-control" name="attendedStart" ng-model="formData.attendedStart">
+                </div>
+                <div class="col-md-4">
+                  <label for="attendEnd">Date Ended</label>
+                  <input type="text" class="form-control" name="attendEnd" ng-model="formData.attendEnd">
+                </div>
+                <div class="col-md-4">
+                  <label for="Major">Major</label>
+                  <select ng-model="myRoles" class="form-control" ng-options="role.name for role in roles"></select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="honors">Honors</label>
+                  <input type="text" class="form-control" name="honors" ng-model="formData.honors">
+                </div>
+                <div class="col-sm-6">
+                  <label for="proficiency">Major</label>
+                  <select ng-model="myproficiency" class="form-control"
+                          ng-options="proficiency.name for proficiency in proficiencies"></select><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="character" data-ng-model="formData.character"
+                         placeholder="URL"/>
+                </div>
+                <div class="col-sm-3 row-fluid">
+                  <input type="button" class="btn btn-primary" name="addEmail" value="Add another institution"
+                         data-ng-click="addEmails()" ng-required="email"
+                         ng-pattern="emailPattern">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Education Info -->
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseTwo">2. Special Training?</a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <!-- Education Start Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Special Trainings:</label><br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                Training Name
+              </div>
+              <div class="col-md-4">
+                Certificate Earned
+              </div>
+              <div class="col-md-1">
+                Start
+              </div>
+              <div class="col-md-1">
+                End
+              </div>
+              <div class="col-md-3">
+                URL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="image" src="" ng-click="showDetails2 = ! showDetails2" class="a"
+                       value="add another training +"/>
+              </div>
+            </div>
+            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails2 }">
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="trainingName">Training Name</label>
+                  <input type="text" class="form-control" name="trainingName" ng-model="formData.trainingName">
+                </div>
+                <div class="col-md-4">
+                  <label for="certificate">Certificate Earned</label>
+                  <input type="text" class="form-control" name="certificate" ng-model="formData.certificate">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="attendedStartT">Dates Started</label>
+                  <input type="text" class="form-control" name="attendedStartT" ng-model="formData.attendedStartT">
+                </div>
+                <div class="col-md-4">
+                  <label for="attendEndT">Date Ended</label>
+                  <input type="text" class="form-control" name="attendEndT" ng-model="formData.attendEndT">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label for="specialHonors">Special Honors</label>
+                  <input type="text" class="form-control" name="specialHonors" ng-model="formData.specialHonors">
+                </div>
+                <div class="col-sm-6">
+                  <label for="proficiency">Major</label>
+                  <select ng-model="myproficiency" class="form-control"
+                          ng-options="proficiency.name for proficiency in proficiencies"></select><br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="character" data-ng-model="formData.character"
+                         placeholder="URL"/>
+                </div>
+                <div class="col-sm-3 row-fluid">
+                  <input type="button" class="btn btn-primary" name="addEmail" value="Add another training"
+                         data-ng-click="addEmails()" ng-required="email"
+                         ng-pattern="emailPattern">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.auditions" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

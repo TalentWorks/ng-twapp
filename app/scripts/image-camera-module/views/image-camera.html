@@ -1,0 +1,15 @@
+<div id="image-camera">
+  <h1>Image Acquired from Mobile Camera</h1>
+
+  <p>When viewing this page from a mobile device, trying uploading an image by taking a picture!</p>
+
+  <form>
+    <input type="file" name="image" accept="image/*;capture=camera" bind-file="onFileSelect($files)">
+    <hr>
+    <i ng-hide="imageSrc">No Image Chosen</i>
+    <img ng-src="{{imageSrc}}" class="img-responsive"/>
+    <hr>
+    <p>Progress</p>
+    <progress value="{{progress}}"></progress>
+  </form>
+</div>

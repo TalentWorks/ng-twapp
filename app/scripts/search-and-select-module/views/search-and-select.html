@@ -1,0 +1,24 @@
+<div id="search-and-select">
+  <h3>Searching and Selecting</h3>
+
+  <p>This page provides an example integration of the ui.select plugin for AngularJS.</p>
+
+  <p>The plugin can be found here: <a href="https://github.com/angular-ui/ui-select">https://github.com/angular-ui/ui-select</a>
+  </p>
+
+  <div ng-show="architect.selected">
+    <p>Architect Name: {{architect.selected.name}}</p>
+
+    <p>Architect Email: <a href="mailto:{{architect.selected.email}}">{{architect.selected.email}}</a></p>
+  </div>
+
+  <ui-select ng-model="architect.selected" theme="bootstrap">
+    <ui-select-match placeholder="Select an architect in the list or search his or her name/email...">
+      {{$select.selected.name}}
+    </ui-select-match>
+    <ui-select-choices repeat="architect in architects | props: {name: $select.search, email: $select.search}">
+      <div ng-bind-html="architect.name | highlight: $select.search"></div>
+      <small>Email: {{architect.email}}</small>
+    </ui-select-choices>
+  </ui-select>
+</div>

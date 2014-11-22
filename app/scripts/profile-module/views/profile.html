@@ -1,43 +1,43 @@
 <!-- form.html -->
 <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+  <div class="col-sm-8 col-sm-offset-2">
 
-        <div id="profileController">
+    <div id="profileController">
 
-            <div class="page-header text-center">
-                <h2>Edit your profile!</h2>
+      <div class="page-header text-center">
+        <h2>Edit your profile!</h2>
 
-                <!-- the links to our nested states using relative paths -->
-                <!-- add the active class if the state matches our ui-sref -->
-                <div class="nav nav-{{type || 'tabs'}}" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}">
-                <li ng-class="{active: active, disabled: disabled}">
-                    <a ui-sref-active="active" ui-sref=".page1">Profile</a>
-                </li>
-                <li ng-class="{active: active, disabled: disabled}">
-                    <a ui-sref-active="active" ui-sref=".page2">Special Skills</a>
-                </li>
-                <li ng-class="{active: active, disabled: disabled}">
-                    <a ui-sref-active="active" ui-sref=".page3">Experience/Credits</a>
-                </li>
-                <li ng-class="{active: active, disabled: disabled}">
-                    <a ui-sref-active="active" ui-sref=".page4">Education History</a>
-                </li>
-                </div>
-            </div>
-
-            <!-- use ng-submit to catch the form submission and use our Angular function -->
-            <form id="profile-form" ng-submit="processForm()">
-
-                <!-- our nested state views will be injected here -->
-                <div id="profile-views" ui-view></div>
-            </form>
-
+        <!-- the links to our nested states using relative paths -->
+        <!-- add the active class if the state matches our ui-sref -->
+        <div class="nav nav-{{type || 'tabs'}}" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}">
+          <li ng-class="{active: active, disabled: disabled}">
+            <a ui-sref-active="active" ui-sref=".page1">Profile</a>
+          </li>
+          <li ng-class="{active: active, disabled: disabled}">
+            <a ui-sref-active="active" ui-sref=".page2">Special Skills</a>
+          </li>
+          <li ng-class="{active: active, disabled: disabled}">
+            <a ui-sref-active="active" ui-sref=".page3">Experience/Credits</a>
+          </li>
+          <li ng-class="{active: active, disabled: disabled}">
+            <a ui-sref-active="active" ui-sref=".page4">Education History</a>
+          </li>
         </div>
+      </div>
 
-        <!-- show our formData as it is being typed -->
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <form id="profile-form" ng-submit="processForm()">
+
+        <!-- our nested state views will be injected here -->
+        <div id="profile-views" ui-view></div>
+      </form>
+
+    </div>
+
+    <!-- show our formData as it is being typed -->
 	<pre>
 		{{ formData }}
 	</pre>
 
-    </div>
+  </div>
 </div>

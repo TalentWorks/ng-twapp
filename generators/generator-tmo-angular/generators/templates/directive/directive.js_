@@ -1,0 +1,16 @@
+'use strict';
+/**
+ * @ngdoc directive
+ * @name <%= moduleName %>.<%= name %>
+ * @description <%= moduleName %> directive
+ */
+angular.module('<%= moduleName %>').directive('<%= name %>', function () {
+	return {
+		restrict: 'EA',
+		link: function(scope, element) {
+			element.text('This is the <%= name %> directive.');
+		},<% if (separateTemplate) { %>
+        templateUrl: '<%= templateUrl %>'<% } else { %>
+        template: '<div><%= dasherizedName %></div>'<% } %>
+	};
+});

@@ -1,0 +1,3 @@
+<div id="<%= dasherizedName %>">
+    <h2>View for <%= humanizedName %></h2>
+</div>

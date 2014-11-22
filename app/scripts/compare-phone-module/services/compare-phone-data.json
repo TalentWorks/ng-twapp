@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Nokia Lumia 635",
+    "weight": "4.73ounces",
+    "color": "white",
+    "size": "10inch"
+  },
+  {
+    "id": "2",
+    "name": "Samsung Galaxy S 4",
+    "weight": "",
+    "color": "grey",
+    "size": ""
+  },
+  {
+    "id": "3",
+    "name": "Samsung Galaxy S 4",
+    "weight": "4.6ounces",
+    "color": "grey",
+    "size": ""
+  },
+  {
+    "id": "4",
+    "name": "Samsung Galaxy S 4",
+    "weight": "4.6ounces",
+    "color": "",
+    "size": "abc"
+  }
+]

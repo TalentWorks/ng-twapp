@@ -1,0 +1,9 @@
+'use strict';
+/**
+ * @ngdoc module
+ * @name <%= moduleName %>
+ * @description The module definition and configuration for <%= moduleName %>.
+ */
+angular.module('<%= moduleName %>', []).config(function() {
+
+});

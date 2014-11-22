@@ -1,10 +1,14 @@
-<div class="left-nav-mobile">
-    <a class="visible-xs btn  btn-primary" ng-class="" ng-click="inventory.sideBarOpened = !inventory.sideBarOpened">Show / Hide Table of Contents</a>
+<div id="inventory-module" class="row">
+  <div class="col-sm-2 inventory-sidebar text-nowrap">
+    <a class="visible-xs btn  btn-primary" ng-click="inventory.sideBar = !inventory.sideBar">Show / Hide Table of
+      Contents</a>
+    <left-nav ng-class="{'hidden-xs':inventory.sideBar}"></left-nav>
+    {{sideBar}}
+  </div>
+
+  <div class="col-sm-10">
+    <div class="right-nav">
+      <div ui-view="">Please select from an option on the left.</div>
+    </div>
+  </div>
 </div>
-
-<left-nav ng-show="inventory.sideBarOpened" ng-class="{hide:false}"></left-nav>
-
-<div class="right-nav">
-    <div ui-view></div>
-</div>
-

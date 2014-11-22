@@ -1,4 +1,4 @@
-@bootstrap-path: "../../../bower_components/bootstrap-less/less";
+@bootstrap-path: "../../../bower_components/bootstrap/less";
 
 @import "@{bootstrap-path}/popovers";
 @import "@{bootstrap-path}/print";
@@ -42,23 +42,25 @@
 @import "@{bootstrap-path}/pagination";
 @import "@{bootstrap-path}/panels";
 
-
 //Bootstrap Variables
-@body-bg:               #2f2f2f;
-@text-color:            white;
-@link-color:            #00BC8C;
-@link-hover-color:      lighten(@link-color, 15%);
-@text-muted:            darken(@link-color, 5%);
+@body-bg: #2f2f2f;
+@text-color: white;
+@link-color: #00BC8C;
+@link-hover-color: lighten(@link-color, 15%);
+@text-muted: darken(@link-color, 5%);
 
-@modal-content-bg:                             lighten(@body-bg, 5%);
-@modal-content-border-color:                   rgba(0,0,0,.2);
-@modal-content-fallback-border-color:          lighten(@modal-content-bg, 20%);
+@modal-content-bg: lighten(@body-bg, 5%);
+@modal-content-border-color: rgba(0, 0, 0, .2);
+@modal-content-fallback-border-color: lighten(@modal-content-bg, 20%);
 
 @nav-link-hover-bg: lighten(@body-bg, 10%);
 @navbar-default-color: @body-bg;
 @navbar-default-bg: @body-bg;
 @navbar-default-brand-color: @body-bg;
 
+@panel-default: #2f2f2f;
+@bs-example: #2f2f2f;
+
 @table-bg-accent: lighten(@body-bg, 25%);
 
-@icon-font-path: "../bower_components/bootstrap-less/fonts/";
+@icon-font-path: "../bower_components/bootstrap/fonts/";

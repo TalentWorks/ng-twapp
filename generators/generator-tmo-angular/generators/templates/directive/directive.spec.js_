@@ -1,0 +1,32 @@
+'use strict';
+
+describe('Directive: <%= name %>', function() {
+
+  var element;
+  var scope;
+
+  // load the directive's module
+  beforeEach(function() {
+      module('<%= moduleName %>');<% if (separateTemplate) { %>
+      module('dir-templates');<% } %>
+      inject(function($rootScope) {
+        scope = $rootScope.$new();
+      });
+  });
+
+  <% if (separateTemplate) { %>
+  it('should have expected text', inject(function($compile, $templateCache) {
+      element = angular.element('<<%= dasherizedName %>></<%= dasherizedName %>>');
+      $templateCache.put('<%= dasherizedName %>.html', $templateCache.get('<%= feature %>/<%= templateUrl %>'));
+      element = $compile(element)(scope);
+      scope.$digest();
+      expect(element.text()).to.equal('This is the <%= dasherizedName %> directive.');
+  }));
+  <% } else { %>
+  it('should have expected text', inject(function($compile) {
+      element = angular.element('<<%= dasherizedName %>></<%= dasherizedName %>>');
+      element = $compile(element)(scope);
+      expect(element.text()).to.equal('This is the <%= dasherizedName %> directive.');
+  }));
+  <% } %>
+});

@@ -1,0 +1,18 @@
+<div class='container-fluid' ng-controller="AutocompleteController">
+  <h4>Static data</h4> Enter Text to add in static array
+  <input type="text" ng-model="addText" class="blackFont">
+  <button ng-disabled="!addText" name="add" required class="btn btn-xs btn-primary" ng-click="addToArray(addText);">
+    Add
+  </button>
+  <div> Selected (using static array): <span ng-bind="selected"></span>
+  </div>
+  <input type="text" ng-model="selected" placeholder="please type here"
+         typeahead="name for name in states | filter:$viewValue" class="form-control">
+  <h4>using $http</h4>
+
+  <div> Selected (using $http): <span ng-bind="asyncSelected"></span>
+  </div>
+  <input type="text" ng-model="asyncSelected" placeholder="please type here"
+         typeahead="data for data in getAutocompleteData($viewValue) | filter:$viewValue"
+         typeahead-loading="loadingLocations" class="form-control"> <i ng-show="loadingLocations"
+                                                                       class="glyphicon glyphicon-refresh"></i></div>

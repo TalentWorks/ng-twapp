@@ -1,15 +1,9 @@
- 'use strict';
+'use strict';
 /**
  * @ngdoc config
- * @name ng-twapp.pagination
+ * @name ng-twapp.pagination.pagination
  * @description  Pagination configuration
  */
-angular.module('ng-twapp').config(function ($stateProvider, $urlRouterProvider) {
-	    $stateProvider.state('pagination', {
-            url: '/pagination',
-            templateUrl: 'scripts/pagination-module/views/pagination-example.html',
-            controller: 'PaginationExampleController'
-        });
-
-        $urlRouterProvider.otherwise('/');
-});
+angular.module('ng-twapp.pagination', [])
+  .config(function () {
+  });

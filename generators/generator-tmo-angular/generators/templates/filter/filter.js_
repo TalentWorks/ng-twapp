@@ -1,0 +1,11 @@
+'use strict';
+/**
+ * @ngdoc filter
+ * @name <%= moduleName %>.<%= name %>
+ * @description A filter for the <%= moduleName %> module.
+ */
+angular.module('<%= moduleName %>').filter('<%= name %>', function() {
+	return function (input) {
+		return 'Filter ' + input;
+	};
+});

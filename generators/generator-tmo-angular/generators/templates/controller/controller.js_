@@ -1,0 +1,9 @@
+'use strict';
+/**
+ * @ngdoc controller
+ * @name <%= moduleName %>.<%= capitalizedName %>
+ * @description A controller for the <%= moduleName %> module.
+ */
+angular.module('<%= moduleName %>').controller('<%= capitalizedName %>', function() {
+	
+});

@@ -1,18 +1,18 @@
 'use strict';
 /**
- * @ngdoc controller
- * @name ng-twapp.logingCtrl
- * @description # logingCtrl
+ * @ngdoc profileController
+ * @name ng-twapp.profileController
+ * @description # profileController
  */
 
-angular.module('ng-twapp')
-    .controller('profileController', function ($scope) {
-      // we will store all of our form data in this object
-      $scope.formData = {};
+angular.module('ng-twapp.profile')
+  .controller('profileController', function ($scope) {
+    // we will store all of our form data in this object
+    $scope.formData = {};
 
-      // function to process the form
-      $scope.processForm = function () {
+    // function to process the form
+    $scope.processForm = function () {
 
-        alert('Created User! ' + $scope.formData.name);
-      };
-    });
+      //alert('Created User! ' + $scope.formData.name);
+    };
+  });

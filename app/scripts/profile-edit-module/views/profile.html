@@ -1,0 +1,16 @@
+<!-- form.html -->
+<div class="row">
+  <div class="col-md-4">
+    <profile-edit-directive></profile-edit-directive>
+  </div>
+  <div class="col-sm-8">
+    <div id="profileEditController">
+      <form id="profile-edit-form" ng-submit="processForm()">
+        <div id="profile-edit-views" ui-view></div>
+      </form>
+    </div>
+    <pre class="hidden">
+        {{ formData }}
+    </pre>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+325[l<!-- profile-page-seven.html -->
+Group Act? <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to continu wth group act form.
+<h4>My Links</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseOne">1. My Links History?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Collections Start Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>My Links:</label><br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                Link Name
+              </div>
+              <div class="col-md-3">
+                type
+              </div>
+              <div class="col-md-3">
+                date
+              </div>
+              <div class="col-md-3">
+                URL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="image" src="" ng-click="showDetails = ! showDetails" class="a" value="add another link +"/>
+              </div>
+            </div>
+            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="linksName">Links Name</label>
+                  <input type="text" class="form-control" name="linksName" ng-model="formData.linksName">
+                </div>
+                <div class="col-md-4">
+                  <label for="linksType">Type</label>
+                  <input type="text" class="form-control" name="linksType" ng-model="formData.linksType">
+                </div>
+                <div class="col-md-4">
+                  <label for="linksDate">Date</label>
+                  <input type="text" class="form-control" name="linksDate" ng-model="formData.linksDate">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Links URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="linksUrl" data-ng-model="formData.linksUrl"
+                         placeholder="Links URL"/>
+                </div>
+                <div class="col-sm-3 row-fluid">
+                  <input type="button" class="btn btn-primary" name="links" value="Add another link"
+                         data-ng-click="addEmails()">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Collections Info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.wish" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

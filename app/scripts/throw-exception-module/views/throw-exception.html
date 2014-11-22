@@ -1,0 +1,25 @@
+<div id="throw-exception-module" class="container">
+  <div class="row">
+    <h1>Exception Handling</h1>
+
+    <h2>Reporting a Thrown Exception</h2>
+
+    <p>This module will throw an exception when the button is clicked.</p>
+    <button ng-click="throwException()">Throw an Exception</button>
+  </div>
+  <div class="row">
+    <h2>Printing a Stack Trace</h2>
+
+    <p>Clicking the following button will give you a stack trace. This helps to find where something might have gone
+      wrong.</p>
+    <button ng-click="printStackTrace()">Print Stack Trace</button>
+    <p ng-repeat="item in stacktrace">{{item}}</p>
+  </div>
+  <div class="row">
+    <h2>Errors via Promises</h2>
+
+    <p>Click below to handle an error with a promise.</p>
+    <button ng-click="doSomethingWithRejectedPromise()">Reject Promise</button>
+    <p>{{promiseError}}</p>
+  </div>
+</div>

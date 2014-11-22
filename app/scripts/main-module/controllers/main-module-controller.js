@@ -2,23 +2,19 @@
 /**
  * @author josefsosa on 9/18/14.
  * @ngdoc controller
- * @name ng-twapp.commonFooterCtrl
- * @description # commonFooterCtrl
+ * @name mytmoNgApp.commonFooterController
+ * @description # commonFooterController
  */
+angular.module('ng-twapp.main').controller('MainController', function ($scope, MainService) {
+  var params = {userName: 'John', userLast: 'Smith'};
 
-angular.module('ng-twapp')
-    .controller('mainCtrl', function ($scope) {
-      var params = {userName:'John', userLast:'Smith'};
+  $scope.userName = params.userName + ' ' + params.userLast;
+  console.log($scope.userName);
 
-      this.userName = params.userName + " " + params.userLast;
-      console.log(this.userName);
+  $scope.mainUserData = MainService.getData();
 
-      this.userFName = params.userName;
-      this.userLName = params.userLast;
-
-      // function to process the form
-      $scope.someAlert = function () {
-        alert('Created User! ' + $scope.formData.name);
-      };
-
-    });
+  // function to process the form
+  $scope.someAlert = function () {
+    //alert('Created User! ' + $scope.formData.name);
+  };
+});

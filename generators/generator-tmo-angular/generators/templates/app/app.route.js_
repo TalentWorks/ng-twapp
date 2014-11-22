@@ -1,0 +1,17 @@
+'use strict';
+/**
+ * @ngdoc module
+ * @name <%= appName %>
+ * @description Overall route configuration for the application
+ */
+angular.module('<%= appName %>').config(function ($routeProvider) {
+	$routeProvider
+	.when('/', {
+		 template: '<div><h1><%= humanizedAppName %> - root</h1></div>',
+		 title: '<%= humanizedAppName %>'
+	 })
+	//route:needle
+	.otherwise({
+		redirectTo: '/'
+	});
+});

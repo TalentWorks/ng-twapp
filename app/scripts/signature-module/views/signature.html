@@ -1,0 +1,24 @@
+<div id="signature" class="container">
+  <h2>Signature Pad</h2>
+
+  <p>Try signing your name and saving or clearing the canvas. The controller is responsible for sending alerts from the
+    button to the signature directive by changing two scope variables. The directive uses ngLite to handle actions
+    specific <strong>only</strong> within the element itself.</p>
+
+  <div class="row">
+    <div class="col-md-12">
+      <canvas id="signature-canvas" height="150" width="400" signature></canvas>
+    </div>
+  </div>
+  <ul class="list-group">
+    <button class="btn btn-warning" ng-click="clearImage()">Clear</button>
+    <button class="btn btn-primary" ng-click="saveImage()">Save</button>
+  </ul>
+  <div ng-show="imageData">
+    <h4>The last picture you saved is here:</h4>
+
+    <div id="saved-signature">
+      <img ng-src="{{imageData}}"/>
+    </div>
+  </div>
+</div>

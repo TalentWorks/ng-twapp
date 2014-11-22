@@ -1,0 +1,86 @@
+<!-- form-profile-page4.html -->
+Group Act?    <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to continu wth group act form.
+<h4>Been in TV Before?</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseOne">1. My TV Show History?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Education Start Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>TV Shows:</label><br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                Program Name
+              </div>
+              <div class="col-md-3">
+                Location
+              </div>
+              <div class="col-md-3">
+                Date
+              </div>
+              <div class="col-md-3">
+                Show URL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="image" src="" ng-click="showDetails = ! showDetails" class="a" value="add another show +"/>
+              </div>
+            </div>
+            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="programName">Program Name</label>
+                  <input type="text" class="form-control" name="programName" ng-model="formData.programName">
+                </div>
+                <div class="col-md-4">
+                  <label for="location">Location</label>
+                  <input type="text" class="form-control" name="location" ng-model="formData.location">
+                </div>
+                <div class="col-md-4">
+                  <label for="date">Date</label>
+                  <select ng-model="myRoles" class="form-control" ng-options="role.name for role in roles"></select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="character" data-ng-model="formData.character"
+                         placeholder="Show URL"/>
+                </div>
+                <div class="col-sm-3 row-fluid">
+                  <input type="button" class="btn btn-primary" name="addEmail" value="Add another show"
+                         data-ng-click="addEmails()" ng-required="email"
+                         ng-pattern="emailPattern">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Education Info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.training" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

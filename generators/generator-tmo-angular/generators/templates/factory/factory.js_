@@ -1,0 +1,11 @@
+'use strict';
+/**
+ * @ngdoc factory
+ * @name <%= moduleName %>.<%= capitalizedName %>
+ * @description A factory for the <%= moduleName %> module.
+ */
+angular.module('<%= moduleName %>').factory('<%= capitalizedName %>', function() {
+	var factory = {};
+	
+	return factory;
+});

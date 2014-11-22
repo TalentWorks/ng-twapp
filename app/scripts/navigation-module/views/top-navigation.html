@@ -1,43 +1,39 @@
-<nav class="header-navbar navbar navbar-default" role="navigation">
+<nav class="header-navbar navbar navbar-default navbar-inverse" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Talent Works</a>
-        <form action="" method="post">
-            <div class="nav navbar-nav navbar-right">
-                <div class="row">
-                    <div class="col-md-4">
-                        <input type="text" name="username" placeholder="username">
-                    </div>
-                    <div class="col-md-4">
-                        <input type="password" name="password" placeholder="password">
-                    </div>
-                    <div class="col-md-4">
-                        <div class="well"></div>
-                        <input type="submit" value="Log in" data-ng-click="login()">
-                    </div>
-                </div>
-            </div>
-        </form>
+
+      <form class="navbar-form navbar-right input-group-sm" method="post" role="search">
+        <div class="form-group">
+          <input type="text" class="input-group input-group-sm" name="username" placeholder="Username">
+        </div>
+        <div class="form-group">
+          <input type="password" class="input-group input-group-sm" name="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-xs" data-ng-click="login()">Sign In</button>
+      </form>
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a ng-href="#/home">Home</a></li>
-        <li><a ng-href="#/inventory">Inventory</a></li>
         <li><a ng-href="#/profile">Profile</a></li>
         <li class="divider"></li>
-        <li><a ng-href="#form/signup">join us</a></li>
+        <li><a ng-href="#/inventory">Inventory</a></li>
+        <li><a ng-href="#/form/signup">join us</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
 </nav>
-
-

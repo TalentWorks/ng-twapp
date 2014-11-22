@@ -1,0 +1,20 @@
+<!-- form-login.html -->
+<div id="form-login">
+  <div class="form-group">
+    <label for="username">User Name</label>
+    <input type="text" class="form-control" name="username" ng-model="formData.username">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" name="password" ng-model="formData.password">
+  </div>
+
+  <div class="form-group row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <a ui-sref="form.success" class="btn btn-block btn-info">
+        Login <span class="glyphicon glyphicon-circle-arrow-right"></span>
+      </a>
+    </div>
+  </div>
+</div>

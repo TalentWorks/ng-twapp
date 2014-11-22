@@ -1,0 +1,8 @@
+'use strict';
+/**
+ * @ngdoc module
+ * @name <%= appName %>
+ * @description The main module configuration for the application.
+ */
+angular.module('<%= appName %>', [
+]);

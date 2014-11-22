@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="PhantomJS 1.9.7 (Mac OS X)" package="" timestamp="2014-10-24T21:48:09" id="0" hostname="Joses-MacBook-Pro.local" tests="3" errors="1" failures="1" time="0.009">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/534.34 (KHTML, like Gecko) PhantomJS/1.9.7 Safari/534.34"/>
+    </properties>
+    <testcase name="&quot;before each&quot; hook: workFn" time="0.009" classname="PhantomJS 1.9.7 (Mac OS X).Service: loginService">
+      <failure type="">Error: [$injector:unpr] Unknown provider: UserServiceProvider &lt;- UserService &lt;- LoginService
+http://errors.angularjs.org/1.2.16/$injector/unpr?p0=UserServiceProvider%20%3C-%20UserService%20%3C-%20LoginService
+    at /Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3705
+    at getService (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3832)
+    at /Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3710
+    at getService (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3832)
+    at invoke (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3859)
+    at instantiate (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3880)
+    at /Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3748
+    at invoke (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3869)
+    at /Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3711
+    at getService (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3832)
+    at invoke (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular/angular.js:3859)
+    at workFn (/Users/josefsosa/dev/github/ng-twapp/bower_components/angular-mocks/angular-mocks.js:2147)
+undefined
+</failure>
+    </testcase>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
