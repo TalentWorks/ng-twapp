@@ -1,3 +1,0 @@
-<div id="<%= dasherizedName %>">
-	<h2>Partial for <%= humanizedName %></h2>
-</div>
