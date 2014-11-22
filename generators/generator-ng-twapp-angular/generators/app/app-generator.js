@@ -29,7 +29,7 @@ module.exports = yeoman.generators.Base.extend({
         fs.exists(path.join('.yo-rc.json'), function (exists) {
             if (exists){
                 that.yoConfig = that._getYoConfig();
-                if (!that.yoConfig['generator-tmo-angular']) {
+                if (!that.yoConfig['generator-ng-twapp-angular']) {
                     that.invoke('tmo-angular:baseconfig', {}, cb);
                 } else {
                     cb();
@@ -41,7 +41,7 @@ module.exports = yeoman.generators.Base.extend({
     },
     getAppName: function () {
         this.yoConfig = this._getYoConfig();
-		this.appName = this.yoConfig['generator-tmo-angular'].appName;
+		this.appName = this.yoConfig['generator-ng-twapp-angular'].appName;
         this.dasherizedAppName = naming.toDasherized(this.appName);
         this.humanizedAppName = _.humanize(this.dasherizedAppName);
     },
@@ -366,7 +366,7 @@ module.exports = yeoman.generators.Base.extend({
             eeraUtils.addModuleToAppJS('ui.router', this.appName);
         } else if (this.routingNg) {
             eeraUtils.addModuleToAppJS('ngRoute', this.appName);
-        } 
+        }
     },
     _getYoConfig: function () {
         return require(path.join(this.appPath, '.yo-rc.json'));

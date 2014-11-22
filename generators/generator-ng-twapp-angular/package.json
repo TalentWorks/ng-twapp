@@ -1,7 +1,7 @@
 {
-  "name": "generator-tmo-angular",
+  "name": "generator-ng-twapp-angular",
   "version": "0.0.6",
-  "description": "generator-tmo-angular is a generator for AngularJS that emphasizes on modularity.",
+  "description": "generator-ng-twapp-angular is a generator for AngularJS that emphasizes on modularity.",
   "main": "generators/app/index.js",
   "keywords": [
     "app",

@@ -15,7 +15,7 @@ Different projects have custom technology stacks. These technology stacks utiliz
 
 Installation
 ------------
-The generator can be installed by doing the following command (within the generator-tmo-angular folder):
+The generator can be installed by doing the following command (within the generator-ng-twapp-angular folder):
 
     > npm install & npm link
 
