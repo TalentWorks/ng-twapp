@@ -1,0 +1,6 @@
+<div ng-controller="StarRatingController">
+  <h4>Rating</h4>
+  <rating ng-model="rate" max="max" on-leave="overStar= null" ng-click="rateFunction(rate)"></rating>
+  <pre style="margin:15px 0;">Rate: <b>{{rate}}</b></pre>
+  {{averageReview() | number:2}}
+</div>

@@ -1,0 +1,19 @@
+describe('Service: <%= capitalizedName %>', function () {
+    'use strict';
+
+    var <%= name %>,
+        $httpBackend;
+
+    // load the service's module
+    beforeEach(function () {
+        module('<%= appName %>');
+        inject(function (_<%= capitalizedName %>_, _$httpBackend_) {
+            <%= name %> = _<%= capitalizedName %>_;
+            $httpBackend = _$httpBackend_;
+        });
+    });
+	
+	it('should be defined', function () {
+        expect(!!<%= name %>).to.be.true;
+    });
+});

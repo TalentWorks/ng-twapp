@@ -1,13 +1,13 @@
 'use strict';
 /**
  * @ngdoc directive
- * @name ng-twapp.commonHeader
- * @description # Common Header navigation directive
+ * @name ng-twapp.profile
+ * @description # profile directive
  */
-angular.module('ng-twapp')
-    .directive('LoginDirective', function () {
-        return {
-            restrict: 'E',
-            templateUrl: '/scripts/login-module/views/form.html'
-        };
-    });
+angular.module('ng-twapp.profile')
+  .directive('profileDirective', function () {
+    return {
+      restrict: 'E',
+      templateUrl: '/scripts/login-module/views/form.html'
+    };
+  });

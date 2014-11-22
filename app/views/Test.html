@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <polymer-element name=“my-counter">
+    <template>
+      <style>
+        :host {
+          background: lightgray;
+          padding: 10px;
+          display: inline-block;
+        }
+
+        #label {
+          font-weight: bold;
+        }
+      </style>
+      <div id=“label”>
+        <content></content>
+      </div>
+      Value: <span id=“counter”>{{counter}}</span><br>
+      <button id=“inc” on-tap=“{{increment}}”>Increment</button>
+    </template>
+    <script>
+      Polymer(
+      ‘
+      my - counter
+      ’,
+      {
+        publish:{
+          counter: 0
+        }
+      ,
+        increment: function () {
+          this.counter++;
+        }
+      ,
+        counterChanged: function () {
+          console.log(“counter: “
+          +this.counter
+        )
+          ;
+        }
+      }
+      )
+      ;
+    </script>
+  </polymer-element>
+</head>
+<body>
+<my-counter>Users</my-counter>
+<my-counter counter=“20”>Developers</my-counter>
+
+</body>
+</html>

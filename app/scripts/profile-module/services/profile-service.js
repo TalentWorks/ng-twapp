@@ -1,11 +1,11 @@
 'use strict';
 /**
- * @ngdoc service
- * @name ng-twapp.loginService
- * @description # loginService
+ * @ngdoc profileService
+ * @name ng-twapp.profileService
+ * @description # profileService
  */
 
-angular.module('ng-twapp')
-    .service('loginService', function ($rootScope) {
+angular.module('ng-twapp.profile')
+  .service('profileService', function () {
 
-    });
+  });

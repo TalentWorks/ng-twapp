@@ -1,21 +1,18 @@
-/**
- * Created by josefsosa on 9/28/14.
- */
 'use strict';
+/**
+ * @ngdoc module
+ * @name  ng-twapp
+ * @description # ng-twapp main app module loader
+ */
+angular.module('ng-twapp').config(function ($stateProvider, $urlRouterProvider, localStorageServiceProvider) {
 
-angular
-    .module('ng-twapp')
-    .config(function ($routeProvider) {
-      $routeProvider
-          .when('/', {
-            templateUrl: 'views/main.html',
-            controller: 'mainCtrl'
-          })
-          .when('/about', {
-            templateUrl: 'views/main.html',
-            controller: 'mainCtrl'
-          })
-          .otherwise({
-            redirectTo: '/'
-          });
-    });
+  localStorageServiceProvider.setPrefix('ng-twapp');
+  localStorageServiceProvider.setStorageType('localStorage');
+
+  $stateProvider.state('home', {
+    url: '/',
+    templateUrl: '/views/home.html'
+  });
+
+  $urlRouterProvider.otherwise('/');
+});

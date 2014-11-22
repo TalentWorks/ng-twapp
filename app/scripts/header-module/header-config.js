@@ -1,12 +1,9 @@
 'use strict';
 /**
  * @ngdoc config
- * @name ng-twapp.header
+ * @name ng-twapp.header.header
  * @description  header configuration
  */
+angular.module('ng-twapp.header', []).config(function () {
 
-angular
-    .module('ng-twapp')
-    .config(function () {
-
-    });
+});

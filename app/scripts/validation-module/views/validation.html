@@ -1,0 +1,80 @@
+<div class="validateContain">
+  <h1>Customer form</h1>
+
+  <div class="col-sm-10 main-left">
+    <div ng-show="!ngCustomer"><span>customer :</span>
+
+      <div class="customer-result"><span ng-bind="customer.userFirstName"></span> <span
+        ng-bind="customer.userLastName"></span></div>
+    </div>
+    <div ng-hide="!ngCustomer">
+      <form name="customerForm" novalidate ng-submit="submitForm(customerForm.$valid,'ngCustomer')"
+            class="form-horizontal">
+        <div class="row-fluid edit-body"><span>customer</span>
+
+          <div class="form-group validationField">
+            <label for="firstName" class="control-label">First Name</label>
+            <input type="text" placeholder="first name" ng-pattern="/^[A-Za-z\-]*$/" ng-maxlength="20" required=""
+                   ng-model="customer.userFirstName" name="firstName" class="form-contro"> <span
+            ng-show="!customerForm.firstName.$pristine && customerForm.firstName.$error.required" class="error ng-hide">Enter a first name.</span>
+            <span ng-show="!customerForm.firstName.$pristine && customerForm.firstName.$error.maxlength"
+                  class="error ng-hide">Name Length must be 40 characters or less.</span> <span
+            ng-show="!customerForm.firstName.$pristine && customerForm.firstName.$error.pattern" class="error ng-hide">please use only letters A through Z, hyphen (-), apostrophe ('), and spaces.</span>
+          </div>
+          <div class="form-group validationField">
+            <label for="lastName" class="control-label">Last Name</label>
+            <input type="text" placeholder="last name" ng-pattern="/^[A-Za-z\-]*$/" ng-change="custSubmitted=false"
+                   ng-maxlength="20" required="" ng-model="customer.userLastName" name="lastName" class="form-contro">
+            <span ng-show="!customerForm.lastName.$pristine && customerForm.lastName.$error.required"
+                  class="error ng-hide">Enter a last name.</span> <span
+            ng-show="!customerForm.lastName.$pristine && customerForm.lastName.$error.maxlength" class="error ng-hide">Name Length must be 40 characters	or less.</span>
+            <span ng-show="!customerForm.lastName.$pristine && customerForm.lastName.$error.pattern"
+                  class="error ng-hide"> please use only letters A through Z, hyphen (-), apostrophe ('), and spaces.</span>
+          </div>
+          <div id="id_CustSave" class="form-group">
+            <label class="control-label"></label>
+            <input type="submit" value="Save" class="saveBtn btn btn-primary">
+            <input type="button" ng-click="cancelViewData('ngCustomer')" value="Cancel"
+                   class="cancelBtn btn btn-danger"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div ng-show="!ngCustomer" class="col-sm-2 main-right"><a ng-click="ngCustomer = !ngCustomer">Edit</a></div>
+  <div class="col-sm-10 main-left">
+    <div ng-show="!ngEmail"><span>Email :</span> <span ng-bind="customer.email"></span></div>
+    <div ng-hide="!ngEmail">
+      <form name="emailForm" novalidate ng-submit="submitForm(emailForm.$valid,'ngEmail')" class="form-horizontal">
+        <div class="row-fluid edit-body"><span>Update Email</span>
+
+          <div class="form-group validationField">
+            <label for="firstName" class="control-label">Email Address</label>
+            <input type="text" name="newEmail" placeholder="New email" ng-model="customer.email" required
+                   ng-maxlength=25
+                   ng-pattern="/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/"/> <span
+            class="error" ng-show="!emailForm.newEmail.$pristine && emailForm.newEmail.$error.required">Please enter an email address.</span>
+            <span class="error" ng-show="!emailForm.newEmail.$pristine && emailForm.newEmail.$error.maxlength">Please enter no more than 50 characters.</span>
+            <span class="error" ng-show="!emailForm.newEmail.$pristine && emailForm.newEmail.$error.pattern">Correct the email format (for example, name@example.com).</span>
+          </div>
+          <div class="form-group validationField">
+            <label for="lastName" class="control-label">Conform Email</label>
+            <input type="text" name="reEnterEmail" placeholder="Re-enter new email" ng-model="customer.email2" required
+                   ng-maxlength=25
+                   ng-pattern="/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/"/> <span
+            class="error" ng-show="!emailForm.reEnterEmail.$pristine && emailForm.reEnterEmail.$error.required">Please enter an email address.</span>
+            <span class="error" ng-show="!emailForm.reEnterEmail.$pristine && emailForm.reEnterEmail.$error.maxlength">Please enter no more than 50 characters.</span>
+            <span class="error" ng-show="!emailForm.reEnterEmail.$pristine && emailForm.reEnterEmail.$error.pattern">Correct the email format (for example, name@example.com).</span>
+            <span class="error"
+                  ng-if="!emailForm.reEnterEmail.$pristine && !emailForm.newEmail.$error.required && !emailForm.reEnterEmail.$error.required && !emailForm.reEnterEmail.$error.pattern && customer.email2 != customer.email">Email addresses do not match.</span>
+          </div>
+          <div id="id_CustSave" class="form-group">
+            <label class="control-label"></label>
+            <input type="submit" ng-click="emailSubmitted=true" value="Save" class="saveBtn btn btn-primary">
+            <input type="button" ng-click="cancelViewData('ngEmail')" value="Cancel" class="cancelBtn btn btn-danger">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div ng-show="!ngEmail" class="col-sm-2 main-right"><a ng-click="ngEmail = !ngEmail">Edit</a></div>
+</div>

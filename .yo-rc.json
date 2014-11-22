@@ -1,0 +1,28 @@
+{
+  "generator-ng-twapp-angular": {
+    "routing": "angular-ui-router",
+    "moduleDir": "app\\scripts",
+    "srcDir": "app",
+    "appName": "ng-twapp",
+    "modules": [
+      "auth",
+      "footer",
+      "googleMaps",
+      "header",
+      "imageCamera",
+      "infiniteScroll",
+      "inventory",
+      "localStorage",
+      "login",
+      "main",
+      "modal",
+      "navigation",
+      "pagination",
+      "responsive",
+      "throwException",
+      "deviceDetector",
+      "searchAndSelect",
+      "signature"
+    ]
+  }
+}

@@ -6,6 +6,9 @@
  */
 
 angular.module('ng-twapp')
-    .controller('WeatherCtrl', function ($scope, weatherService) {
+  .controller('WeatherController', function ($rootScope, $scope, weatherService) {
+    $rootScope.loading = true;
     $scope.weather = weatherService.getWeather();
-});
+
+
+  });

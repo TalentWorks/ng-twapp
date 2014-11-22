@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1",
+    "phoneName": "Nokia Lumia 635",
+    "value": "PhoneId1",
+    "image": "/images/iphone.jpeg"
+  },
+  {
+    "Id": "2",
+    "phoneName": "Samsung Galaxy S 4",
+    "value": "PhoneId2",
+    "image": "/images/iphone.jpeg"
+  },
+  {
+    "Id": "3",
+    "phoneName": "Samsung Galaxy Note III",
+    "value": "PhoneId3",
+    "image": "/images/iphone.jpeg"
+  },
+  {
+    "Id": "4",
+    "phoneName": "Apple iPhone 6",
+    "value": "phoneId4",
+    "image": "/images/iphone.jpeg"
+  }
+]

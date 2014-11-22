@@ -1,62 +1,21 @@
 'use strict';
 /**
  * @ngdoc service
- * @name ng-twapp.loginService
+ * @name ng-twapp.login.loginService
  * @description # loginService
  */
 
-angular.module('ng-twapp')
-    .service('loginService', function ($rootScope) {
-      // Public API
-      var service = {};
-
-      var generateCommonAPIHeaders = function () {
-        return {
-          "Content-Type": "application/json"
-        };
-      };
-
-      service.getUsers = function () {
-        var deferred = $q.defer();
-        $http({
-          method: 'GET',
-          url:'localhost:9005/api/users',
-          headers: generateCommonAPIHeaders()
-        }).then(function (response) {
-              deferred.resolve(response);
-            });
-        return deferred.promise;
-      };
-
-      service.getUsersById = function (id) {
-        var deferred = $q.defer();
-        $http({
-          method: 'GET',
-          url:'localhost:9005/api/users' + id,
-          headers: generateCommonAPIHeaders()
-        }).then(function (response) {
-              deferred.resolve(response);
-            });
-        return deferred.promise;
-      };
-
-      service.createNewUser = function (userData) {
-        var deferred = $q.defer();
-        $http({
-          method: "POST",
-          data: userData,
-          url:'localhost:9005/api/users',
-          headers: generateCommonAPIHeaders()
-        })
-            .success(function (response) {
-              deferred.resolve(response._id);
-            })
-            .error(function (data, status) {
-              deferred.reject(status);
-            });
-        return deferred.promise;
-      }
-
-      return service;
-
-    });
+angular.module('ng-twapp.login').service('LoginService', function (UserService) {
+  return {
+    //a method that is supposedly to return boolean whether a user is authenticated or not
+    authenticateUser: function (user) {
+      UserService.authenticate(user);
+    },
+    resetPassword: function (user, newPassword) {
+      user.setPassword(newPassword);
+    },
+    requestAuthenticationID: function (user) {
+      console.log(user);
+    }
+  };
+});

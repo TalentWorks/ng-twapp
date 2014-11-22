@@ -1,0 +1,33 @@
+{<% var ngVer = "1.3.2" %>
+    "name": "<%= dasherizedAppName %>",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": "<%= ngVer %>",
+        "json3": "~3.3.1",
+        "less": "~2.0.0",
+        "es5-shim": "~4.0.3"<% if (bootstrap3) { %>,
+        "jquery": "~2.1.1",
+        "bootstrap": "~3.3.1"<% } %><% if (bootstrap2) { %>,
+        "jquery": "~2.0.3",
+        "bootstrap2.3.2": "~2.3.2"<% } %><% if (ngResource) { %>,
+        "angular-resource": "<%= ngVer %>"<% } %><% if (ngCookies) { %>,
+        "angular-cookies": "<%= ngVer %>"<% } %><% if (ngSanitize) { %>,
+        "angular-sanitize": "<%= ngVer %>"<% } %><% if (ngAnimate) { %>,
+        "angular-animate": "<%= ngVer %>"<% } %><% if (ngTouch) { %>,
+        "angular-touch": "<%= ngVer %>"<% } %><% if (angularLocalStorage) { %>,
+        "angular-local-storage": "~0.1.3"<% } %><% if (angularUiSelect) { %>,
+        "angular-ui-select": "~0.8.3"<% } %><% if (routingUi) { %>,
+        "ui-router": "~0.2.11"<% } %><% if (routingNg) { %>,
+        "angular-route": "<%= ngVer %>"<% } %><% if (momentJS) { %>,
+        "moment": "~2.8.1"<% } %><% if (ngInfiniteScroll) { %>,
+        "ngInfiniteScroll": "~1.1.2"<% } %><% if (ngDeviceDetector) { %>,
+        "ng-device-detector": "*"<% } %><% if (stacktraceJs) { %>,
+        "stacktrace-js": "~0.6.2"<% } %>
+    },
+    "devDependencies": {
+        "angular-mocks": "<%= ngVer %>",
+        "angular-scenario": "<%= ngVer %>",
+        "sinonjs": "~1.10.2"
+    },
+    "appPath": "app"
+}

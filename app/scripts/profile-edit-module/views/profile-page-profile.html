@@ -1,0 +1,232 @@
+<!-- form-profile.html -->
+Group Act?  <a href="#">Click here</a> to continu wth group act form.
+<h4>My Profile</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile#collapseOne">1. Who am I?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Who am I? -->
+          <div class="form-group input-sm">
+            <div class="row">
+              <div class="col-md-4">
+                <label for="fname">First Name</label>
+                <input type="text" class="form-control wi" name="name" ng-model="formData.fname">
+              </div>
+              <div class="col-md-4">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control wi" name="name" ng-model="formData.lname">
+              </div>
+              <div class="col-md-4">
+                <label for="alies">Alies</label>
+                <input type="text" class="form-control" name="alies" ng-model="formData.alies">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="eyes">Eyes</label>
+                <input type="text" class="form-control" name="eyes" ng-model="formData.eyes">
+              </div>
+              <div class="col-md-4">
+                <label for="dateBirth">Date of Birth</label>
+                <input type="text" class="form-control" name="bday" ng-model="formData.bday">
+              </div>
+              <div class="col-md-4">
+                <label for="sex">Sex</label>
+                <input type="text" class="form-control" name="sex" ng-model="formData.sex">
+              </div>
+            </div>
+          </div>
+          <!-- End Who am I? -->
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseTwo">2. Where am I from?</a>
+        </h4>
+      </div>
+      <div id="collapseTwo" class="panel-collapse collapse">
+        <div class="panel-body">
+          <!-- Where am I from? -->
+          <div class="form-group input-sm">
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="address1">Primary Address</label>
+                <input type="text" class="form-control" name="address1" ng-model="formData.address1">
+              </div>
+              <div class="col-sm-6">
+                <label for="address2">Secondary Address</label>
+                <input type="text" class="form-control" name="address2" ng-model="formData.address2">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="city">City</label>
+                <input type="text" class="form-control" name="city" ng-model="formData.city">
+              </div>
+              <div class="col-md-4">
+                <label for="State">State</label>
+                <input type="text" class="form-control" name="state" ng-model="formData.state">
+              </div>
+              <div class="col-md-4">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" name="zip" ng-model="formData.zip">
+              </div>
+            </div>
+          </div>
+          <!-- End Where am I from -->
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseThree">3. More about me?</a>
+        </h4>
+      </div>
+      <div id="collapseThree" class="panel-collapse collapse">
+        <div class="panel-body">
+          <!-- More about me? -->
+          <div class="form-group input-sm">
+            <div class="row">
+              <div class="col-sm-6">
+                <label for="unions">Union Affiliations</label>
+                <select class="form-control" ng-model="list_union"
+                        ng-options="obj.id as obj.name for obj in list_unions.unions">
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="colors">What color am I</label>
+                <select ng-model="colorSelector" class="form-control"
+                        ng-options="colors.name for colors in colorSelector.colors">
+                  <option value=""></option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="nationality">Nationality</label>
+                <input type="text" class="form-control" name="nationality" ng-model="formData.nationality">
+              </div>
+              <div class="col-md-4">
+                <label for="relationshipStatus">Relationship Status</label>
+                <input type="text" class="form-control" name="relationshipStatus"
+                       ng-model="formData.relationshipStatus">
+              </div>
+              <div class="col-md-4">
+                <label for="twinBrother">Twin Brother</label>
+                <input type="text" class="form-control" name="twinBrother" ng-model="formData.twinBrother">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="Height">Height</label>
+                <input type="text" class="form-control" name="Height" ng-model="formData.height">
+              </div>
+              <div class="col-md-4">
+                <label for="Ethinicity">Ethinicity</label>
+                <input type="text" class="form-control" name="ethinicity" ng-model="formData.ethinicity">
+              </div>
+              <div class="col-md-4">
+                <label for="Physique">Physique</label>
+                <input type="text" class="form-control" name="physique" ng-model="formData.physique">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="Weight">Weight</label>
+                <input type="text" class="form-control" name="Weight" ng-model="formData.weight">
+              </div>
+              <div class="col-md-4">
+                <label for="HairStyle">Hair Style</label>
+                <input type="text" class="form-control" name="state" ng-model="formData.hairStyle">
+              </div>
+              <div class="col-md-4">
+                <label for="FacialHair">Facial Hair</label>
+                <input type="text" class="form-control" name="facialHair" ng-model="formData.facialHair">
+              </div>
+            </div>
+          </div>
+          <!-- End More about me? -->
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseFour">2. My Contact
+            Info?</a>
+        </h4>
+      </div>
+      <div id="collapseFour" class="panel-collapse collapse">
+        <div class="panel-body">
+          <!-- Contact Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-4">
+                <label for="homeNumber">Home Number</label>
+                <input type="text" class="form-control" name="v" ng-model="formData.homeNumber">
+              </div>
+              <div class="col-md-4">
+                <label for="altContacts">Alternative Contacts</label>
+                <input type="text" class="form-control" name="state" ng-model="formData.altContacts">
+              </div>
+              <div class="col-md-4">
+                <label for="Skype">Skype</label>
+                <input type="text" class="form-control" name="Skype" ng-model="formData.Skype">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="cellNumber">Cell Number</label>
+                <input type="text" class="form-control" name="cellNumber" ng-model="formData.cellNumber">
+              </div>
+              <div class="col-md-4">
+                <label for="IM">IM</label>
+                <input type="text" class="form-control" name="im" ng-model="formData.im">
+              </div>
+              <div class="col-md-4">
+                <label for="twitter">twitter</label>
+                <input type="text" class="form-control" name="twitter" ng-model="formData.twitter">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Email</label><br/>
+                <li ng-repeat="mail in emails track by $index">{{mail.email}}</li>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="text" class="form-control" name="email" data-ng-model="formData.email"
+                       placeholder="enter another email"/>
+              </div>
+              <div class="col-sm-3 row-fluid">
+                <input type="button" class="btn btn-primary" name="addEmail" value="Add another email"
+                       data-ng-click="addEmails()" ng-required="email"
+                       ng-pattern="emailPattern">
+              </div>
+            </div>
+          </div>
+          <!-- End Contact Info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.skills" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+'use strict';
+/**
+ * @ngdoc module
+ * @name <%= appName %>
+ * @description Overall state configuration for the application
+ */
+angular.module('<%= appName %>').config(function ($stateProvider, $urlRouterProvider) {
+	$stateProvider
+	.state('default', {
+		url: '/',
+		template: '<div><h1><%= humanizedAppName %> - root</h1></div>',
+		title: '<%= humanizedAppName %>'
+	})
+	//state:needle
+	;
+	$urlRouterProvider.otherwise('/');
+});

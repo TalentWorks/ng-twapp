@@ -1,0 +1,51 @@
+325[l<!-- profile-page-seven.html -->
+Group Act? <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to continu wth group act form.
+<h4>Personal BIO</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseOne">1. My Personal BIO?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Start Personal BIO Info? -->
+          <div class="form-group">
+            <div>
+              <div class="row">
+                <div class="col-md-12">
+                  <label for="personalBio">Personal BIO</label>
+                  <textarea class="form-control" name="personalBio" ng-model="formData.personalBio" cols="8"
+                            rows="6"></textarea>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Personal Bio URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="personalBioURL" data-ng-model="formData.personalBioURL"
+                         placeholder="Personal Bio URL"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Personal BIO Info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.news" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

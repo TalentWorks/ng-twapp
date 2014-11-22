@@ -1,0 +1,85 @@
+325[l<!-- profile-page-seven.html -->
+Group Act? <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to continu wth group act form.
+<h4>My Wish List</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title ">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseOne">1. My Wish List?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Collections Start Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Wish List:</label><br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                Wish List Name
+              </div>
+              <div class="col-md-3">
+                Location
+              </div>
+              <div class="col-md-3">
+                date
+              </div>
+              <div class="col-md-3">
+                Collections URL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="image" src="" ng-click="showDetails = ! showDetails" class="a"
+                       value="add another wish list +"/>
+              </div>
+            </div>
+            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="wishListName">Wish List Name</label>
+                  <input type="text" class="form-control" name="wishListName" ng-model="formData.wishListName">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="wishListComments">Wish List Comments</label>
+                  <textarea class="form-control" name="wishListComments" ng-model="formData.wishListComments" cols="8"
+                            rows="4"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Wish List URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="wishListUrl" data-ng-model="formData.wishListUrl"
+                         placeholder="Wish List URL"/>
+                </div>
+                <div class="col-sm-3 row-fluid">
+                  <input type="button" class="btn btn-primary" name="wishListUrl" value="Add another wish list"
+                         data-ng-click="addEmails()">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Collections Info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.verify" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

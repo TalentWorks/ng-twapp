@@ -1,0 +1,17 @@
+'use strict';
+
+describe('Filter', function() {
+	var <%= name %>;
+	beforeEach(function() {
+        module('<%= appName %>');
+		inject(function(_$filter_) {
+            <%= name %> = _$filter_('<%= name %>');
+        });
+    });
+
+    describe('<%= name %>', function() {
+        it('should prepend every item with \'Filter \'', function() {
+			expect(<%= name %>('item')).to.equal('Filter item');
+        });
+    });
+});

@@ -1,36 +1,30 @@
 <!-- form.html -->
 <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+  <div class="col-sm-8 col-sm-offset-2">
 
-        <div id="logingCtrl">
+    <div id="logingCtrl">
 
-            <div class="page-header text-center">
-                <h2>Login or Sign up for Talent Works!</h2>
+      <div class="page-header text-center">
+        <h2>Sign up for Talent Works!</h2>
 
-                <!-- the links to our nested states using relative paths -->
-                <!-- add the active class if the state matches our ui-sref -->
-                <div id="status-buttons" class="text-center">
-                    <a ui-sref-active="active" ui-sref=".login"><span>L</span> Login</a>
-                    <a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
-                    <a ui-sref-active="active" ui-sref=".interests"><span>2</span> Interests</a>
-                    <a ui-sref-active="active" ui-sref=".verify"><span>3</span> Verify</a>
-                </div>
-            </div>
-
-            <!-- use ng-submit to catch the form submission and use our Angular function -->
-            <form id="signup-form" ng-submit="processForm()">
-
-                <!-- our nested state views will be injected here -->
-                <div id="form-views" ui-view></div>
-            </form>
-
+        <!-- the links to our nested states using relative paths -->
+        <!-- add the active class if the state matches our ui-sref -->
+        <div id="status-buttons" class="text-center">
+          <a ui-sref-active="active" ui-sref=".signup"><span>1</span> Sign Up</a>
+          <a ui-sref-active="active" ui-sref=".interests"><span>2</span> Interests</a>
+          <a ui-sref-active="active" ui-sref=".verify"><span>3</span> Verify</a>
         </div>
+      </div>
 
-        <!-- show our formData as it is being typed -->
-	<pre>
-		{{ formData }}
-	</pre>
+      <!-- use ng-submit to catch the form submission and use our Angular function -->
+      <form id="signup-form" ng-submit="processForm()">
 
-
+        <!-- our nested state views will be injected here -->
+        <div id="form-views" ui-view></div>
+      </form>
     </div>
+  </div>
 </div>
+<pre class="hidden">
+		{{ formData }}
+</pre>

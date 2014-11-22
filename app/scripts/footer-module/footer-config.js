@@ -1,28 +1,25 @@
 'use strict';
 /**
  * @ngdoc config
- * @name ng-twapp.commonFooterCtrl
+ * @name ng-twapp.footer.CommonFooterController
  * @description # Common footer navigation configuration
  */
 
-angular
-    .module('ng-twapp')
-    .config(function ($stateProvider, $urlRouterProvider) {
+angular.module('ng-twapp.footer', []).config(function ($stateProvider, $urlRouterProvider) {
+  $stateProvider
 
-      $stateProvider
+    // route to show our basic form (/form)
+    .state('footer', {
+      url: '/main',
+      templateUrl: '/scripts/main-module/view/main.html',
+      controller: 'CommonFooterController'
+    })
 
-        // route to show our basic footer
-          .state('footer', {
-            url: '/main',
-            templateUrl: '/scripts/main-module/view/main.html',
-            controller: 'commonFooterCtrl'
-          })
-
-        // url will be contacts
-          .state('footer.contact', {
-            url: '/contact',
-            templateUrl: '/scripts/main-module/view/main.html'
-          });
-
-      $urlRouterProvider.otherwise('/');
+    // url will be /main/contacts
+    .state('footer.contact', {
+      url: '/contact',
+      templateUrl: '/scripts/main-module/view/main.html'
     });
+
+  $urlRouterProvider.otherwise('/');
+});

@@ -1,19 +1,13 @@
 'use strict';
 /**
  * @ngdoc module
- * @name ng-twapp
+ * @name ng-twapp.modal
  * @file nav-route-config.js
- * @description # ng-twapp nav-route-config.js main app module loader
+ * @description # ng-twapp.modal nav-route-config.js main app module loader
  */
 
-angular.module('ng-twapp')
-    .config(function ($stateProvider, $urlRouterProvider) {
+angular.module('ng-twapp.modal', [])
+  .config(function ($stateProvider, $httpProvider, $urlRouterProvider, RestangularProvider) {
+    RestangularProvider.setBaseUrl('http://54.174.36.93:8888/api/');
 
-        $stateProvider.state('modalurl', {
-            url: '/modalurl',
-            templateUrl: 'scripts/modal-module/views/modal.html',
-            controller: 'modalController'
-        });
-
-        $urlRouterProvider.otherwise('/');
-    });
+  });

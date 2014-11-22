@@ -1,0 +1,183 @@
+<div id="responsive-module">
+  <p>
+    See below for examples of the bootstrap grid. Resize the width of your browser and see how the columns stack
+    above/below each other.
+    <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a>
+  </p>
+
+  <h3 id="grid-example-basic">Example: Progressive Enhancement</h3>
+
+  <p>Start by shrinking your browser to a narrow viewport to imitate a mobile brow <code>.col-md-*</code> grid classes,
+    you can create a basic grid system that starts out stacked on mobile devices and tablet devices (the extra small to
+    small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.
+  </p>
+
+  <div class="bs-docs-grid">
+    <div class="row show-grid">
+      <div class="col-md-12" id="header">Sample Header</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-sm-12 visible-xs" id="visiblePhoneWidget">Mobile-ONLY viewable. Used for special messaging for
+        mobile or mobile-specific image/behavior
+        <div class="row show-grid">
+          <div class="col-xs-4">1/3 Width column Layout</div>
+          <div class="col-xs-8">2/3 Width column Layout</div>
+        </div>
+      </div>
+      <div class="col-md-10" id="leftMainContent">
+        Sample Two-column Layout with various distributions based on device size.
+        <div class="row show-grid" id="multiSize">
+          <div class="col-lg-4 col-md-12 turquoise">Desktop: 1/3 width width, Tablet full width, Mobile full width</div>
+          <div class="col-lg-4 col-md-6 red hidden-xs">Desktop: 1/3 width width, Tablet 1/2 width, HIDDEN on mobile
+          </div>
+          <div class="col-lg-4 col-md-6 teal">Desktop: 1/3 width width, Tablet 1/2 width, Mobile full width</div>
+        </div>
+
+      </div>
+      <div class="col-md-2 hidden-xs" id="rightRailAd">Sample Advertisement. Hidden on mobile.
+        <div class="row show-grid">
+          <div class="col-md-6">Sample 2 column layout within the right rail</div>
+          <div class="col-md-6">Sample 2 column layout within the right rail</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row show-grid">
+      <div class="col-md-6">Two-column Layout for Tablets and above</div>
+      <div class="col-md-6">Two-column Layout for Tablets and above</div>
+    </div>
+    <div class="row show-grid">
+      <div class="col-md-12" id="footer">This is the Footer</div>
+    </div>
+  </div>
+  <div class="highlight"><pre><code class="html">
+    &lt;div class=&quot;bs-docs-grid&quot;&gt;
+    &lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-md-12&quot; id=&quot;header&quot;&gt;Sample Header&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-sm-12 visible-xs&quot; id=&quot;visiblePhoneWidget&quot;&gt;Mobile-ONLY viewable. Used for
+    special messaging for mobile or mobile-specific image/behavior&lt;/div&gt;
+    &lt;div class=&quot;col-md-10&quot; id=&quot;leftMainContent&quot;&gt;
+    Sample Two-column Layout with various distributions based on device size.
+    &lt;div class=&quot;row show-grid&quot; id=&quot;multiSize&quot;&gt;
+    &lt;div class=&quot;col-lg-4 col-md-12 turquoise&quot;&gt;Desktop: 1/3 width width, Tablet full width, Mobile full
+    width&lt;/div&gt;
+    &lt;div class=&quot;col-lg-4 col-md-6 red hidden-xs&quot;&gt;Desktop: 1/3 width width, Tablet 1/2 width, HIDDEN on
+    mobile&lt;/div&gt;
+    &lt;div class=&quot;col-lg-4 col-md-6 teal&quot;&gt;Desktop: 1/3 width width, Tablet 1/2 width, Mobile full width&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-2 hidden-xs&quot; id=&quot;rightRailAd&quot;&gt;Sample Advertisement. Hidden on mobile.
+    &lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;Sample 2 column layout within the right rail&lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;Sample 2 column layout within the right rail&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-md-12&quot; id=&quot;footer&quot;&gt;This is the Footer&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  </code></pre>
+  </div>
+
+
+  <div class="container">
+    <div class="col-md-10 col-md-offset-1" style="font-size:0.9em;">
+      <span
+        style="font-style:italic">An excerpt from the Rebellion UI Architecture Blueprint on Responsive Design</span>
+
+
+      <h3>
+        <strong>3.5.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong>Responsive framework</strong></h3>
+
+      <p>
+        Responsive design is a Web design and development methodology that helps ensure the user interface delivers an
+        optimal viewing experience on any screen size using a fluid grid-based layout. Modern Web applications are often
+        written for consumption via traditional desktops, mobile devices, and tablets. Responsive design is a
+        methodology by which a single codebase can be utilized to deliver an optimal experience to each of these
+        devices. Responsive frameworks have the following primary components:</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Grid System &ndash; design concepts that organize all
+        content into structured components.</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CSS3 Media Queries - CSS code that allows rendering
+        based on certain dynamic attributes of a page. CSS3 Media Queries allow browsers to detect screen resolution and
+        react when certain breakpoints are reached.</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fluid Components &ndash; the width of the components is
+        scaled relative to the window.</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Progressive Enhancement &ndash; UI is designed with
+        mobile first in mind and as the view port increases the UI is enhanced accordingly.</p>
+
+      <p>
+        Responsive frameworks provide a grid system that divides the viewport size into multiple columns. The predefined
+        CSS classes are then used to create the; page layout specifying the number of columns a component spans in a
+        row. Responsive frameworks usually recognize a number (3-4, e.g.: small, medium, large, extra-large) of screen
+        sizes that each have their own media query. The layout of the page changes on media query breakpoints. Moreover
+        the width of components between two media queries adjusts relative to the window. Layouts defined for the small
+        devices are progressively enhanced as the view port increases e.g.: collapsed layout changes to the
+        horizontal.</p>
+
+      <p>
+        Responsive frameworks provide also a set of predefined classes for global styling of standard components that
+        are consistent across different browsers and pre-built UI widgets that accelerate modern UI development (e.g.:
+        dropdowns, button groups, pagination, off canvas navigation, breadcrumbs, etc.). Despite of the amount of
+        predefined components, responsive frameworks still allow full customization to suit the needs of actual
+        project &ndash; grid system, media queries breakpoints, colors and styling of components, required plugins,
+        etc.</p>
+
+      <p>
+        The benefits of responsive design include:</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cost savings: invest in developing a single Web UI that
+        works across multiple devices and screen sizes, rather than separate mobile and desktop Web UI development
+        efforts.</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Single Codebase: build a site once, reach customers on
+        multiple form factors simultaneously.</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Consistent Branding: there is only a single reflection
+        of the brand, not multiple, often diverging experiences.</p>
+      <h4>
+        <strong>3.5.2.1&nbsp; </strong><strong>Twitter Bootstrap</strong></h4>
+
+      <p>
+        The Rebellion project will utilize the Twitter Bootstrap framework for development in Less. The framework itself
+        encourages a pattern of development that leverages responsive design principles to reduce extra development
+        effort. By taking a Mobile-first approach to the development of the application, the design is built to be
+        friendly for all user experiences. The bootstrap framework itself offers four different user experiences when
+        integrated into the application:</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mobile size (Less than 768px)</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Table size (Larger than 768px)</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Desktop size (Larger than 992px)</p>
+
+      <p>
+        &middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Large size (Larger than 1200px)</p>
+
+    </div>
+  </div>
+</div>

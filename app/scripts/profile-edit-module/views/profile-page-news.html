@@ -1,0 +1,86 @@
+325[l<!-- profile-page-seven.html -->
+Group Act? <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to continu wth group act form.
+<h4>My News</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseOne">1. My News History?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Collections Start Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>My News:</label><br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                News Article Name
+              </div>
+              <div class="col-md-3">
+                Media
+              </div>
+              <div class="col-md-3">
+                date
+              </div>
+              <div class="col-md-3">
+                News URL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="image" src="" ng-click="showDetails = ! showDetails" class="a"
+                       value="add another news item +"/>
+              </div>
+            </div>
+            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="newsArticleName">News Article Name</label>
+                  <input type="text" class="form-control" name="newsArticleName" ng-model="formData.newsArticleName">
+                </div>
+                <div class="col-md-4">
+                  <label for="newsMedia">Media</label>
+                  <input type="text" class="form-control" name="newsMedia" ng-model="formData.newsMedia">
+                </div>
+                <div class="col-md-4">
+                  <label for="newsDate">Date</label>
+                  <input type="text" class="form-control" name="collectionsDate" ng-model="formData.collectionsDate">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>News URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="newsUrl" data-ng-model="formData.newsUrl"
+                         placeholder="News URL"/>
+                </div>
+                <div class="col-sm-3 row-fluid">
+                  <input type="button" class="btn btn-primary" name="news" value="Add another news item"
+                         data-ng-click="addEmails()">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Collections Info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.links" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

@@ -1,6 +1,11 @@
-<div ng-controller="WeatherCtrl">
+<div id="weather-module">
+  <p>Below is an example of making an API call to an externally hosted service (cross-domain AJAX call) using CORS and
+    then handled via a Promise object. Refer to the weather-service.js file for additional details</p>
+
+  <div ng-controller="WeatherController">
     <h2>Weather in Seattle, Washington</h2>
     <weather-icon cloudiness="{{ weather.clouds }}"></weather-icon>
     <h3>Current: {{ weather.temp.current | temp:2 }}</h3>
     min: {{ weather.temp.min | temp }}, max: {{ weather.temp.max | temp }}
+  </div>
 </div>

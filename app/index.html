@@ -1,138 +1,72 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css({.tmp,app}) styles/main.css -->
-    <!-- //@ sourceMappingURL=jquery-1.10.2.min.map -->
-     <link rel="stylesheet" href="styles/core.css">
-     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/darkly/bootstrap.min.css">
-     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.0.0-rc13.min.js"></script>
-     <!-- endbuild -->
-  </head>
-  <body ng-app="ng-twapp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Talent Works</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <!-- build:css({./,.tmp,app}) styles/vendor.css -->
+  <link rel="stylesheet" href="styles/vendor.css">
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css({.tmp,app}) styles/core.css -->
+  <!-- injector:css -->
+  <!-- endinjector -->
+  <!-- endbuild -->
+</head>
+<body ng-app="ng-twapp">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <!-- Add your site or application content here -->
-    <!-- views will be injected here -->
-   <common-top-nav></common-top-nav>
-    <div class="container">
-        <div ui-view></div>
+<!-- Add your site or application content here -->
+<!-- views will be injected here -->
+<div id="wrap">
+  <common-top-nav></common-top-nav>
+  <div id="main" class="container clear-top">
+    <div class="row">
+      <div class="span12">
+        <div class="container">
+          <div ui-view=""></div>
+        </div>
+      </div>
     </div>
-    <common-footer-nav></common-footer-nav>
+  </div>
+</div>
+<footer class="footer">
+  <common-footer-nav></common-footer-nav>
+</footer>
 
+<spinner-directive></spinner-directive>
 
+<!--[if lt IE 9]>
+<!-- build:js({./,.tmp,app}) scripts/ie9-fix.js -->
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+<!-- endbuild -->
+<![endif]-->
 
-    <!--[if lt IE 9]>
-    <script src="/bower_components/es5-shim/es5-shim.js"></script>
-    <script src="/bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
+<script type="text/javascript"
+        src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization&amp;sensor=false&amp;language=en&amp;v=3.14"></script>
+<!-- build:js({./,.tmp,app}) scripts/vendor.js -->
+<!-- bower:js -->
+<!-- endbower -->
+<!-- injector:vendorjs -->
+<!-- endinjector -->
+<!-- endbuild -->
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/angular/angular.js"></script>
-    <script src="/bower_components/json3/lib/json3.js"></script>
-    <script src="/bower_components/bootstrap-less/js/affix.js"></script>
-    <script src="/bower_components/bootstrap-less/js/alert.js"></script>
-    <script src="/bower_components/bootstrap-less/js/button.js"></script>
-    <script src="/bower_components/bootstrap-less/js/carousel.js"></script>
-    <script src="/bower_components/bootstrap-less/js/collapse.js"></script>
-    <script src="/bower_components/bootstrap-less/js/tab.js"></script>
-    <script src="/bower_components/bootstrap-less/js/transition.js"></script>
-    <script src="/bower_components/bootstrap-less/js/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-less/js/modal.js"></script>
-    <script src="/bower_components/bootstrap-less/js/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-less/js/popover.js"></script>
-    <script src="/bower_components/angular-resource/angular-resource.js"></script>
-    <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="/bower_components/angular-animate/angular-animate.js"></script>
-    <script src="/bower_components/angular-touch/angular-touch.js"></script>
-    <script src="/bower_components/angular-route/angular-route.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    <script src="/bower_components/ng-infinite-scroll/ng-infinite-scroll.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script type="text/javascript" src="scripts/route-config.js"></script>
-
-    <!-- top navigation scripts -->
-    <script type="text/javascript" src="scripts/navigation-module/controllers/nav-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/navigation-module/directives/top-nav-directive.js"></script>
-    <script type="text/javascript" src="scripts/navigation-module/nav-config.js"></script>
-
-    <!-- main scripts -->
-    <script type="text/javascript" src="scripts/main-module/controllers/main-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/main-module/main-config.js"></script>
-
-    <!-- login scripts -->
-    <script type="text/javascript" src="scripts/login-module/controllers/login-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/login-module/services/login-service.js"></script>
-    <script type="text/javascript" src="scripts/login-module/login-config.js"></script>
-
-    <!-- inventory scripts -->
-    <script type="text/javascript" src="scripts/inventory-module/controllers/inventory-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/inventory-module/controllers/inventory-item-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/inventory-module/directives/left-nav-directive.js"></script>
-    <script type="text/javascript" src="scripts/inventory-module/services/inventory-service.js"></script>
-    <script type="text/javascript" src="scripts/inventory-module/inventory-config.js"></script>
-
-    <!-- footer scripts -->
-    <script type="text/javascript" src="scripts/footer-module/controllers/common-footer-ctrl.js"></script>
-    <script type="text/javascript" src="scripts/footer-module/directives/footer-nav-directive.js"></script>
-    <script type="text/javascript" src="scripts/footer-module/footer-config.js"></script>
-
-    <!-- model scripts -->
-    <script type="text/javascript" src="scripts/modal-module/controllers/modal-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/modal-module/directives/modal-directive.js"></script>
-    <script type="text/javascript" src="scripts/modal-module/modal-config.js"></script>
-
-    <!-- pagination scripts -->
-    <script type="text/javascript" src="scripts/pagination-module/controllers/pagination-controller.js"></script>
-    <script type="text/javascript" src="scripts/pagination-module/pagination-config.js"></script>
-
-    <!-- calendar scripts -->
-    <script type="text/javascript" src="scripts/shared-modules/calendar-picker-module/controllers/calendar-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/shared-modules/calendar-picker-module/directives/calendar-directive.js"></script>
-    <script type="text/javascript" src="scripts/shared-modules/calendar-picker-module/calendar-config.js"></script>
-
-    <!-- weather module scripts -->
-    <script type="text/javascript" src="scripts/shared-modules/weather-module/controllers/weather-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/shared-modules/weather-module/directives/weather-directive.js"></script>
-    <script type="text/javascript" src="scripts/shared-modules/weather-module/filters/weather-filter.js"></script>
-    <script type="text/javascript" src="scripts/shared-modules/weather-module/services/weather-service.js"></script>
-    <script type="text/javascript" src="scripts/shared-modules/weather-module/weather-config.js"></script>
-    <script type="text/javascript" src="scripts/login-module/directives/login-directive.js"></script>
-
-    <!-- infinite scroll scripts -->
-    <script type="text/javascript" src="scripts/infinite-scroll-module/controllers/infinite-scroll-controller.js"></script>
-    <script type="text/javascript" src="scripts/infinite-scroll-module/infinite-scroll-config.js"></script>
-
-    <!-- profile scripts -->
-    <script type="text/javascript" src="scripts/profile-module/controllers/profile-module-controller.js"></script>
-    <script type="text/javascript" src="scripts/profile-module/directives/profile-directive.js"></script>
-    <script type="text/javascript" src="scripts/profile-module/services/profile-service.js"></script>
-    <script type="text/javascript" src="scripts/profile-module/profile-config.js"></script>
-
-    <!-- endbuild -->
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<!-- injector:js -->
+<!-- endinjector -->
+<!-- endbuild -->
 </body>
 </html>

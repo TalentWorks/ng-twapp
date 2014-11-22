@@ -1,6 +1,10 @@
-angular.module('ng-twapp').controller('InventoryItemCtrl', ['$stateParams',
-    function ($stateParams) {
-        var self = this;
-        console.log($stateParams);
-        self.itemId = $stateParams.itemID;
-    }]);
+'use strict';
+/**
+ * @ngdoc module
+ * @name  ng-twapp.inventory
+ * @description # ng-twapp inventory controller per item
+ */
+angular.module('ng-twapp.inventory').controller('InventoryItemController', function ($stateParams) {
+  var self = this;
+  self.itemId = $stateParams.itemID;
+});

@@ -6,6 +6,28 @@ body > .container {
   margin-bottom: 20px;
 }
 
+html, body {
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 150px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -150px; /* negative value of footer height */
+  height: 150px;
+  clear: both;
+  padding-top: 20px;
+  color: #fff;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -13,8 +35,16 @@ body > .container {
   padding: 0.2em 0;
 }
 
+#auth-iframe {
+  width: 400;
+  height: 500px;
+}
+
 .header-navbar .navbar-brand {
+  width: 217px;
+  text-indent: -100%;
   color: #00BC8C;
+  background: transparent url(/images/talent-logo.png) no-repeat right center;
 }
 
 .header-navbar .navbar-nav > li > a {
@@ -43,6 +73,7 @@ body > .container {
 
   .left-nav {
     margin-bottom: 20px;
+    width: 400px;
   }
 }
 
@@ -170,13 +201,6 @@ body > .container {
   float: left;
 }
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .marketing {
   padding-left: 15px;
@@ -299,45 +323,44 @@ body > .container {
   animation: slideOutLeft 0.5s both ease;
 }
 
-/* style.css */
-/* ANIMATION STYLINGS
+/* ANIMATION STYLINGS FOR PROFILE
 ============================================================================= */
-#profile-form {
+#signup-form {
   position: relative;
   min-height: 300px;
   overflow: hidden;
   padding: 30px;
 }
 
-#profile-views {
+#profile-edit-views {
   width: auto;
 }
 
 /* basic styling for entering and leaving */
 /* left and right added to ensure full width */
-#profile-views.ng-enter,
-#profile-views.ng-leave {
-  position: absolute;
-  left: 30px;
-  right: 30px;
-  transition: 0.5s all ease;
-  -moz-transition: 0.5s all ease;
-  -webkit-transition: 0.5s all ease;
-}
+#profile-edit-views.ng-enter,
+  //#profile-edit-views.ng-leave {
+  //  position: absolute;
+  //  left: 30px;
+  //  right: 30px;
+  //  transition: 0.5s all ease;
+  //  -moz-transition: 0.5s all ease;
+  //  -webkit-transition: 0.5s all ease;
+  //}
 
-/* enter animation */
-#profile-views.ng-enter {
+  /* enter animation */
+#profile-edit-views.ng-enter {
   -webkit-animation: slideInRight 0.5s both ease;
   -moz-animation: slideInRight 0.5s both ease;
   animation: slideInRight 0.5s both ease;
 }
 
 /* leave animation */
-#profile-views.ng-leave {
-  -webkit-animation: slideOutLeft 0.5s both ease;
-  -moz-animation: slideOutLeft 0.5s both ease;
-  animation: slideOutLeft 0.5s both ease;
-}
+//#profile-edit-views.ng-leave {
+//  -webkit-animation: slideOutRight 0.5s both ease;
+//  -moz-animation: slideOutRight 0.5s both ease;
+//  animation: slideOutRight 0.5s both ease;
+//}
 
 /* ANIMATIONS
 ============================================================================= */
@@ -388,7 +411,38 @@ body > .container {
   }
 }
 
-#talentworkLogo {
-  position:relative;
-  top: -7px;
+/* Main Profile Forms
+============================================================================= */
+/* bs-example */
+.bs-example {
+  background: #2e2e2e;
+  border-color: #FFFFFF;
+  color: #000;
+}
+
+.bs-example:after {
+  content: "Edit Form";
+}
+
+.panel {
+  background: #5C5C5C;
+  border-color: #FFFFFF;
+  color: #fff;
+}
+
+#accordion.panel-group.panel-default > .panel-heading {
+  background: #151515;
+  color: #fff;
+}
+
+.panel-default .panel-heading .panel-title {
+  background: #2e2e2e;
+  color: #fff;
+}
+
+.panel-default .panel-heading {
+  background: #2e2e2e;
+  background-image: '/images/gradient-form1.png';
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
 }

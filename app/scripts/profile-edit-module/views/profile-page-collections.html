@@ -1,0 +1,88 @@
+325[l<!-- profile-page-seven.html -->
+Group Act? <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to continu wth group act form.
+<h4>Collections</h4>
+<div class="bs-example">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/skils#collapseOne">1. My Collections
+            History?</a>
+        </h4>
+      </div>
+      <div id="collapseOne" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <!-- Collections Start Info? -->
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Collections:</label><br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                Collections Name
+              </div>
+              <div class="col-md-3">
+                Location
+              </div>
+              <div class="col-md-3">
+                date
+              </div>
+              <div class="col-md-3">
+                Collections URL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <input type="image" src="" ng-click="showDetails = ! showDetails" class="a"
+                       value="add another collections +"/>
+              </div>
+            </div>
+            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
+              <div class="row">
+                <div class="col-md-4">
+                  <label for="collectionsName">Collections Name</label>
+                  <input type="text" class="form-control" name="collectionsName" ng-model="formData.collectionsName">
+                </div>
+                <div class="col-md-4">
+                  <label for="collectionsLocation">Collections Location</label>
+                  <input type="text" class="form-control" name="collectionsLocation"
+                         ng-model="formData.collectionsLocation">
+                </div>
+                <div class="col-md-4">
+                  <label for="collectionsDate">Date</label>
+                  <input type="text" class="form-control" name="collectionsDate" ng-model="formData.collectionsDate">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Collections URL</label><br/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" name="collectionsUrl" data-ng-model="formData.collectionsUrl"
+                         placeholder="Collections URL"/>
+                </div>
+                <div class="col-sm-3 row-fluid">
+                  <input type="button" class="btn btn-primary" name="collections" value="Add another collections"
+                         data-ng-click="addEmails()">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Collections Info -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group row">
+  <div class="col-xs-6 col-xs-offset-3">
+    <a ui-sref="profile.affiliations" class="btn btn-block btn-info">
+      Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+  </div>
+</div>

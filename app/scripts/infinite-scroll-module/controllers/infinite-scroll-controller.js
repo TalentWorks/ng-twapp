@@ -1,19 +1,30 @@
-angular.module('ng-twapp').controller('InfiniteScrollController', function($scope, $http) {
-	$scope.busy = false;
-	$scope.after = '';
-	$scope.items = [];
-	$scope.nextPage = function() {
-		if (this.busy) return;
-		this.busy = true;
-
-		var url = "http://api.reddit.com/hot?after=" + this.after + "&jsonp=JSON_CALLBACK";
-		$http.jsonp(url).success(function(data) {
-			var items = data.data.children;
-			for (var i = 0; i < items.length; i++) {
-				$scope.items.push(items[i].data);
-			}
-			$scope.after = "t3_" + $scope.items[$scope.items.length - 1].id;
-			$scope.busy = false;
-		});
-	};
+'use strict';
+/**
+ * @ngdoc config
+ * @name ng-twapp.infiniteScroller.infinite-scroll
+ * @description  Infinite Scroll Example controller to handle calling the required services for passing the data into the model
+ */
+angular.module('ng-twapp.infiniteScroller').controller('InfiniteScrollController', function ($scope, $http, RedditFeedFactory, $exceptionHandler) {
+  $scope.busy = false;
+  $scope.items = [];
+  $scope.after = '';
+  $scope.nextPage = function () {
+    if ($scope.busy) {
+      return;
+    }
+    $scope.busy = true;
+    RedditFeedFactory.getFeed($scope.after).then(
+      function (data) {
+        var newItems = data.data.children;
+        angular.forEach(newItems, function (item) {
+          this.push(item.data);
+        }, $scope.items);
+        $scope.after = 't3_' + $scope.items[$scope.items.length - 1].id;
+        $scope.busy = false;
+      },
+      function (error) {
+        $exceptionHandler('Error parsing the feed response.', error);
+      }
+    );
+  };
 });
