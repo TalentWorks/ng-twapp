@@ -4,7 +4,7 @@
   <h1>Using RestAngular</h1>
 
   <div>
-    This is using the users model restAngular.all:
+    This is using the users restAngular.all:
     <div ng-repeat="user in users">
       <h3><a>{{ user.firstName }}</a></h3>
 
@@ -12,10 +12,19 @@
       <hr/>
     </div>
     <div>
-      This is using the user model restAngular.one:
+      This is using the user restAngular.one:
       <h3><a>{{ user.firstName}}</a></h3>
     </div>
-    Updating a User:
+    <div>
+      This is using the user restAngular.several:
+      <div ng-repeat="user in severalUsers">
+        <p>{{  user.firstName }}</p>
+        <hr/>
+      </div>
+    </div>
+
+    Create new user:
+    <input type="button" ng-click="submit()" value="Create User"  class="ui-button" />
 
   </div>
 </div>

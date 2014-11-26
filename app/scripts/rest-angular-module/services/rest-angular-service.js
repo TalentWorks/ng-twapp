@@ -5,7 +5,7 @@
  * @description  The restNgSerevice requires:
  * after: restNgSerevice.
  */
-angular.module('ng-twapp.RestAngular').factory('restNgSerevice', function ($q, $http, Restangular) {
+angular.module('ng-twapp.RestAngular').factory('restNgService', function ($q, $http, Restangular) {
   var factory = {};
 
   factory.getAllUsers = function () {
@@ -16,6 +16,11 @@ angular.module('ng-twapp.RestAngular').factory('restNgSerevice', function ($q, $
   factory.getOneUser = function (id) {
     var user = Restangular.one('users', id).get();
     return user;
+  };
+
+  factory.getSeveralUser = function (ids) {
+    var severalUser = Restangular.several('users', ids).getList();
+    return severalUser;
   };
 
   return factory;

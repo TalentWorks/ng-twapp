@@ -140,6 +140,5 @@ angular.module('ng-twapp.inventory', []).config(function ($stateProvider, $urlRo
       controller: 'RestAngularController'
     });
 
-
   $urlRouterProvider.otherwise('/');
 });
