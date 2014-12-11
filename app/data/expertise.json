@@ -1,24 +1,24 @@
 {
-  "expertise": [
+  "expertises": [
     {
-      "Id": 1,
-      "Name": "Basic",
-      "Position": ""
+      "id": 1,
+      "name": "Basic",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Intermediate",
-      "Position": ""
+      "id": 2,
+      "name": "Intermediate",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Advanced",
-      "Position": ""
+      "id": 3,
+      "name": "Advanced",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Professional",
-      "Position": ""
+      "id": 4,
+      "name": "Professional",
+      "position": ""
     }
   ]
 }

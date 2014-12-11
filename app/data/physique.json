@@ -1,34 +1,34 @@
 {
-  "physique": [
+  "physiques": [
     {
-      "Id": 1,
-      "Name": "Athletic/Fit",
-      "Position": ""
+      "id": 1,
+      "name": "Athletic/Fit",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Average",
-      "Position": ""
+      "id": 2,
+      "name": "Average",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Large",
-      "Position": ""
+      "id": 3,
+      "name": "Large",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Muscular",
-      "Position": ""
+      "id": 4,
+      "name": "Muscular",
+      "position": ""
     },
     {
-      "Id": 5,
-      "Name": "Petite",
-      "Position": ""
+      "id": 5,
+      "name": "Petite",
+      "position": ""
     },
     {
-      "Id": 6,
-      "Name": "Thin",
-      "Position": ""
+      "id": 6,
+      "name": "Thin",
+      "position": ""
     }
   ]
 }

@@ -1,368 +1,368 @@
 {
-  "actor-categories": [
+  "actorcategories": [
     {
-      "Id": 1,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Crime ",
-      "Position": 1
+      "id": 1,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Crime ",
+      "position": 1
     },
     {
-      "Id": 2,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Legal",
-      "Position": 2
+      "id": 2,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Legal",
+      "position": 2
     },
     {
-      "Id": 3,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Historical",
-      "Position": 3
+      "id": 3,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Historical",
+      "position": 3
     },
     {
-      "Id": 4,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Docudrama",
-      "Position": 4
+      "id": 4,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Docudrama",
+      "position": 4
     },
     {
-      "Id": 5,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Comedy-Drama",
-      "Position": 5
+      "id": 5,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Comedy-Drama",
+      "position": 5
     },
     {
-      "Id": 6,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Melodrama",
-      "Position": 6
+      "id": 6,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Melodrama",
+      "position": 6
     },
     {
-      "Id": 7,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Romance",
-      "Position": 7
+      "id": 7,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Romance",
+      "position": 7
     },
     {
-      "Id": 8,
-      "Artist": "Actor",
-      "Style": "Drama",
-      "Name": "Tragedy",
-      "Position": 8
+      "id": 8,
+      "artist": "Actor",
+      "style": "Drama",
+      "name": "Tragedy",
+      "position": 8
     },
     {
-      "Id": 9,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Black or dark comedy",
-      "Position": 9
+      "id": 9,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Black or dark comedy",
+      "position": 9
     },
     {
-      "Id": 10,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Blue ",
-      "Position": 10
+      "id": 10,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Blue ",
+      "position": 10
     },
     {
-      "Id": 11,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Character ",
-      "Position": 11
+      "id": 11,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Character ",
+      "position": 11
     },
     {
-      "Id": 12,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Improvisational ",
-      "Position": 12
+      "id": 12,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Improvisational ",
+      "position": 12
     },
     {
-      "Id": 13,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Observational ",
-      "Position": 13
+      "id": 13,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Observational ",
+      "position": 13
     },
     {
-      "Id": 14,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Alternative ",
-      "Position": 14
+      "id": 14,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Alternative ",
+      "position": 14
     },
     {
-      "Id": 15,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Physical ",
-      "Position": 15
+      "id": 15,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Physical ",
+      "position": 15
     },
     {
-      "Id": 16,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Prop ",
-      "Position": 16
+      "id": 16,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Prop ",
+      "position": 16
     },
     {
-      "Id": 17,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Surreal ",
-      "Position": 17
+      "id": 17,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Surreal ",
+      "position": 17
     },
     {
-      "Id": 18,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Deadpan ",
-      "Position": 18
+      "id": 18,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Deadpan ",
+      "position": 18
     },
     {
-      "Id": 19,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Topical comedy/Satire",
-      "Position": 19
+      "id": 19,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Topical comedy/Satire",
+      "position": 19
     },
     {
-      "Id": 20,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Wit/Word play",
-      "Position": 20
+      "id": 20,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Wit/Word play",
+      "position": 20
     },
     {
-      "Id": 21,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Insult ",
-      "Position": 21
+      "id": 21,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Insult ",
+      "position": 21
     },
     {
-      "Id": 22,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Mockumentary",
-      "Position": 22
+      "id": 22,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Mockumentary",
+      "position": 22
     },
     {
-      "Id": 23,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Cringe ",
-      "Position": 23
+      "id": 23,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Cringe ",
+      "position": 23
     },
     {
-      "Id": 24,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Sketch",
-      "Position": 24
+      "id": 24,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Sketch",
+      "position": 24
     },
     {
-      "Id": 25,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Sitcom",
-      "Position": 25
+      "id": 25,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Sitcom",
+      "position": 25
     },
     {
-      "Id": 26,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Musical ",
-      "Position": 26
+      "id": 26,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Musical ",
+      "position": 26
     },
     {
-      "Id": 27,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Spoof",
-      "Position": 27
+      "id": 27,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Spoof",
+      "position": 27
     },
     {
-      "Id": 28,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Technical ",
-      "Position": 28
+      "id": 28,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Technical ",
+      "position": 28
     },
     {
-      "Id": 29,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Farce",
-      "Position": 29
+      "id": 29,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Farce",
+      "position": 29
     },
     {
-      "Id": 30,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Burlesque",
-      "Position": 30
+      "id": 30,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Burlesque",
+      "position": 30
     },
     {
-      "Id": 31,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Satire",
-      "Position": 31
+      "id": 31,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Satire",
+      "position": 31
     },
     {
-      "Id": 32,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Prank Call",
-      "Position": 32
+      "id": 32,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Prank Call",
+      "position": 32
     },
     {
-      "Id": 33,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Impersonation",
-      "Position": 33
+      "id": 33,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Impersonation",
+      "position": 33
     },
     {
-      "Id": 34,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Impressionist",
-      "Position": 34
+      "id": 34,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Impressionist",
+      "position": 34
     },
     {
-      "Id": 35,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Visual Gag",
-      "Position": 35
+      "id": 35,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Visual Gag",
+      "position": 35
     },
     {
-      "Id": 36,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Pantomime",
-      "Position": 36
+      "id": 36,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Pantomime",
+      "position": 36
     },
     {
-      "Id": 37,
-      "Artist": "Actor",
-      "Style": "Comedy",
-      "Name": "Stand up",
-      "Position": 37
+      "id": 37,
+      "artist": "Actor",
+      "style": "Comedy",
+      "name": "Stand up",
+      "position": 37
     },
     {
-      "Id": 38,
-      "Artist": "Actor",
-      "Style": "Mystery",
-      "Name": "Horror",
-      "Position": 38
+      "id": 38,
+      "artist": "Actor",
+      "style": "Mystery",
+      "name": "Horror",
+      "position": 38
     },
     {
-      "Id": 39,
-      "Artist": "Actor",
-      "Style": "Mystery",
-      "Name": "Fantasy",
-      "Position": 39
+      "id": 39,
+      "artist": "Actor",
+      "style": "Mystery",
+      "name": "Fantasy",
+      "position": 39
     },
     {
-      "Id": 40,
-      "Artist": "Actor",
-      "Style": "Mystery",
-      "Name": "Science Fiction",
-      "Position": 40
+      "id": 40,
+      "artist": "Actor",
+      "style": "Mystery",
+      "name": "Science Fiction",
+      "position": 40
     },
     {
-      "Id": 41,
-      "Artist": "Actor",
-      "Style": "Mystery",
-      "Name": "Historical",
-      "Position": 41
+      "id": 41,
+      "artist": "Actor",
+      "style": "Mystery",
+      "name": "Historical",
+      "position": 41
     },
     {
-      "Id": 42,
-      "Artist": "Actor",
-      "Style": "Mystery",
-      "Name": "Other",
-      "Position": 42
+      "id": 42,
+      "artist": "Actor",
+      "style": "Mystery",
+      "name": "Other",
+      "position": 42
     },
     {
-      "Id": 43,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Conspiracy",
-      "Position": 43
+      "id": 43,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Conspiracy",
+      "position": 43
     },
     {
-      "Id": 44,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Crime",
-      "Position": 44
+      "id": 44,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Crime",
+      "position": 44
     },
     {
-      "Id": 45,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Erotic",
-      "Position": 45
+      "id": 45,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Erotic",
+      "position": 45
     },
     {
-      "Id": 46,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Political",
-      "Position": 46
+      "id": 46,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Political",
+      "position": 46
     },
     {
-      "Id": 47,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Psychological",
-      "Position": 47
+      "id": 47,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Psychological",
+      "position": 47
     },
     {
-      "Id": 48,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Spy",
-      "Position": 48
+      "id": 48,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Spy",
+      "position": 48
     },
     {
-      "Id": 49,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Supernatural",
-      "Position": 49
+      "id": 49,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Supernatural",
+      "position": 49
     },
     {
-      "Id": 50,
-      "Artist": "Actor",
-      "Style": "Thriller",
-      "Name": "Techno",
-      "Position": 50
+      "id": 50,
+      "artist": "Actor",
+      "style": "Thriller",
+      "name": "Techno",
+      "position": 50
     },
     {
-      "Id": 51,
-      "Artist": "Actor",
-      "Style": "Other",
-      "Name": "",
-      "Position": 51
+      "id": 51,
+      "artist": "Actor",
+      "style": "Other",
+      "name": "",
+      "position": 51
     },
     {
-      "Id": 52,
-      "Artist": "Actor",
-      "Style": "Musical",
-      "Name": "",
-      "Position": 52
+      "id": 52,
+      "artist": "Actor",
+      "style": "Musical",
+      "name": "",
+      "position": 52
     }
   ]
 }

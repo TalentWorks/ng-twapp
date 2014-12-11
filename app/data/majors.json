@@ -1,0 +1,1514 @@
+{
+  "majors": [
+  {
+    "id":1,
+    "name":"Aerospace Engineering",
+    "position":""
+  },
+  {
+    "id":2,
+    "name":"Aerospace Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":3,
+    "name":"Aerospace Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":4,
+    "name":"Africana Studies",
+    "position":""
+  },
+  {
+    "id":5,
+    "name":"African Studies (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":6,
+    "name":"American Indian Studies (minor)",
+    "position":""
+  },
+  {
+    "id":7,
+    "name":"American Studies (minor)",
+    "position":""
+  },
+  {
+    "id":8,
+    "name":"Animal Science",
+    "position":""
+  },
+  {
+    "id":9,
+    "name":"Agriculture and Life Science (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":10,
+    "name":"Animal Science (M.S.)",
+    "position":""
+  },
+  {
+    "id":11,
+    "name":"Animal Science (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":12,
+    "name":"Animal Science (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":13,
+    "name":"Anthropology",
+    "position":""
+  },
+  {
+    "id":14,
+    "name":"Anthropology (M.A.)",
+    "position":""
+  },
+  {
+    "id":15,
+    "name":"Anthropology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":16,
+    "name":"Applied Economics and Management",
+    "position":""
+  },
+  {
+    "id":17,
+    "name":"Agricultural Economics (M.S.)",
+    "position":""
+  },
+  {
+    "id":18,
+    "name":"Agricultural Economics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":19,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":20,
+    "name":"Applied Mathematics",
+    "position":""
+  },
+  {
+    "id":21,
+    "name":"Applied Mathematics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":22,
+    "name":"Applied Physics",
+    "position":""
+  },
+  {
+    "id":23,
+    "name":"Applied Physics (M.S.)",
+    "position":""
+  },
+  {
+    "id":24,
+    "name":"Applied Physics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":25,
+    "name":"Engineering Physics (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":26,
+    "name":"Archaeology",
+    "position":""
+  },
+  {
+    "id":27,
+    "name":"Archaeology (M.A.)",
+    "position":""
+  },
+  {
+    "id":28,
+    "name":"Architecture",
+    "position":""
+  },
+  {
+    "id":29,
+    "name":"Architectural Science (M.S.)",
+    "position":""
+  },
+  {
+    "id":30,
+    "name":"Design (M.Arch)",
+    "position":""
+  },
+  {
+    "id":31,
+    "name":"History of Architecture and Urban Development (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":32,
+    "name":"Creative Visual Arts (M.F.A.)",
+    "position":""
+  },
+  {
+    "id":33,
+    "name":"Asian Literature, Religion and Culture",
+    "position":""
+  },
+  {
+    "id":34,
+    "name":"Asian Literature, Religion, and Culture (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":35,
+    "name":"Asian Studies",
+    "position":""
+  },
+  {
+    "id":36,
+    "name":"Asian Studies (M.A.)",
+    "position":""
+  },
+  {
+    "id":37,
+    "name":"Astronomy and Space Sciences",
+    "position":""
+  },
+  {
+    "id":38,
+    "name":"Astronomy (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":39,
+    "name":"Atmospheric Science",
+    "position":""
+  },
+  {
+    "id":40,
+    "name":"Atmospheric Science (M.S.)",
+    "position":""
+  },
+  {
+    "id":41,
+    "name":"Atmospheric Science (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":42,
+    "name":"Atmospheric Science (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":43,
+    "name":"Biochemistry, Molecular and Cell Biology",
+    "position":""
+  },
+  {
+    "id":44,
+    "name":"Biochemistry (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":45,
+    "name":"Molecular and Cell Biology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":46,
+    "name":"Biological and Environmental Engineering",
+    "position":""
+  },
+  {
+    "id":47,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":48,
+    "name":"Biological and Environmental Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":49,
+    "name":"Biological and Environmental Engineering (M.S.)",
+    "position":""
+  },
+  {
+    "id":50,
+    "name":"Biological and Environmental Engineering (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":51,
+    "name":"Biological and Environmental Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":52,
+    "name":"Biomedical Engineering",
+    "position":""
+  },
+  {
+    "id":53,
+    "name":"Biomedical Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":54,
+    "name":"Biomedical Engineering (M.S.)",
+    "position":""
+  },
+  {
+    "id":55,
+    "name":"Biomedical Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":56,
+    "name":"Biophysics",
+    "position":""
+  },
+  {
+    "id":57,
+    "name":"Biophysics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":58,
+    "name":"Chemical Engineering",
+    "position":""
+  },
+  {
+    "id":59,
+    "name":"Chemical Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":60,
+    "name":"Chemical Engineering (M.S.)",
+    "position":""
+  },
+  {
+    "id":61,
+    "name":"Chemical Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":62,
+    "name":"Chemistry and Chemical Biology",
+    "position":""
+  },
+  {
+    "id":63,
+    "name":"Chemistry and Chemical Biology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":64,
+    "name":"City and Regional Planning",
+    "position":""
+  },
+  {
+    "id":65,
+    "name":"City and Regional Planning (M.R.P.)",
+    "position":""
+  },
+  {
+    "id":66,
+    "name":"City and Regional Planning (M.R.P./M.L.A. (dual degree))",
+    "position":""
+  },
+  {
+    "id":67,
+    "name":"City and Regional Planning (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":68,
+    "name":"Historic Preservation Planning (M.A.)",
+    "position":""
+  },
+  {
+    "id":69,
+    "name":"Civil and Environmental Engineering",
+    "position":""
+  },
+  {
+    "id":70,
+    "name":"Civil and Environmental Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":71,
+    "name":"Civil and Environmental Engineering (M.S.)",
+    "position":""
+  },
+  {
+    "id":72,
+    "name":"Civil and Environmental Engineering (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":73,
+    "name":"Civil and Environmental Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":74,
+    "name":"Engineering Management (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":75,
+    "name":"Classics",
+    "position":""
+  },
+  {
+    "id":76,
+    "name":"Classics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":77,
+    "name":"Cognitive Science (minor)",
+    "position":""
+  },
+  {
+    "id":78,
+    "name":"Communication",
+    "position":""
+  },
+  {
+    "id":79,
+    "name":"Communication (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":80,
+    "name":"Comparative Biomedical Sciences",
+    "position":""
+  },
+  {
+    "id":81,
+    "name":"Veterinary Medicine (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":82,
+    "name":"Comparative Literature",
+    "position":""
+  },
+  {
+    "id":83,
+    "name":"Comparative Literature (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":84,
+    "name":"Computational Biology",
+    "position":""
+  },
+  {
+    "id":85,
+    "name":"Computational Biology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":86,
+    "name":"Computational Science and Engineering (minor)",
+    "position":""
+  },
+  {
+    "id":87,
+    "name":"Computer Science",
+    "position":""
+  },
+  {
+    "id":88,
+    "name":"Computer Science (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":89,
+    "name":"Computer Science (M.Eng.) (Cornell NYC Tech)",
+    "position":""
+  },
+  {
+    "id":90,
+    "name":"Computer Science (M.S.)",
+    "position":""
+  },
+  {
+    "id":91,
+    "name":"Computer Science (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":92,
+    "name":"Information Systems (M.S.) (Cornell NYC Tech)",
+    "position":""
+  },
+  {
+    "id":93,
+    "name":"Conservation and Sustainable Development (minor)",
+    "position":""
+  },
+  {
+    "id":94,
+    "name":"Demography (minor)",
+    "position":""
+  },
+  {
+    "id":95,
+    "name":"Design and Environmental Analysis",
+    "position":""
+  },
+  {
+    "id":96,
+    "name":"Design (M.A.)",
+    "position":""
+  },
+  {
+    "id":97,
+    "name":"Human Behavior and Design (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":98,
+    "name":"Human-Environment Relations (M.S.)",
+    "position":""
+  },
+  {
+    "id":99,
+    "name":"Development Sociology",
+    "position":""
+  },
+  {
+    "id":100,
+    "name":"Development Sociology (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":101,
+    "name":"Development Sociology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":102,
+    "name":"Ecology and Evolutionary Biology",
+    "position":""
+  },
+  {
+    "id":103,
+    "name":"Ecology (M.S.)",
+    "position":""
+  },
+  {
+    "id":104,
+    "name":"Ecology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":105,
+    "name":"Evolutionary Biology (M.S.)",
+    "position":""
+  },
+  {
+    "id":106,
+    "name":"Evolutionary Biology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":107,
+    "name":"Economics",
+    "position":""
+  },
+  {
+    "id":108,
+    "name":"Economics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":109,
+    "name":"Education",
+    "position":""
+  },
+  {
+    "id":110,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":111,
+    "name":"Education (M.S.)",
+    "position":""
+  },
+  {
+    "id":112,
+    "name":"Education (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":113,
+    "name":"Mathematics 7-12 (M.S.)",
+    "position":""
+  },
+  {
+    "id":114,
+    "name":"Electrical and Computer Engineering",
+    "position":""
+  },
+  {
+    "id":115,
+    "name":"Electrical and Computer Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":116,
+    "name":"Electrical and Computer Engineering (M.Eng.) (Cornell NYC Tech)",
+    "position":""
+  },
+  {
+    "id":117,
+    "name":"Electrical and Computer Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":118,
+    "name":"English Language and Literature",
+    "position":""
+  },
+  {
+    "id":119,
+    "name":"Creative Writing (M.F.A.)",
+    "position":""
+  },
+  {
+    "id":120,
+    "name":"English Language and Literature (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":121,
+    "name":"Entomology",
+    "position":""
+  },
+  {
+    "id":122,
+    "name":"Entomology (M.S.)",
+    "position":""
+  },
+  {
+    "id":123,
+    "name":"Entomology (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":124,
+    "name":"Entomology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":125,
+    "name":"Environmental Quality (minor)",
+    "position":""
+  },
+  {
+    "id":126,
+    "name":"Environmental Toxicology",
+    "position":""
+  },
+  {
+    "id":127,
+    "name":"Environmental Toxicology (M.S.)",
+    "position":""
+  },
+  {
+    "id":128,
+    "name":"Environmental Toxicology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":129,
+    "name":"Epidemiology (minor)",
+    "position":""
+  },
+  {
+    "id":130,
+    "name":"Feminist, Gender, and Sexuality Studies (minor)",
+    "position":""
+  },
+  {
+    "id":131,
+    "name":"Fiber Science and Apparel Design",
+    "position":""
+  },
+  {
+    "id":132,
+    "name":"Apparel Design (M.A.)",
+    "position":""
+  },
+  {
+    "id":133,
+    "name":"Apparel Design (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":134,
+    "name":"Fiber Science (M.S.)",
+    "position":""
+  },
+  {
+    "id":135,
+    "name":"Fiber Science (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":136,
+    "name":"Human Ecology (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":137,
+    "name":"Film and Video Studies (minor)",
+    "position":""
+  },
+  {
+    "id":138,
+    "name":"Food Science and Technology",
+    "position":""
+  },
+  {
+    "id":139,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":140,
+    "name":"Food Science and Technology (M.S.)",
+    "position":""
+  },
+  {
+    "id":141,
+    "name":"Food Science and Technology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":142,
+    "name":"Genetics, Genomics and Development",
+    "position":""
+  },
+  {
+    "id":143,
+    "name":"Genetics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":144,
+    "name":"Genomics (minor)",
+    "position":""
+  },
+  {
+    "id":145,
+    "name":"Geological Sciences",
+    "position":""
+  },
+  {
+    "id":146,
+    "name":"Geological Sciences (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":147,
+    "name":"Geological Sciences (M.S.)",
+    "position":""
+  },
+  {
+    "id":148,
+    "name":"Geological Sciences (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":149,
+    "name":"Germanic Studies",
+    "position":""
+  },
+  {
+    "id":150,
+    "name":"Germanic Studies (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":151,
+    "name":"Global Development",
+    "position":""
+  },
+  {
+    "id":152,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":153,
+    "name":"International Development (M.P.S.(I.D.))",
+    "position":""
+  },
+  {
+    "id":154,
+    "name":"Government",
+    "position":""
+  },
+  {
+    "id":155,
+    "name":"Government (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":156,
+    "name":"History",
+    "position":""
+  },
+  {
+    "id":157,
+    "name":"History (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":158,
+    "name":"History of Art, Archaeology, and Visual Studies",
+    "position":""
+  },
+  {
+    "id":159,
+    "name":"History of Art and Archaeology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":160,
+    "name":"Horticulture",
+    "position":""
+  },
+  {
+    "id":161,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":162,
+    "name":"Horticultural Biology (M.S.)",
+    "position":""
+  },
+  {
+    "id":163,
+    "name":"Horticultural Biology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":164,
+    "name":"Horticultural Crop and Landscape Management (M.S.)",
+    "position":""
+  },
+  {
+    "id":165,
+    "name":"Horticultural Crop and Landscape Management (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":166,
+    "name":"Hotel Administration",
+    "position":""
+  },
+  {
+    "id":167,
+    "name":"Hospitality Management (M.S.)",
+    "position":""
+  },
+  {
+    "id":168,
+    "name":"Hospitality Management (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":169,
+    "name":"Human Development",
+    "position":""
+  },
+  {
+    "id":170,
+    "name":"Developmental Psychology (M.A.)",
+    "position":""
+  },
+  {
+    "id":171,
+    "name":"Developmental Psychology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":172,
+    "name":"Human Development and Family Studies (M.A.)",
+    "position":""
+  },
+  {
+    "id":173,
+    "name":"Human Development and Family Studies (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":174,
+    "name":"Immunology and Infectious Disease",
+    "position":""
+  },
+  {
+    "id":175,
+    "name":"Immunology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":176,
+    "name":"Industrial and Labor Relations",
+    "position":""
+  },
+  {
+    "id":177,
+    "name":"Human Resources (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":178,
+    "name":"Industrial and Labor Relations (M.I.L.R.)",
+    "position":""
+  },
+  {
+    "id":179,
+    "name":"Industrial and Labor Relations (M.I.L.R./M.B.A. (dual degree))",
+    "position":""
+  },
+  {
+    "id":180,
+    "name":"Industrial and Labor Relations (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":181,
+    "name":"Industrial and Labor Relations (M.P.S.) (Cornell ILR NYC)",
+    "position":""
+  },
+  {
+    "id":182,
+    "name":"Industrial and Labor Relations (M.S.)",
+    "position":""
+  },
+  {
+    "id":183,
+    "name":"Industrial and Labor Relations (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":184,
+    "name":"Industrial and Labor Relations (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":185,
+    "name":"Information Science",
+    "position":""
+  },
+  {
+    "id":186,
+    "name":"Information Science (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":187,
+    "name":"Information Science (M.P.S.) (Cornell NYC Tech)",
+    "position":""
+  },
+  {
+    "id":188,
+    "name":"Information Science (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":189,
+    "name":"Information Systems (M.S.) (Cornell NYC Tech)",
+    "position":""
+  },
+  {
+    "id":190,
+    "name":"Landscape Architecture",
+    "position":""
+  },
+  {
+    "id":191,
+    "name":"Landscape Architecture (M.L.A.)",
+    "position":""
+  },
+  {
+    "id":192,
+    "name":"Landscape Architecture (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":193,
+    "name":"Landscape Architecture (M.R.P./M.L.A. (dual degree))",
+    "position":""
+  },
+  {
+    "id":194,
+    "name":"Latin American Studies (minor)",
+    "position":""
+  },
+  {
+    "id":195,
+    "name":"Latina/o Studies (minor)",
+    "position":""
+  },
+  {
+    "id":196,
+    "name":"Law",
+    "position":""
+  },
+  {
+    "id":197,
+    "name":"Law (J.S.D)",
+    "position":""
+  },
+  {
+    "id":198,
+    "name":"Lesbian, Gay, Bisexual and Transgender Studies (minor)",
+    "position":""
+  },
+  {
+    "id":199,
+    "name":"Linguistics",
+    "position":""
+  },
+  {
+    "id":200,
+    "name":"Linguistics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":201,
+    "name":"Management",
+    "position":""
+  },
+  {
+    "id":202,
+    "name":"Management (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":203,
+    "name":"Materials Science and Engineering",
+    "position":""
+  },
+  {
+    "id":204,
+    "name":"Materials Science and Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":205,
+    "name":"Materials Science and Engineering (M.S.)",
+    "position":""
+  },
+  {
+    "id":206,
+    "name":"Materials Science and Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":207,
+    "name":"Mathematics",
+    "position":""
+  },
+  {
+    "id":208,
+    "name":"Mathematics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":209,
+    "name":"Mechanical Engineering",
+    "position":""
+  },
+  {
+    "id":210,
+    "name":"Mechanical Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":211,
+    "name":"Mechanical Engineering (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":212,
+    "name":"Medieval Studies",
+    "position":""
+  },
+  {
+    "id":213,
+    "name":"Medieval Studies (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":214,
+    "name":"Microbiology",
+    "position":""
+  },
+  {
+    "id":215,
+    "name":"Microbiology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":216,
+    "name":"Molecular and Integrative Physiology",
+    "position":""
+  },
+  {
+    "id":217,
+    "name":"Physiology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":218,
+    "name":"Music",
+    "position":""
+  },
+  {
+    "id":219,
+    "name":"Music (D.M.A.)",
+    "position":""
+  },
+  {
+    "id":220,
+    "name":"Musicology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":221,
+    "name":"Natural Resources",
+    "position":""
+  },
+  {
+    "id":222,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":223,
+    "name":"Natural Resources (M.S.)",
+    "position":""
+  },
+  {
+    "id":224,
+    "name":"Natural Resources (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":225,
+    "name":"Natural Resources (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":226,
+    "name":"Near Eastern Studies",
+    "position":""
+  },
+  {
+    "id":227,
+    "name":"Near Eastern Studies (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":228,
+    "name":"Neurobiology and Behavior",
+    "position":""
+  },
+  {
+    "id":229,
+    "name":"Behavioral Biology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":230,
+    "name":"Neurobiology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":231,
+    "name":"Nutrition",
+    "position":""
+  },
+  {
+    "id":232,
+    "name":"Human Ecology (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":233,
+    "name":"Nutrition (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":234,
+    "name":"Operations Research and Information Engineering",
+    "position":""
+  },
+  {
+    "id":235,
+    "name":"Operations Research (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":236,
+    "name":"Operations Research and Information Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":237,
+    "name":"Operations Research and Information Engineering (M.Eng.) (Cornell NYC Tech)",
+    "position":""
+  },
+  {
+    "id":238,
+    "name":"Peace Studies and Peace Science (minor)",
+    "position":""
+  },
+  {
+    "id":239,
+    "name":"Pharmacology",
+    "position":""
+  },
+  {
+    "id":240,
+    "name":"Pharmacology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":241,
+    "name":"Philosophy",
+    "position":""
+  },
+  {
+    "id":242,
+    "name":"Philosophy (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":243,
+    "name":"Physics",
+    "position":""
+  },
+  {
+    "id":244,
+    "name":"Physics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":245,
+    "name":"Plant Biology",
+    "position":""
+  },
+  {
+    "id":246,
+    "name":"Plant Biology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":247,
+    "name":"Plant Breeding",
+    "position":""
+  },
+  {
+    "id":248,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":249,
+    "name":"Plant Breeding (M.S.)",
+    "position":""
+  },
+  {
+    "id":250,
+    "name":"Plant Breeding (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":251,
+    "name":"Plant Breeding (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":252,
+    "name":"Plant Pathology and Plant-Microbe Biology",
+    "position":""
+  },
+  {
+    "id":253,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":254,
+    "name":"Plant Pathology (M.S.)",
+    "position":""
+  },
+  {
+    "id":255,
+    "name":"Plant Pathology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":256,
+    "name":"Plant Protection",
+    "position":""
+  },
+  {
+    "id":257,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":258,
+    "name":"Policy Analysis and Management",
+    "position":""
+  },
+  {
+    "id":259,
+    "name":"Health Administration (M.H.A.)",
+    "position":""
+  },
+  {
+    "id":260,
+    "name":"Health Administration (M.H.A./M.B.A. (dual degree))",
+    "position":""
+  },
+  {
+    "id":261,
+    "name":"Health Administration (M.H.A./M.P.A. (dual degree))",
+    "position":""
+  },
+  {
+    "id":262,
+    "name":"Policy Analysis and Management (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":263,
+    "name":"Psychology",
+    "position":""
+  },
+  {
+    "id":264,
+    "name":"Psychology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":265,
+    "name":"Public Affairs",
+    "position":""
+  },
+  {
+    "id":266,
+    "name":"Public Administration (M.H.A./M.P.A. (dual degree))",
+    "position":""
+  },
+  {
+    "id":267,
+    "name":"Public Administration (M.P.A.)",
+    "position":""
+  },
+  {
+    "id":268,
+    "name":"Real Estate",
+    "position":""
+  },
+  {
+    "id":269,
+    "name":"Real Estate (M.P.S.( R.E.))",
+    "position":""
+  },
+  {
+    "id":270,
+    "name":"Regional Science",
+    "position":""
+  },
+  {
+    "id":271,
+    "name":"Regional Science (M.A.)",
+    "position":""
+  },
+  {
+    "id":272,
+    "name":"Regional Science (M.S.)",
+    "position":""
+  },
+  {
+    "id":273,
+    "name":"Regional Science (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":274,
+    "name":"Risk Analysis, Communication and Policy (minor)",
+    "position":""
+  },
+  {
+    "id":275,
+    "name":"Romance Studies",
+    "position":""
+  },
+  {
+    "id":276,
+    "name":"Romance Studies (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":277,
+    "name":"Science and Technology Studies",
+    "position":""
+  },
+  {
+    "id":278,
+    "name":"Science and Technology Studies (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":279,
+    "name":"Sociology",
+    "position":""
+  },
+  {
+    "id":280,
+    "name":"Sociology (M.A.)",
+    "position":""
+  },
+  {
+    "id":281,
+    "name":"Sociology (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":282,
+    "name":"Soil and Crop Sciences",
+    "position":""
+  },
+  {
+    "id":283,
+    "name":"Agriculture and Life Sciences (M.P.S.)",
+    "position":""
+  },
+  {
+    "id":284,
+    "name":"Soil and Crop Sciences (M.S.)",
+    "position":""
+  },
+  {
+    "id":285,
+    "name":"Soil and Crop Sciences (M.S./Ph.D.)",
+    "position":""
+  },
+  {
+    "id":286,
+    "name":"Soil and Crop Sciences (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":287,
+    "name":"Statistics",
+    "position":""
+  },
+  {
+    "id":288,
+    "name":"Applied Statistics (M.P.S. (A.S.))",
+    "position":""
+  },
+  {
+    "id":289,
+    "name":"Statistics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":290,
+    "name":"Sustainable Energy (minor)",
+    "position":""
+  },
+  {
+    "id":291,
+    "name":"Systems Engineering",
+    "position":""
+  },
+  {
+    "id":292,
+    "name":"Systems Engineering (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":293,
+    "name":"Systems Engineering (M.Eng.) (Distance Learning)",
+    "position":""
+  },
+  {
+    "id":294,
+    "name":"Theatre Arts",
+    "position":""
+  },
+  {
+    "id":295,
+    "name":"Theatre Arts (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":296,
+    "name":"Theoretical and Applied Mechanics",
+    "position":""
+  },
+  {
+    "id":297,
+    "name":"Engineering Mechanics (M.Eng.)",
+    "position":""
+  },
+  {
+    "id":298,
+    "name":"Theoretical and Applied Mechanics (Ph.D.)",
+    "position":""
+  },
+  {
+    "id":299,
+    "name":"Urban Studies (minor)",
+    "position":""
+  },
+  {
+    "id":300,
+    "name":"Water Resources (minor)",
+    "position":""
+  },
+  {
+    "id":301,
+    "name":"Zoology and Wildlife Conservation",
+    "position":""
+  },
+  {
+    "id":302,
+    "name":"Zoology (Ph.D.)",
+    "position":""
+  }
+]
+}

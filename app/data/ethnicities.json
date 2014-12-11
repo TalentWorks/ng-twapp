@@ -1,0 +1,164 @@
+{
+  "ethnicities": [
+    {
+      "id": 1,
+      "name": "* Any Minority",
+      "position": ""
+    },
+    {
+      "id": 2,
+      "name": "African",
+      "position": ""
+    },
+    {
+      "id": 3,
+      "name": "African American",
+      "position": ""
+    },
+    {
+      "id": 4,
+      "name": "Amerasian",
+      "position": ""
+    },
+    {
+      "id": 5,
+      "name": "Arab",
+      "position": ""
+    },
+    {
+      "id": 6,
+      "name": "Armenian",
+      "position": ""
+    },
+    {
+      "id": 7,
+      "name": "Asian",
+      "position": ""
+    },
+    {
+      "id": 8,
+      "name": "Black - White Mix",
+      "position": ""
+    },
+    {
+      "id": 9,
+      "name": "Cambodian",
+      "position": ""
+    },
+    {
+      "id": 10,
+      "name": "Caucasian",
+      "position": ""
+    },
+    {
+      "id": 11,
+      "name": "Chinese",
+      "position": ""
+    },
+    {
+      "id": 12,
+      "name": "East Indian",
+      "position": ""
+    },
+    {
+      "id": 13,
+      "name": "Eastern European",
+      "position": ""
+    },
+    {
+      "id": 14,
+      "name": "Eurasian",
+      "position": ""
+    },
+    {
+      "id": 15,
+      "name": "Filipino",
+      "position": ""
+    },
+    {
+      "id": 16,
+      "name": "Hispanic",
+      "position": ""
+    },
+    {
+      "id": 17,
+      "name": "Indian - South American",
+      "position": ""
+    },
+    {
+      "id": 18,
+      "name": "Italian",
+      "position": ""
+    },
+    {
+      "id": 19,
+      "name": "Japanese",
+      "position": ""
+    },
+    {
+      "id": 20,
+      "name": "Korean",
+      "position": ""
+    },
+    {
+      "id": 21,
+      "name": "Latin",
+      "position": ""
+    },
+    {
+      "id": 22,
+      "name": "Mediterranean",
+      "position": ""
+    },
+    {
+      "id": 23,
+      "name": "Middle Eastern",
+      "position": ""
+    },
+    {
+      "id": 24,
+      "name": "Native American",
+      "position": ""
+    },
+    {
+      "id": 25,
+      "name": "Pacific Island",
+      "position": ""
+    },
+    {
+      "id": 26,
+      "name": "Polynesian",
+      "position": ""
+    },
+    {
+      "id": 27,
+      "name": "Scandinavian",
+      "position": ""
+    },
+    {
+      "id": 28,
+      "name": "Slavic / Balkan",
+      "position": ""
+    },
+    {
+      "id": 29,
+      "name": "Southeast Asian",
+      "position": ""
+    },
+    {
+      "id": 30,
+      "name": "Thai",
+      "position": ""
+    },
+    {
+      "id": 31,
+      "name": "Vietnamese",
+      "position": ""
+    },
+    {
+      "id": 32,
+      "name": "Other",
+      "position": ""
+    }
+  ]
+}

@@ -1,64 +1,64 @@
 {
-  "character-type": [
+  "charactertypes": [
     {
-      "Id": 1,
-      "Name": "Athlete",
-      "Position": ""
+      "id": 1,
+      "name": "Athlete",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Blue Collar",
-      "Position": ""
+      "id": 2,
+      "name": "Blue Collar",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Character",
-      "Position": ""
+      "id": 3,
+      "name": "Character",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Ingenue",
-      "Position": ""
+      "id": 4,
+      "name": "Ingenue",
+      "position": ""
     },
     {
-      "Id": 5,
-      "Name": "Leading Man",
-      "Position": ""
+      "id": 5,
+      "name": "Leading Man",
+      "position": ""
     },
     {
-      "Id": 6,
-      "Name": "Leading Woman",
-      "Position": ""
+      "id": 6,
+      "name": "Leading Woman",
+      "position": ""
     },
     {
-      "Id": 7,
-      "Name": "Model",
-      "Position": ""
+      "id": 7,
+      "name": "Model",
+      "position": ""
     },
     {
-      "Id": 8,
-      "Name": "Precision Driver",
-      "Position": ""
+      "id": 8,
+      "name": "Precision Driver",
+      "position": ""
     },
     {
-      "Id": 9,
-      "Name": "Stunt Person",
-      "Position": ""
+      "id": 9,
+      "name": "Stunt Person",
+      "position": ""
     },
     {
-      "Id": 10,
-      "Name": "Triplet",
-      "Position": ""
+      "id": 10,
+      "name": "Triplet",
+      "position": ""
     },
     {
-      "Id": 11,
-      "Name": "Twin",
-      "Position": ""
+      "id": 11,
+      "name": "Twin",
+      "position": ""
     },
     {
-      "Id": 12,
-      "Name": "White Collar",
-      "Position": ""
+      "id": 12,
+      "name": "White Collar",
+      "position": ""
     }
   ]
 }

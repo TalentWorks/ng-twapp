@@ -1,109 +1,109 @@
 {
-  "disability-type": [
+  "disabilities": [
     {
-      "Id": 1,
-      "Name": "Any Disability",
-      "Position": ""
+      "id": 1,
+      "name": "Any Disability",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Arm Amputee",
-      "Position": ""
+      "id": 2,
+      "name": "Arm Amputee",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Attention Deficit Disorder (ADD)",
-      "Position": ""
+      "id": 3,
+      "name": "Attention Deficit Disorder (ADD)",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Autism",
-      "Position": ""
+      "id": 4,
+      "name": "Autism",
+      "position": ""
     },
     {
-      "Id": 5,
-      "Name": "Blind / Visually Impaired",
-      "Position": ""
+      "id": 5,
+      "name": "Blind / Visually Impaired",
+      "position": ""
     },
     {
-      "Id": 6,
-      "Name": "Cerebral Palsy",
-      "Position": ""
+      "id": 6,
+      "name": "Cerebral Palsy",
+      "position": ""
     },
     {
-      "Id": 7,
-      "Name": "Deaf / Hearing Impaired",
-      "Position": ""
+      "id": 7,
+      "name": "Deaf / Hearing Impaired",
+      "position": ""
     },
     {
-      "Id": 8,
-      "Name": "Developmental Disability",
-      "Position": ""
+      "id": 8,
+      "name": "Developmental Disability",
+      "position": ""
     },
     {
-      "Id": 9,
-      "Name": "Down syndrome",
-      "Position": ""
+      "id": 9,
+      "name": "Down syndrome",
+      "position": ""
     },
     {
-      "Id": 10,
-      "Name": "Facial Difference",
-      "Position": ""
+      "id": 10,
+      "name": "Facial Difference",
+      "position": ""
     },
     {
-      "Id": 11,
-      "Name": "Hyperactivity Disorder (HD)",
-      "Position": ""
+      "id": 11,
+      "name": "Hyperactivity Disorder (HD)",
+      "position": ""
     },
     {
-      "Id": 12,
-      "Name": "Invisible Disability",
-      "Position": ""
+      "id": 12,
+      "name": "Invisible Disability",
+      "position": ""
     },
     {
-      "Id": 13,
-      "Name": "Leg Amputee",
-      "Position": ""
+      "id": 13,
+      "name": "Leg Amputee",
+      "position": ""
     },
     {
-      "Id": 14,
-      "Name": "Little Person",
-      "Position": ""
+      "id": 14,
+      "name": "Little Person",
+      "position": ""
     },
     {
-      "Id": 15,
-      "Name": "Mobility Impaired / Cane",
-      "Position": ""
+      "id": 15,
+      "name": "Mobility Impaired / Cane",
+      "position": ""
     },
     {
-      "Id": 16,
-      "Name": "Mobility Impaired / Crutches",
-      "Position": ""
+      "id": 16,
+      "name": "Mobility Impaired / Crutches",
+      "position": ""
     },
     {
-      "Id": 17,
-      "Name": "Mobility Impaired / Forearm Crutches",
-      "Position": ""
+      "id": 17,
+      "name": "Mobility Impaired / Forearm Crutches",
+      "position": ""
     },
     {
-      "Id": 18,
-      "Name": "Mobility Impaired / Limp",
-      "Position": ""
+      "id": 18,
+      "name": "Mobility Impaired / Limp",
+      "position": ""
     },
     {
-      "Id": 19,
-      "Name": "Mobility Impaired / Walker",
-      "Position": ""
+      "id": 19,
+      "name": "Mobility Impaired / Walker",
+      "position": ""
     },
     {
-      "Id": 20,
-      "Name": "Mobility Impaired / Wheelchair User",
-      "Position": ""
+      "id": 20,
+      "name": "Mobility Impaired / Wheelchair User",
+      "position": ""
     },
     {
-      "Id": 21,
-      "Name": "Tourette syndrome",
-      "Position": ""
+      "id": 21,
+      "name": "Tourette syndrome",
+      "position": ""
     }
   ]
 }

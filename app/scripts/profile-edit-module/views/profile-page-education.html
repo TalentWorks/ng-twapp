@@ -51,39 +51,39 @@ Group Act?    <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to 
             <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
               <div class="row">
                 <div class="col-md-4">
-                  <label for="schoolName">School Name</label>
+                  <label>School Name</label>
                   <input type="text" class="form-control" name="schoolName" ng-model="formData.schoolName">
                 </div>
                 <div class="col-md-4">
-                  <label for="degree">Degree</label>
+                  <label>Degree</label>
                   <input type="text" class="form-control" name="degree" ng-model="formData.degree">
                 </div>
                 <div class="col-md-4">
-                  <label for="field">Field of Study</label>
+                  <label>Field of Study</label>
                   <select ng-model="myRoles" class="form-control" ng-options="role.name for role in roles"></select>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <label for="attendedStart">Dates Started</label>
+                  <label>Dates Started</label>
                   <input type="text" class="form-control" name="attendedStart" ng-model="formData.attendedStart">
                 </div>
                 <div class="col-md-4">
-                  <label for="attendEnd">Date Ended</label>
+                  <label>Date Ended</label>
                   <input type="text" class="form-control" name="attendEnd" ng-model="formData.attendEnd">
                 </div>
                 <div class="col-md-4">
-                  <label for="Major">Major</label>
+                  <label>Major</label>
                   <select ng-model="myRoles" class="form-control" ng-options="role.name for role in roles"></select>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <label for="honors">Honors</label>
+                  <label>Honors</label>
                   <input type="text" class="form-control" name="honors" ng-model="formData.honors">
                 </div>
                 <div class="col-sm-6">
-                  <label for="proficiency">Major</label>
+                  <label>Major</label>
                   <select ng-model="myproficiency" class="form-control"
                           ng-options="proficiency.name for proficiency in proficiencies"></select><br>
                 </div>
@@ -151,33 +151,34 @@ Group Act?    <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to 
             <div class="procedure-details" ng-class="{ 'hidden': ! showDetails2 }">
               <div class="row">
                 <div class="col-md-4">
-                  <label for="trainingName">Training Name</label>
+                  <label>Training Name</label>
                   <input type="text" class="form-control" name="trainingName" ng-model="formData.trainingName">
                 </div>
                 <div class="col-md-4">
-                  <label for="certificate">Certificate Earned</label>
+                  <label>Certificate Earned</label>
                   <input type="text" class="form-control" name="certificate" ng-model="formData.certificate">
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <label for="attendedStartT">Dates Started</label>
+                  <label>Dates Started</label>
                   <input type="text" class="form-control" name="attendedStartT" ng-model="formData.attendedStartT">
                 </div>
                 <div class="col-md-4">
-                  <label for="attendEndT">Date Ended</label>
+                  <label>Date Ended</label>
                   <input type="text" class="form-control" name="attendEndT" ng-model="formData.attendEndT">
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <label for="specialHonors">Special Honors</label>
+                  <label>Special Honors</label>
                   <input type="text" class="form-control" name="specialHonors" ng-model="formData.specialHonors">
                 </div>
                 <div class="col-sm-6">
-                  <label for="proficiency">Major</label>
-                  <select ng-model="myproficiency" class="form-control"
-                          ng-options="proficiency.name for proficiency in proficiencies"></select><br>
+                  <label>Major</label>
+                  <select class="form-control" ng-model="formData.major"
+                          ng-options="obj.id as obj.name for obj in list_majors.majors">
+                  </select>
                 </div>
               </div>
               <div class="row">

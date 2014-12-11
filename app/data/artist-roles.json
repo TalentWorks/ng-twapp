@@ -1,0 +1,70 @@
+{
+  "artistroles": [
+    {
+      "id": 1,
+      "name": "Actor",
+      "position": ""
+    },
+    {
+      "id": 2,
+      "name": "Musician",
+      "position": ""
+    },
+    {
+      "id": 3,
+      "name": "Singer",
+      "position": ""
+    },
+    {
+      "id": 4,
+      "name": "Dancer",
+      "position": ""
+    },
+    {
+      "id": 5,
+      "name": "Entertainer",
+      "position": ""
+    },
+    {
+      "id": 6,
+      "name": "Fashion Model",
+      "position": ""
+    },
+    {
+      "id": 7,
+      "artist": "Artist role",
+      "name": "Visual Arts",
+      "position": ""
+    },
+    {
+      "id": 8,
+      "name": "Professional Theater",
+      "position": ""
+    },
+    {
+      "id": 9,
+      "name": "Professional Film",
+      "position": ""
+    },
+    {
+      "id": 10,
+      "name": "Professional Fashion",
+      "position": ""
+    },
+    {
+      "id": 11,
+      "name": "Professional Music",
+      "position": ""
+    },
+    {
+      "id": 12,
+      "name": "Professional Other",
+      "position": ""
+    },
+    {
+      "id": 13,
+      "name": "Professional TV",
+      "position": ""
+    }
+  ]
+}

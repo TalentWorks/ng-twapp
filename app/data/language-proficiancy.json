@@ -1,29 +1,29 @@
 {
-  "language-proficiency": [
+  "proficiencies": [
     {
-      "Id": 1,
-      "Name": "Elementary",
-      "Position": ""
+      "id": 1,
+      "name": "Elementary",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Limited Working",
-      "Position": ""
+      "id": 2,
+      "name": "Limited Working",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Professionally Working",
-      "Position": ""
+      "id": 3,
+      "name": "Professionally Working",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Full Professional ",
-      "Position": ""
+      "id": 4,
+      "name": "Full Professional ",
+      "position": ""
     },
     {
-      "Id": 5,
-      "Name": "Native or Bilingual",
-      "Position": ""
+      "id": 5,
+      "name": "Native or Bilingual",
+      "position": ""
     }
   ]
 }

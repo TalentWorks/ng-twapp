@@ -1,54 +1,54 @@
 {
-  "eye-color": [
+  "eyes": [
     {
-      "Id": 1,
-      "Name": "Blue",
-      "Position": ""
+      "id": 1,
+      "name": "Blue",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Blue/Green",
-      "Position": ""
+      "id": 2,
+      "name": "Blue/Green",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Brown",
-      "Position": ""
+      "id": 3,
+      "name": "Brown",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Dark Brown",
-      "Position": ""
+      "id": 4,
+      "name": "Dark Brown",
+      "position": ""
     },
     {
-      "Id": 5,
-      "Name": "Green",
-      "Position": ""
+      "id": 5,
+      "name": "Green",
+      "position": ""
     },
     {
-      "Id": 6,
-      "Name": "Grey",
-      "Position": ""
+      "id": 6,
+      "name": "Grey",
+      "position": ""
     },
     {
-      "Id": 7,
-      "Name": "Hazel",
-      "Position": ""
+      "id": 7,
+      "name": "Hazel",
+      "position": ""
     },
     {
-      "Id": 8,
-      "Name": "Light Blue",
-      "Position": ""
+      "id": 8,
+      "name": "Light Blue",
+      "position": ""
     },
     {
-      "Id": 9,
-      "Name": "Light Brown",
-      "Position": ""
+      "id": 9,
+      "name": "Light Brown",
+      "position": ""
     },
     {
-      "Id": 10,
-      "Name": "Violet",
-      "Position": ""
+      "id": 10,
+      "name": "Violet",
+      "position": ""
     }
   ]
 }
