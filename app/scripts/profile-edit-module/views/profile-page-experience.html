@@ -53,100 +53,62 @@ Group Act?  <a href="#">Click here</a> to continu wth group act form.
             <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
               <div class="row">
                 <div class="col-md-4">
-                  <label for="title">Title</label>
+                  <label>Title</label>
                   <input type="text" class="form-control" name="title" ng-model="formData.title">
                 </div>
                 <div class="col-md-4">
-                  <label for="character">Character</label>
+                  <label>Character</label>
                   <input type="text" class="form-control" name="character" ng-model="formData.character">
                 </div>
                 <div class="col-md-4">
-                  <label for="role">Role</label>
+                  <label>Role</label>
                   <input type="text" class="form-control" name="role" ng-model="formData.role">
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <label for="producedBy">Produced by</label>
+                  <label>Produced by</label>
                   <input type="text" class="form-control" name="producedBy" ng-model="formData.producedBy">
                 </div>
                 <div class="col-md-4">
-                  <label for="directedBy">Directed By</label>
+                  <label>Directed By</label>
                   <input type="text" class="form-control" name="directedBy" ng-model="formData.directedBy">
                 </div>
                 <div class="col-md-4">
-                  <label for="date">Date</label>
+                  <label>Date</label>
                   <input type="text" class="form-control" name="date" ng-model="formData.date">
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
-                  <label for="types">Type</label>
-                  <select ng-model="myTypes" class="form-control" ng-options="type.name for type in types"></select><br>
+                  <label>Type</label>
+                  <select class="form-control" ng-model="formData.type"
+                          ng-options="obj.id as obj.name for obj in list_characterTypes.charactertypes">
+                  </select>
                 </div>
                 <div class="col-sm-6">
-                  <label for="proficiency">Proficiency</label>
-                  <select ng-model="myproficiency" class="form-control"
-                          ng-options="proficiency.name for proficiency in proficiencies"></select><br>
+                  <label>Proficiency</label>
+                  <select class="form-control" ng-model="formData.proficiency"
+                          ng-options="obj.id as obj.name for obj in list_proficiencies.proficiencies">
+                  </select>
                 </div>
               </div>
               <div class="row">
                 <div class="col-sm-6">
+                  <label>Type</label>
                   <input type="text" class="form-control" name="url" data-ng-model="formData.url" placeholder="URL"/>
                 </div>
-                <div class="col-sm-3 row-fluid">
-                  <input type="button" class="btn btn-primary" name="addEmail" value="Add another credit"
-                         data-ng-click="addEmails()" ng-required="email"
-                         ng-pattern="emailPattern">
+                <div class="col-sm-6">
+                  <br />
+                  <input type="button" class="btn btn-primary" name="addcredits" value="Add another credit"
+                         data-ng-click="addCredeit()">
                 </div>
               </div>
-            </div>
           </div>
           <!-- End Contact Info -->
         </div>
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseTwo">2. My Professional
-            Experience?</a>
-        </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse">
-        <div class="panel-body">
-          <!-- Where am I from? -->
-          <div class="form-group input-sm">
-            <div class="row">
-              <div class="col-sm-6">
-                <label for="address1">Primary Address</label>
-                <input type="text" class="form-control" name="address1" ng-model="formData.address1">
-              </div>
-              <div class="col-sm-6">
-                <label for="address2">Secondary Address</label>
-                <input type="text" class="form-control" name="address2" ng-model="formData.address2">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label for="city">City</label>
-                <input type="text" class="form-control" name="city" ng-model="formData.city">
-              </div>
-              <div class="col-md-4">
-                <label for="State">State</label>
-                <input type="text" class="form-control" name="state" ng-model="formData.state">
-              </div>
-              <div class="col-md-4">
-                <label for="zip">Zip</label>
-                <input type="text" class="form-control" name="zip" ng-model="formData.zip">
-              </div>
-            </div>
-          </div>
-          <!-- End Where am I from -->
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
 

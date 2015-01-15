@@ -16,4 +16,4 @@ To get this up and running, do the following:
 
 **Notes**
 
-- Requires Ruby for the CSS compass compilation.
+There is also a node server in the server directory to test mock rest services.

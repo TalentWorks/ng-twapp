@@ -1,168 +1,210 @@
 <!-- form-profile.html -->
-Group Act?  <a href="#">Click here</a> to continu wth group act form.
+Group Act?  <a href="#">Click here</a> to continue wth group act form.
 <h4>My Profile</h4>
 <div class="bs-example">
   <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile#collapseOne">1. Who am I?</a>
-        </h4>
-      </div>
-      <div id="collapseOne" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <!-- Who am I? -->
-          <div class="form-group input-sm">
-            <div class="row">
-              <div class="col-md-4">
-                <label for="fname">First Name</label>
-                <input type="text" class="form-control wi" name="name" ng-model="formData.fname">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="profile/profile#collapseOne">1. Who Am I?</a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+            <!-- Who am I? -->
+            <div class="form-group input-sm">
+              <div class="row">
+                <div class="col-md-4">
+                  <label>First Name</label>
+                  <input type="text" class="form-control wi" name="name" ng-model="formData.fname">
+                </div>
+                <div class="col-md-4">
+                  <label>Last Name</label>
+                  <input type="text" class="form-control wi" name="name" ng-model="formData.lname">
+                </div>
+                <div class="col-md-4">
+                  <label>Alies</label>
+                  <input type="text" class="form-control" name="alies" ng-model="formData.alies">
+                </div>
               </div>
-              <div class="col-md-4">
-                <label for="lname">Last Name</label>
-                <input type="text" class="form-control wi" name="name" ng-model="formData.lname">
-              </div>
-              <div class="col-md-4">
-                <label for="alies">Alies</label>
-                <input type="text" class="form-control" name="alies" ng-model="formData.alies">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>Date of Birth</label>
+                  <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="formData.bday" is-open="opened"
+                           min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions"
+                           date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="open($event)"><i
+                      class="glyphicon glyphicon-calendar"></i></button>
+                  </span>
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <label>Sex</label>
+                  <select ng-model="formData.sex" class="form-control">
+                    <option value=""> </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgendered">Transgendered</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label for="eyes">Eyes</label>
-                <input type="text" class="form-control" name="eyes" ng-model="formData.eyes">
-              </div>
-              <div class="col-md-4">
-                <label for="dateBirth">Date of Birth</label>
-                <input type="text" class="form-control" name="bday" ng-model="formData.bday">
-              </div>
-              <div class="col-md-4">
-                <label for="sex">Sex</label>
-                <input type="text" class="form-control" name="sex" ng-model="formData.sex">
-              </div>
-            </div>
+            <!-- End Who am I? -->
           </div>
-          <!-- End Who am I? -->
         </div>
       </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseTwo">2. Where am I from?</a>
-        </h4>
-      </div>
-      <div id="collapseTwo" class="panel-collapse collapse">
-        <div class="panel-body">
-          <!-- Where am I from? -->
-          <div class="form-group input-sm">
-            <div class="row">
-              <div class="col-sm-6">
-                <label for="address1">Primary Address</label>
-                <input type="text" class="form-control" name="address1" ng-model="formData.address1">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseTwo">2. Where Am I From?</a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+          <div class="panel-body">
+            <!-- Where am I from? -->
+            <div class="form-group input-sm">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Primary Address</label>
+                  <input type="text" class="form-control" name="address1" ng-model="formData.address1">
+                </div>
+                <div class="col-sm-6">
+                  <label>Secondary Address</label>
+                  <input type="text" class="form-control" name="address2" ng-model="formData.address2">
+                </div>
               </div>
-              <div class="col-sm-6">
-                <label for="address2">Secondary Address</label>
-                <input type="text" class="form-control" name="address2" ng-model="formData.address2">
+              <div class="row">
+                <div class="col-md-3">
+                  <label>Country</label>
+                  <input type="text" class="form-control" name="country" ng-model="formData.country">
+                </div>
+                <div class="col-md-3">
+                  <label>City</label>
+                  <input type="text" class="form-control" name="city" ng-model="formData.city">
+                </div>
+                <div class="col-md-3">
+                  <label>State / Province</label>
+                  <select class="form-control" ng-model="formData.state"
+                          ng-options="obj.id as obj.name for obj in list_states.states">
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label>Zip/Postal Code</label>
+                  <input type="text" class="form-control" name="zip" ng-model="formData.zip">
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label for="city">City</label>
-                <input type="text" class="form-control" name="city" ng-model="formData.city">
-              </div>
-              <div class="col-md-4">
-                <label for="State">State</label>
-                <input type="text" class="form-control" name="state" ng-model="formData.state">
-              </div>
-              <div class="col-md-4">
-                <label for="zip">Zip</label>
-                <input type="text" class="form-control" name="zip" ng-model="formData.zip">
-              </div>
-            </div>
+            <!-- End Where am I from -->
           </div>
-          <!-- End Where am I from -->
         </div>
       </div>
-    </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseThree">3. More about me?</a>
-        </h4>
-      </div>
-      <div id="collapseThree" class="panel-collapse collapse">
-        <div class="panel-body">
-          <!-- More about me? -->
-          <div class="form-group input-sm">
-            <div class="row">
-              <div class="col-sm-6">
-                <label for="unions">Union Affiliations</label>
-                <select class="form-control" ng-model="list_union"
-                        ng-options="obj.id as obj.name for obj in list_unions.unions">
-                </select>
-              </div>
-              <div class="col-sm-6">
-                <label for="colors">What color am I</label>
-                <select ng-model="colorSelector" class="form-control"
-                        ng-options="colors.name for colors in colorSelector.colors">
-                  <option value=""></option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label for="nationality">Nationality</label>
-                <input type="text" class="form-control" name="nationality" ng-model="formData.nationality">
-              </div>
-              <div class="col-md-4">
-                <label for="relationshipStatus">Relationship Status</label>
-                <input type="text" class="form-control" name="relationshipStatus"
-                       ng-model="formData.relationshipStatus">
-              </div>
-              <div class="col-md-4">
-                <label for="twinBrother">Twin Brother</label>
-                <input type="text" class="form-control" name="twinBrother" ng-model="formData.twinBrother">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label for="Height">Height</label>
-                <input type="text" class="form-control" name="Height" ng-model="formData.height">
-              </div>
-              <div class="col-md-4">
-                <label for="Ethinicity">Ethinicity</label>
-                <input type="text" class="form-control" name="ethinicity" ng-model="formData.ethinicity">
-              </div>
-              <div class="col-md-4">
-                <label for="Physique">Physique</label>
-                <input type="text" class="form-control" name="physique" ng-model="formData.physique">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label for="Weight">Weight</label>
-                <input type="text" class="form-control" name="Weight" ng-model="formData.weight">
-              </div>
-              <div class="col-md-4">
-                <label for="HairStyle">Hair Style</label>
-                <input type="text" class="form-control" name="state" ng-model="formData.hairStyle">
-              </div>
-              <div class="col-md-4">
-                <label for="FacialHair">Facial Hair</label>
-                <input type="text" class="form-control" name="facialHair" ng-model="formData.facialHair">
-              </div>
-            </div>
-          </div>
-          <!-- End More about me? -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseThree">3. More About Me?</a>
+          </h4>
         </div>
-      </div>
-    </div>
-    <div class="panel panel-default">
+        <div id="collapseThree" class="panel-collapse collapse">
+          <div class="panel-body">
+            <!-- More about me? -->
+            <div class="form-group input-sm">
+              <div class="row">
+                <div class="col-sm-6">
+                  <label>Union Affiliations</label>
+                  <select class="form-control" ng-model="formData.unions"
+                          ng-options="obj.id as obj.name for obj in list_unions.unions">
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label>Disability <span class="small">(used for matching possible gigs)</span></label>
+                  <select class="form-control" ng-model="formData.disability"
+                          ng-options="obj.id as obj.name for obj in list_disabilities.disabilities">
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Twin Brother</label>
+                  <input type="text" class="form-control" name="twinBrother" ng-model="formData.twinBrother">
+                </div>
+                <div class="col-md-4">
+                  <label>Nationality</label>
+                  <select class="form-control" ng-model="formData.nationality"
+                          ng-options="obj.id as obj.name for obj in list_nationalities.nationalities">
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label>Relationship Status</label>
+                  <select class="form-control" ng-model="formData.relationshipStatus"
+                          ng-options="obj.id as obj.name for obj in list_relationships.relationships">
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <label>Height</label>
+                  <select class="float-text-right" ng-model="formData.heightUnit">
+                    <option value="feet">feet</option>
+                    <option value="inches">inches</option>
+                    <option value="cms">cms</option>
+                  </select>
+                  <label class="label-float-right"> unit </label>
+                  <input type="text" class="form-control" name="Height" ng-model="formData.height">
+                </div>
+                <div class="col-md-4">
+                  <label>Ethnicity</label>
+                  <select class="form-control" ng-model="formData.ethnicity"
+                          ng-options="obj.id as obj.name for obj in list_ethnicities.ethnicities">
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label>Physique</label>
+                  <select class="form-control" ng-model="formData.physique"
+                          ng-options="obj.id as obj.name for obj in list_physiques.physiques">
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <label>Weight</label>
+                  <select class="float-text-right" ng-model="formData.weightUnit">
+                    <option value="lb">lb</option>
+                    <option value="cms">kgs</option>
+                  </select>
+                  <label class="label-float-right"> unit </label>
+                  <input type="text" class="form-control" name="Weight" ng-model="formData.weight">
+                </div>
+                <div class="col-md-3">
+                  <label>Hair Style</label>
+                  <select class="form-control" ng-model="formData.hairStyle"
+                          ng-options="obj.id as obj.name for obj in list_hairstyles.hairstyles">
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label>Facial Hair</label>
+                  <select class="form-control" ng-model="formData.facialHair"
+                          ng-options="obj.id as obj.name for obj in list_facialhairstyles.facialhairstyles">
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label>Eyes</label>
+                  <select class="form-control" ng-model="formData.eyes"
+                          ng-options="obj.id as obj.name for obj in list_eyes.eyes">
+                  </select>
+                </div>
+                </div>
+              </div>
+            </div>
+            <!-- End More about me? -->
+          </div>
+        </div>
+      <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseFour">2. My Contact
-            Info?</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseFour">4. My Contact Info?</a>
         </h4>
       </div>
       <div id="collapseFour" class="panel-collapse collapse">
@@ -170,58 +212,87 @@ Group Act?  <a href="#">Click here</a> to continu wth group act form.
           <!-- Contact Info? -->
           <div class="form-group">
             <div class="row">
-              <div class="col-md-4">
-                <label for="homeNumber">Home Number</label>
-                <input type="text" class="form-control" name="v" ng-model="formData.homeNumber">
+              <div class="col-md-6">
+                <label>Home Number</label>
+                <input type="text" class="form-control" ng-model="formData.homeNumber">
               </div>
-              <div class="col-md-4">
-                <label for="altContacts">Alternative Contacts</label>
-                <input type="text" class="form-control" name="state" ng-model="formData.altContacts">
-              </div>
-              <div class="col-md-4">
-                <label for="Skype">Skype</label>
-                <input type="text" class="form-control" name="Skype" ng-model="formData.Skype">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <label for="cellNumber">Cell Number</label>
-                <input type="text" class="form-control" name="cellNumber" ng-model="formData.cellNumber">
-              </div>
-              <div class="col-md-4">
-                <label for="IM">IM</label>
-                <input type="text" class="form-control" name="im" ng-model="formData.im">
-              </div>
-              <div class="col-md-4">
-                <label for="twitter">twitter</label>
-                <input type="text" class="form-control" name="twitter" ng-model="formData.twitter">
+              <div class="col-md-6">
+                <label>Cell Number</label>
+                <input type="text" class="form-control" ng-model="formData.cellNumber">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
-                <label>Email</label><br/>
-                <li ng-repeat="mail in emails track by $index">{{mail.email}}</li>
+                <label>Email</label>
               </div>
             </div>
             <div class="row">
-              <div class="col-sm-6">
-                <input type="text" class="form-control" name="email" data-ng-model="formData.email"
-                       placeholder="enter another email"/>
+              <div class="col-sm-10" ng-repeat="mail in emails track by $index">
+                <div class="col-sm-5">{{mail.email}}</div>
+                <div class="col-sm-3 primaryEmail">primary {{mail.primary}}</div>
+                <div class="col-sm-2"><a href="" ng-click="deleteEmail($index)">Remove</a></div>
               </div>
-              <div class="col-sm-3 row-fluid">
-                <input type="button" class="btn btn-primary" name="addEmail" value="Add another email"
-                       data-ng-click="addEmails()" ng-required="email"
-                       ng-pattern="emailPattern">
+            </div>
+            <div class="row">
+            <div class="col-sm-6">
+              <input type="text" class="form-control" name="email" ng-model="formData.email"
+                     placeholder="enter another email"/>primary <input type="checkbox" ng-model="formData.primary">
+            </div>
+            <div class="col-sm-3 row-fluid">
+              <input type="button" class="btn btn-primary" name="addEmail" value="Add another email"
+                     data-ng-click="addEmails()" ng-required="email"
+                     ng-pattern="emailPattern">
+            </div>
+          </div>
+        </div>
+        <!-- End Contact Info -->
+      </div>
+    </div>
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseFive">5. My Languages?</a>
+        </h4>
+      </div>
+        <div id="collapseFive" class="panel-collapse collapse">
+        <div class="panel-body">
+        <!-- Profile Language -->
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="col-sm-5"><label>Language</label></div>
+              <div class="col-sm-3"><label>Proficiency</label></div>
+              <div class="col-sm-2"><label>Delete</label></div>
+            </div>
+            <div class="col-sm-10" ng-repeat="languages in languageList track by $index">
+              <div class="col-sm-5">{{ getLanguageName(languages.language) }}</div>
+              <div class="col-sm-3">{{getProficiencyName(languages.proficiency)}}</div>
+              <div class="col-sm-2"><a href="" ng-click="deleteLanguage($index)">Remove</a></div>
+            </div>
+            </div>
+            <div class="row" class="col-sm-12">
+              <div class="col-sm-4">
+                <select class="form-control" name="language" ng-model="formData.language"
+                        ng-options="obj.id as obj.name for obj in list_languages.languages">
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <select class="form-control" name="proficiency" ng-model="formData.proficiency"
+                        ng-options="obj.id as obj.name for obj in list_proficiencies.proficiencies">
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <input type="button" class="btn btn-primary" name="addLanguage" value="Add Language"
+                       ng-click="addLanguage()">
               </div>
             </div>
           </div>
-          <!-- End Contact Info -->
         </div>
+        <!-- End Profile Language -->
       </div>
     </div>
   </div>
 </div>
-
 
 <div class="form-group row">
   <div class="col-xs-6 col-xs-offset-3">

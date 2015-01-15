@@ -1,79 +1,79 @@
 {
-  "hair-style": [
+  "hairstyles": [
     {
-      "Id": 1,
-      "Name": "Afro",
-      "Position": ""
+      "id": 1,
+      "name": "Afro",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Bald - Completely",
-      "Position": ""
+      "id": 2,
+      "name": "Bald - Completely",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Bald - On Top",
-      "Position": ""
+      "id": 3,
+      "name": "Bald - On Top",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Dreadlocks",
-      "Position": ""
+      "id": 4,
+      "name": "Dreadlocks",
+      "position": ""
     },
     {
-      "Id": 5,
-      "Name": "Long - Curly",
-      "Position": ""
+      "id": 5,
+      "name": "Long - Curly",
+      "position": ""
     },
     {
-      "Id": 6,
-      "Name": "Long - Straight",
-      "Position": ""
+      "id": 6,
+      "name": "Long - Straight",
+      "position": ""
     },
     {
-      "Id": 7,
-      "Name": "Medium - Curly",
-      "Position": ""
+      "id": 7,
+      "name": "Medium - Curly",
+      "position": ""
     },
     {
-      "Id": 8,
-      "Name": "Medium - Straight",
-      "Position": ""
+      "id": 8,
+      "name": "Medium - Straight",
+      "position": ""
     },
     {
-      "Id": 9,
-      "Name": "Medium - Wavy",
-      "Position": ""
+      "id": 9,
+      "name": "Medium - Wavy",
+      "position": ""
     },
     {
-      "Id": 10,
-      "Name": "Military",
-      "Position": ""
+      "id": 10,
+      "name": "Military",
+      "position": ""
     },
     {
-      "Id": 11,
-      "Name": "Mohawk",
-      "Position": ""
+      "id": 11,
+      "name": "Mohawk",
+      "position": ""
     },
     {
-      "Id": 12,
-      "Name": "Shaved Head",
-      "Position": ""
+      "id": 12,
+      "name": "Shaved Head",
+      "position": ""
     },
     {
-      "Id": 13,
-      "Name": "Short - Curly",
-      "Position": ""
+      "id": 13,
+      "name": "Short - Curly",
+      "position": ""
     },
     {
-      "Id": 14,
-      "Name": "Short - Straight",
-      "Position": ""
+      "id": 14,
+      "name": "Short - Straight",
+      "position": ""
     },
     {
-      "Id": 15,
-      "Name": "Wavy - Thick",
-      "Position": ""
+      "id": 15,
+      "name": "Wavy - Thick",
+      "position": ""
     }
   ]
 }

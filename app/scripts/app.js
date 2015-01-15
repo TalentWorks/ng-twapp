@@ -14,7 +14,6 @@ angular.module('ng-twapp', [
   'ui.bootstrap',
   'ui-rangeSlider',
   'LocalStorageModule',
-  'google-maps',
   'restangular',
   'ng-twapp.pdl',
   'ng-twapp.nav',

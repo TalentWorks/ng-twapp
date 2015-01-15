@@ -19,7 +19,8 @@ angular.module('ng-twapp.profileEdit', []).config(function ($stateProvider, $url
     // url will be /profile/profile
     .state('profile.profile', {
       url: '/profile',
-      templateUrl: '/scripts/profile-edit-module/views/profile-page-profile.html'
+      templateUrl: '/scripts/profile-edit-module/views/profile-page-profile.html',
+      controller: 'profileEditController'
     })
 
     // url will be /profile/skills

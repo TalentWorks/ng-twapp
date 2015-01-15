@@ -1,39 +1,39 @@
 {
-  "facial-hair": [
+  "facialhairstyles": [
     {
-      "Id": 1,
-      "Name": "Beard - Cropped",
-      "Position": ""
+      "id": 1,
+      "name": "Beard - Cropped",
+      "position": ""
     },
     {
-      "Id": 2,
-      "Name": "Beard - Full",
-      "Position": ""
+      "id": 2,
+      "name": "Beard - Full",
+      "position": ""
     },
     {
-      "Id": 3,
-      "Name": "Goatee",
-      "Position": ""
+      "id": 3,
+      "name": "Goatee",
+      "position": ""
     },
     {
-      "Id": 4,
-      "Name": "Moustache",
-      "Position": ""
+      "id": 4,
+      "name": "Moustache",
+      "position": ""
     },
     {
-      "Id": 5,
-      "Name": "None",
-      "Position": ""
+      "id": 5,
+      "name": "None",
+      "position": ""
     },
     {
-      "Id": 6,
-      "Name": "Side Burns",
-      "Position": ""
+      "id": 6,
+      "name": "Side Burns",
+      "position": ""
     },
     {
-      "Id": 7,
-      "Name": "Soul Patch",
-      "Position": ""
+      "id": 7,
+      "name": "Soul Patch",
+      "position": ""
     }
   ]
 }

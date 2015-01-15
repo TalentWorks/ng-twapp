@@ -2,22 +2,15 @@ var express = require('express'),
     http = require('http');
 var cors = require('cors');
 
-var airports = require('./data/airports.json');
-var flights = require('./data/flights.json');
-var html001 = require('./data/html001.json');
-var reservations = [];
-
-for (var i = 0; i < flights.length; i++) {
-  flights[i].originFullName = airports[flights[i].origin].name;
-  flights[i].destinationFullName = airports[flights[i].destination].name;
-}
-
-function getMatchingFlights (data) {
-  return flights.filter(function  (item) {
-    return (item.origin === data.origin) &&
-        (item.destination === data.destination);
-  });
-}
+var interest = require('./data/acting-interest.json');
+var actingStyles = require('./data/acting-styles.json');
+var categories = require('./data/artist-actor-categories.json');
+var dancerStyles = require('./data/artist-dancer-styles.json');
+var entertainerTypes = require('./data/artist-entertainer-types.json');
+var fashionModel = require('./data/artist-fashion-model.json');
+var instruments = require('/data/artist-musician-instruments.json');
+var proCategories = require('/data/artist-production-categories.json');
+var proFashion = require('/data/artist-professional-fashion.json');
 
 var app = express()
     .use(express.bodyParser())
@@ -26,53 +19,40 @@ var app = express()
 
 //app.use(cors())
 
-app.get('/jHtml', function  (req, res) {
-  res.jsonp(html001);
+app.get('/interest', function  (req, res) {
+  res.jsonp(interest);
 });
 
-app.get('/airports', function  (req, res) {
-  res.json(airports);
+app.get('/actingStyles', function  (req, res) {
+  res.json(actingStyles);
 });
 
-app.get('/airports/:airport', function (req, res) {
-  if (typeof airports[req.params.airport] === 'undefined') {
-    res.json(404, {status: 'not found - invalid airport code'});
-  } else {
-    res.json(airports[req.params.airport]);
-  }
+app.get('/categories', function (req, res) {
+  res.json(categories);
 });
 
-app.get('/flights', function (req, res) {
-  res.json(flights);
+app.get('/dancerStyles', function  (req, res) {
+  res.json(dancerStyles);
 });
 
-app.get('/flights/:origin', function (req, res) {
-  var with_origin = flights.filter(function  (item) {
-    return item.origin === req.params.origin;
-  });
-
-  res.json(with_origin);
+app.get('/entertainerTypes', function (req, res) {
+  res.json(entertainerTypes);
 });
 
-app.get('/flights/:origin/:destination', function (req, res) {
-  var matches = getMatchingFlights(req.params);
-
-  res.json(matches);
+app.get('/fashionModel', function  (req, res) {
+  res.json(fashionModel);
 });
 
-app.get('/reservations', function  (req, res) {
-  res.json(reservations);
+app.get('/instruments', function  (req, res) {
+  res.json(instruments);
 });
 
-app.post('/reservations', function  (req, res) {
-  var matches = getMatchingFlights(req.body);
+app.get('/proCategories', function (req, res){
+  res.json(proCategories);
+});
 
-  if (matches.length) {
-    reservations.push(matches[0]);
-    res.json(matches[0]);
-  } else {
-    res.status(404).end();
-  }
+app.get('proFashion', function (req, res){
+  res.json(proFashion);
 });
 
 app.get('/*', function  (req, res) {

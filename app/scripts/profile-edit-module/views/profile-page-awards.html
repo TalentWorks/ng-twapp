@@ -42,15 +42,15 @@ Group Act? <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to con
             <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
               <div class="row">
                 <div class="col-md-4">
-                  <label for="award">Award/Honor Name</label>
+                  <label>Award/Honor Name</label>
                   <input type="text" class="form-control" name="award" ng-model="formData.award">
                 </div>
                 <div class="col-md-4">
-                  <label for="tfield">Awarding Institution</label>
-                  <select ng-model="myRoles" class="form-control" ng-options="role.name for role in roles"></select>
+                  <label>Awarding Institution</label>
+                  <input type="text" class="form-control" name="awardInstitution" ng-model="formData.awardInstitution">
                 </div>
                 <div class="col-md-4">
-                  <label for="tAttendEnd">Date Ended</label>
+                  <label>Date Ended</label>
                   <input type="text" class="form-control" name="tAttendEnd" ng-model="formData.tAttendEnd">
                 </div>
               </div>

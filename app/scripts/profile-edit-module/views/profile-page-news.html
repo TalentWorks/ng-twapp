@@ -41,16 +41,24 @@ Group Act? <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to con
             <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
               <div class="row">
                 <div class="col-md-4">
-                  <label for="newsArticleName">News Article Name</label>
+                  <label>News Article Name</label>
                   <input type="text" class="form-control" name="newsArticleName" ng-model="formData.newsArticleName">
                 </div>
                 <div class="col-md-4">
-                  <label for="newsMedia">Media</label>
+                  <label>Media</label>
                   <input type="text" class="form-control" name="newsMedia" ng-model="formData.newsMedia">
                 </div>
                 <div class="col-md-4">
-                  <label for="newsDate">Date</label>
-                  <input type="text" class="form-control" name="collectionsDate" ng-model="formData.collectionsDate">
+                  <label>Date</label>
+                  <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="formData.newsDate" is-open="opened"
+                           min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions"
+                           date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="open($event)"><i
+                      class="glyphicon glyphicon-calendar"></i></button>
+                  </span>
+                  </p>
                 </div>
               </div>
               <div class="row">

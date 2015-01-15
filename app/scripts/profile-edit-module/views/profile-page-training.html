@@ -45,21 +45,31 @@ Group Act?    <a href="#" xmlns="http://www.w3.org/1999/html">Click here</a> to 
             <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
               <div class="row">
                 <div class="col-md-4">
-                  <label for="tName">Training Name</label>
+                  <label>Training Name</label>
                   <input type="text" class="form-control" name="v" ng-model="formData.tName">
                 </div>
                 <div class="col-md-4">
-                  <label for="tfield">Field of Study</label>
-                  <select ng-model="myRoles" class="form-control" ng-options="role.name for role in roles"></select>
+                  <label>Field of Study</label>
+                  <select class="form-control" ng-model="formData.tfStudy"
+                          ng-options="obj.id as obj.name for obj in list_majors.majors">
+                  </select>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4">
-                  <label for="tAttendedStart">Dates Started</label>
-                  <input type="text" class="form-control" name="tAttendedStart" ng-model="formData.tAttendedStart">
+                  <label>Dates Started</label>
+                    <p class="input-group">
+                    <input type="text" class="form-control" datepicker-popup="{{format}}" ng-model="formData.tAttendedStart" is-open="opened"
+                           min-date="minDate" max-date="'2015-06-22'" datepicker-options="dateOptions"
+                           date-disabled="disabled(date, mode)" ng-required="true" close-text="Close"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="open($event)"><i
+                      class="glyphicon glyphicon-calendar"></i></button>
+                  </span>
+                  </p>
                 </div>
                 <div class="col-md-4">
-                  <label for="tAttendEnd">Date Ended</label>
+                  <label>Date Ended</label>
                   <input type="text" class="form-control" name="tAttendEnd" ng-model="formData.tAttendEnd">
                 </div>
               </div>
