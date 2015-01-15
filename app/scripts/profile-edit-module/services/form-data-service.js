@@ -9,7 +9,7 @@
 angular.module('ng-twapp.common-api').factory('FormDataService', function ($q, $http, Restangular) {
   // Public API
   var factory = {};
-  var baseUrl = 'http://54.174.36.93:8888';
+  //var baseUrl = 'http://54.174.36.93:8888';
 
   factory.actingInterest= function () {
     var data = Restangular.all('data/acting-interest.json').getList();
@@ -23,7 +23,8 @@ angular.module('ng-twapp.common-api').factory('FormDataService', function ($q, $
 
   factory.getUnions = function () {
     var deferred = $q.defer(),
-    httpPromise = $http.get(baseUrl + '/data/unions.json');
+    //httpPromise = $http.get(baseUrl + '/data/unions.json');
+    httpPromise = $http.get('/data/unions.json');
     httpPromise.success(function (data) {
       deferred.resolve(data);
     })
@@ -49,7 +50,7 @@ angular.module('ng-twapp.common-api').factory('FormDataService', function ($q, $
   factory.getEyes = function () {
     var deferred = $q.defer(),
     //httpPromise = $http.get(baseUrl + '/data/eyes.json');
-    httpPromise = $http.get('/data/eyes.json');
+      httpPromise = $http.get('/data/eyes.json');
     httpPromise.success(function (data) {
       deferred.resolve(data);
     })

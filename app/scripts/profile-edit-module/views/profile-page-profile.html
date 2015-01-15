@@ -42,7 +42,13 @@ Group Act?  <a href="#">Click here</a> to continue wth group act form.
                 </div>
                 <div class="col-md-6">
                   <label>Sex</label>
-                  <input type="text" class="form-control" name="sex" ng-model="formData.sex">
+                  <select ng-model="formData.sex" class="form-control">
+                    <option value=""> </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="transgendered">Transgendered</option>
+                    <option value="other">Other</option>
+                  </select>
                 </div>
               </div>
             </div>
@@ -80,7 +86,7 @@ Group Act?  <a href="#">Click here</a> to continue wth group act form.
                   <input type="text" class="form-control" name="city" ng-model="formData.city">
                 </div>
                 <div class="col-md-3">
-                  <label>State</label>
+                  <label>State / Province</label>
                   <select class="form-control" ng-model="formData.state"
                           ng-options="obj.id as obj.name for obj in list_states.states">
                   </select>
@@ -140,6 +146,12 @@ Group Act?  <a href="#">Click here</a> to continue wth group act form.
               <div class="row">
                 <div class="col-md-4">
                   <label>Height</label>
+                  <select class="float-text-right" ng-model="formData.heightUnit">
+                    <option value="feet">feet</option>
+                    <option value="inches">inches</option>
+                    <option value="cms">cms</option>
+                  </select>
+                  <label class="label-float-right"> unit </label>
                   <input type="text" class="form-control" name="Height" ng-model="formData.height">
                 </div>
                 <div class="col-md-4">
@@ -158,6 +170,11 @@ Group Act?  <a href="#">Click here</a> to continue wth group act form.
               <div class="row">
                 <div class="col-md-3">
                   <label>Weight</label>
+                  <select class="float-text-right" ng-model="formData.weightUnit">
+                    <option value="lb">lb</option>
+                    <option value="cms">kgs</option>
+                  </select>
+                  <label class="label-float-right"> unit </label>
                   <input type="text" class="form-control" name="Weight" ng-model="formData.weight">
                 </div>
                 <div class="col-md-3">
@@ -197,23 +214,29 @@ Group Act?  <a href="#">Click here</a> to continue wth group act form.
             <div class="row">
               <div class="col-md-6">
                 <label>Home Number</label>
-                <input type="text" class="form-control" name="v" ng-model="formData.homeNumber">
+                <input type="text" class="form-control" ng-model="formData.homeNumber">
               </div>
               <div class="col-md-6">
                 <label>Cell Number</label>
-                <input type="text" class="form-control" name="cellNumber" ng-model="formData.cellNumber">
+                <input type="text" class="form-control" ng-model="formData.cellNumber">
               </div>
             </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <label>Email</label><br/>
-              <li ng-repeat="mail in emails track by $index">{{mail.email}}</li>
+            <div class="row">
+              <div class="col-sm-6">
+                <label>Email</label>
+              </div>
             </div>
-          </div>
-          <div class="row">
+            <div class="row">
+              <div class="col-sm-10" ng-repeat="mail in emails track by $index">
+                <div class="col-sm-5">{{mail.email}}</div>
+                <div class="col-sm-3 primaryEmail">primary {{mail.primary}}</div>
+                <div class="col-sm-2"><a href="" ng-click="deleteEmail($index)">Remove</a></div>
+              </div>
+            </div>
+            <div class="row">
             <div class="col-sm-6">
-              <input type="text" class="form-control" name="email" data-ng-model="formData.email"
-                     placeholder="enter another email"/>
+              <input type="text" class="form-control" name="email" ng-model="formData.email"
+                     placeholder="enter another email"/>primary <input type="checkbox" ng-model="formData.primary">
             </div>
             <div class="col-sm-3 row-fluid">
               <input type="button" class="btn btn-primary" name="addEmail" value="Add another email"
@@ -231,44 +254,36 @@ Group Act?  <a href="#">Click here</a> to continue wth group act form.
           <a data-toggle="collapse" data-parent="#accordion" href="profile/profile##collapseFive">5. My Languages?</a>
         </h4>
       </div>
-      <div id="collapseFive" class="panel-collapse collapse">
-        <!-- Profile Language -->
+        <div id="collapseFive" class="panel-collapse collapse">
         <div class="panel-body">
-          <div class="form-group">
-            <div class="row">
-              <div class="col-sm-6">
-                <label>Languages:</label><br/>
-              </div>
+        <!-- Profile Language -->
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="col-sm-5"><label>Language</label></div>
+              <div class="col-sm-3"><label>Proficiency</label></div>
+              <div class="col-sm-2"><label>Delete</label></div>
             </div>
-            <div class="row">
-              <div class="col-md-4">
-                Language
-              </div>
-              <div class="col-md-4">
-                Proficiency
-              </div>
+            <div class="col-sm-10" ng-repeat="languages in languageList track by $index">
+              <div class="col-sm-5">{{ getLanguageName(languages.language) }}</div>
+              <div class="col-sm-3">{{getProficiencyName(languages.proficiency)}}</div>
+              <div class="col-sm-2"><a href="" ng-click="deleteLanguage($index)">Remove</a></div>
             </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <input type="image" src="" ng-click="showDetails = ! showDetails" class="a"
-                       value="add another language +"/>
+            <div class="row" class="col-sm-12">
+              <div class="col-sm-4">
+                <select class="form-control" name="language" ng-model="formData.language"
+                        ng-options="obj.id as obj.name for obj in list_languages.languages">
+                </select>
               </div>
-            </div>
-            <div class="procedure-details" ng-class="{ 'hidden': ! showDetails }">
-              <div class="row">
-                <div class="col-md-4">
-                  <label>Language</label>
-                  <select class="form-control" ng-model="formData.language"
-                          ng-options="obj.id as obj.name for obj in list_languages.languages">
-                  </select>
-                </div>
-                <div class="col-sm-6">
-                  <label>Proficiency</label>
-                  <select class="form-control" ng-model="formData.proficiency"
-                          ng-options="obj.id as obj.name for obj in list_proficiencies.proficiencies">
-                  </select>
-                </div>
+              <div class="col-sm-4">
+                <select class="form-control" name="proficiency" ng-model="formData.proficiency"
+                        ng-options="obj.id as obj.name for obj in list_proficiencies.proficiencies">
+                </select>
+              </div>
+              <div class="col-sm-4">
+                <input type="button" class="btn btn-primary" name="addLanguage" value="Add Language"
+                       ng-click="addLanguage()">
               </div>
             </div>
           </div>
@@ -278,8 +293,6 @@ Group Act?  <a href="#">Click here</a> to continue wth group act form.
     </div>
   </div>
 </div>
-
-
 
 <div class="form-group row">
   <div class="col-xs-6 col-xs-offset-3">

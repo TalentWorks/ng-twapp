@@ -75,25 +75,48 @@ angular.module('ng-twapp.profileEdit')
       $scope.list_majors = data;
     });
 
-
     $scope.formData = {};
+
+    //Emails
     $scope.appEmails = [];
-
-//  $scope.loadEmails = function() {
-//      $scope.emails = angular.fromJson(localStorage.getItem('emails'));
-//  };
-
     $scope.addEmails = function () {
-      $scope.appEmails.push($scope.emails);
       $scope.appEmails.push({
         email: $scope.formData.email,
-        default: false
+        primary: $scope.checkPrimaryEmail($scope.formData.primary)
       });
-
-      //$scope.loadEmails();
       $scope.emails = $scope.appEmails;
     };
 
+    $scope.deleteEmail = function (index) {
+      $scope.appEmails.splice($scope.appEmails.indexOf(index), 1);
+    };
+
+    //languages
+    $scope.languageList = [];
+    $scope.addLanguage = function () {
+      $scope.languageList.push({
+        language: $scope.formData.language,
+        proficiency: $scope.formData.proficiency
+      });
+      $scope.emails = $scope.appEmails;
+    };
+
+    $scope.deleteLanguage = function (index) {
+      $scope.languageList.splice($scope.languageList.indexOf(index), 1);
+    };
+
+    $scope.getLanguageName = function (id) {
+      var data = $scope.list_languages;
+      var languageName = data.languages[id -1].name;
+      //var result = _.find(languageList, {'languages.id': id});
+      return languageName;
+    };
+
+    $scope.getProficiencyName = function (id) {
+      var data = $scope.list_proficiencies;
+      var proficiencieName = data.proficiencies[id -1].name;
+      return proficiencieName;
+    };
     /**
      * @function $scope.open
      * @description Opens the calendar popup
@@ -109,31 +132,23 @@ angular.module('ng-twapp.profileEdit')
       $event.stopPropagation();
       $scope.opened = true;
     };
+    //Utilities
+    $scope.checkPrimaryEmail = function(primary){
+      var result = false;
+      if(primary === true){
+        result = true;
+      }
+      return result;
+    };
 
-//      $scope.emailPattern = (function() {
-//        var regexp = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/;
-//        return {
-//          test: function(value) {
-//            if( $scope.formData.email === false ) return true;
-//            else return regexp.test(value);
-//          }
-//        };
-//      })();
-//
-//      $scope.phoneNumberPattern = (function() {
-//        var regexp = /^\(?(\d{3})\)?[ .-]?(\d{3})[ .-]?(\d{4})$/;
-//        return {
-//          test: function(value) {
-//            if( $scope.formData === false ) return true;
-//            else return regexp.test(value);
-//          }
-//        };
-//      })();
-
-    //      $scope.processForm = function () {
-//        alert('Created User! ' + $scope.formData.name);
-//      };
-
-
+  }).filter('getInput', function() {
+    return function(input) {
+      return input ? '\u2713' : '\u2718';
+    };
+  }).filter('makeTwo', function () {
+    return function (input) {
+      return input + 1;
+    };
   });
+
 

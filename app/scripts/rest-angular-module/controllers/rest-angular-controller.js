@@ -16,7 +16,7 @@ angular.module('ng-twapp.RestAngular')
     });
 
     // GET One from restNgSErvice
-    $scope.user = restNgService.getOneUser('05e83b49-d5e7-4f96-95ff-f6b76389e7d5').then(function (data) {
+    $scope.user = restNgService.getOneUser('809d4325-de7f-4b71-a845-6a8273155407').then(function (data) {
       $scope.user = data;
       console.log($scope.user);
     });

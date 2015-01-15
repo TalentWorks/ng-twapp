@@ -7,8 +7,7 @@
 angular.module('ng-twapp').config(function ($stateProvider, $urlRouterProvider, localStorageServiceProvider, RestangularProvider) {
 
   //RestangularProvider.setBaseUrl('http://localhost:3000/');
-  RestangularProvider.setBaseUrl('http://54.174.36.93:8888/');
-
+  RestangularProvider.setBaseUrl('http://54.88.193.44:8888/api/');
 
   localStorageServiceProvider.setPrefix('ng-twapp');
   localStorageServiceProvider.setStorageType('localStorage');
